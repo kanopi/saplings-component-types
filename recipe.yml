@@ -1,0 +1,15 @@
+name: 'Saplings - Component types'
+description: 'Configuration for Saplings component types.'
+type: 'Site'
+install:
+  # Core.
+  # - example
+  # Contrib.
+  # - example
+config:
+  import:
+    # Core.
+    # module_name:
+    #  - one.config.name
+    # Contrib.
+    # module_name: "*"

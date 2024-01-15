@@ -1,0 +1,14 @@
+{
+    "name": "kanopi/saplings-component-types",
+    "description": "Base configuration for Saplings component types.",
+    "type": "drupal-recipe",
+    "license": "GPL-2.0-or-later",
+    "authors": [
+        {
+            "name": "Kerry Murphy",
+            "homepage": "https://kanopi.com",
+            "role": "Maintainer"
+        }
+    ],
+    "require": { }
+}
