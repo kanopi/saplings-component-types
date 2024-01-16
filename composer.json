@@ -10,5 +10,11 @@
             "role": "Maintainer"
         }
     ],
-    "require": { }
+    "require": {
+        "kanopi/saplings-component-base": "^0.0.4",
+        "kanopi/saplings-content-types": "*",
+        "drupal/block_field": "^1.0@RC",
+        "drupal/nomarkup": "^1.0",
+        "drupal/viewsreference": "^2.0@beta"
+     }
 }
