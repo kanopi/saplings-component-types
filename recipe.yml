@@ -8,6 +8,7 @@ install:
   - block_content
   - block_field
   - nomarkup
+  - saplings-component-base
   - viewsreference
 config:
   import:
