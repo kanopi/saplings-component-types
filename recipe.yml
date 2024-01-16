@@ -5,11 +5,15 @@ install:
   # Core.
   # - example
   # Contrib.
-  # - example
+  - block_content
+  - block_field
+  - nomarkup
+  - saplings-component-base
+  - viewsreference
 config:
   import:
     # Core.
     # module_name:
     #  - one.config.name
     # Contrib.
-    # module_name: "*"
+    # block_field
