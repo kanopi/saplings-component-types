@@ -3,13 +3,12 @@ description: 'Configuration for Saplings component types.'
 type: 'Site'
 install:
   # Core.
-  # - example
-  # Contrib.
   - block_content
+  - media
+  # Contrib.
   - block_field
   - ds
   - nomarkup
-  - media
   - viewsreference
 config:
   import:
