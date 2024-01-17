@@ -13,7 +13,10 @@
     "require": {
         "drupal/block_field": "^1.0@RC",
         "drupal/ds": "*",
+        "drupal/entity_reference_revisions": "*",
         "drupal/nomarkup": "^1.0",
-        "drupal/viewsreference": "^2.0@beta"
+        "drupal/paragraphs": "*",
+        "drupal/viewsreference": "^2.0@beta",
+        "kanopi/bootstrap_layout_classes": "*"
      }
 }
