@@ -12,6 +12,7 @@
     ],
     "require": {
         "drupal/block_field": "^1.0@RC",
+        "drupal/ds": "*",
         "drupal/nomarkup": "^1.0",
         "drupal/viewsreference": "^2.0@beta"
      }
