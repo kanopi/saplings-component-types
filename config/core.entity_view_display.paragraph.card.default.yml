@@ -7,8 +7,34 @@ dependencies:
     - field.field.paragraph.card.field_header
     - paragraphs.paragraphs_type.card
   module:
+    - ds
     - nomarkup
     - text
+third_party_settings:
+  ds:
+    layout:
+      id: pattern_card
+      library: null
+      disable_css: false
+      entity_classes: all_classes
+      settings:
+        pattern:
+          field_templates: default
+          variant: default
+          settings:
+            image_position: ''
+            image_position_token: ''
+            image_col_classes: col-md-4
+            image_col_classes_token: ''
+            content_col_classes: col-md-8
+            content_col_classes_token: ''
+    regions:
+      image:
+        - field_card_image
+      header:
+        - field_header
+      content:
+        - field_description
 id: paragraph.card.default
 targetEntityType: paragraph
 bundle: card
@@ -25,8 +51,8 @@ content:
         enabled: true
         separator: '|'
         referenced_entity: 0
-    weight: 2
-    region: content
+    weight: 0
+    region: image
   field_description:
     type: text_default
     label: hidden
@@ -36,7 +62,7 @@ content:
         enabled: true
         separator: '|'
         referenced_entity: ''
-    weight: 1
+    weight: 2
     region: content
   field_header:
     type: string
@@ -48,6 +74,6 @@ content:
         enabled: true
         separator: '|'
         referenced_entity: ''
-    weight: 0
-    region: content
+    weight: 1
+    region: header
 hidden: {  }
