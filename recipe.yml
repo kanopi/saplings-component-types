@@ -1,14 +1,21 @@
 name: 'Saplings - Component types'
 description: 'Configuration for Saplings component types.'
 type: 'Site'
+recipes:
+  - saplings-component-base
 install:
   # Core.
   - block_content
   - media
+  - media_library
+  - text
   # Contrib.
   - block_field
+  - bootstrap_layout_classes
   - ds
+  - entity_reference_revisions
   - nomarkup
+  - paragraphs
   - viewsreference
 config:
   import:
