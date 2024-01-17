@@ -4,6 +4,22 @@ dependencies:
   config:
     - field.field.paragraph.carousel_item.field_carousel_image
     - paragraphs.paragraphs_type.carousel_item
+  module:
+    - ds
+    - nomarkup
+third_party_settings:
+  ds:
+    layout:
+      id: pattern_carousel_item
+      library: null
+      disable_css: false
+      entity_classes: all_classes
+      settings:
+        pattern:
+          field_templates: default
+    regions:
+      image:
+        - field_carousel_image
 id: paragraph.carousel_item.default
 targetEntityType: paragraph
 bundle: carousel_item
@@ -11,11 +27,22 @@ mode: default
 content:
   field_carousel_image:
     type: entity_reference_entity_view
-    label: above
+    label: hidden
     settings:
       view_mode: default
       link: false
-    third_party_settings: {  }
+    third_party_settings:
+      nomarkup:
+        enabled: true
+        separator: '|'
+        referenced_entity: 0
+      ds:
+        ft:
+          id: default
+          settings:
+            lb: ''
+            lb-col: false
+            classes: {  }
     weight: 0
-    region: content
+    region: image
 hidden: {  }
