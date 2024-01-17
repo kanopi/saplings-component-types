@@ -12,7 +12,8 @@
     ],
     "require": {
         "kanopi/saplings-component-base": "^0.0.4",
-        "kanopi/saplings-content-types": "*",
+        "kanopi/saplings-content-base": "*",
+        "kanopi/saplings-theme": "*",
         "drupal/block_field": "^1.0@RC",
         "drupal/nomarkup": "^1.0",
         "drupal/viewsreference": "^2.0@beta"
