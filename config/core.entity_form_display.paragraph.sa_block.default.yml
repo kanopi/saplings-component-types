@@ -48,7 +48,7 @@ content:
     settings:
       usage: 2
       wrapper: 1
-      container: false
+      container: true
       col: true
       text: true
       offset: false
