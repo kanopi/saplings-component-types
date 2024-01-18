@@ -2,9 +2,9 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.field.paragraph.text.sa_description
-    - field.field.paragraph.text.sa_header
-    - field.field.paragraph.text.sa_styles
+    - field.field.paragraph.sa_text.sa_description
+    - field.field.paragraph.sa_text.sa_header
+    - field.field.paragraph.sa_text.sa_styles
     - paragraphs.paragraphs_type.sa_text
   module:
     - bootstrap_layout_classes
