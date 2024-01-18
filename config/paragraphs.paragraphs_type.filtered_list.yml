@@ -1,9 +1,0 @@
-langcode: en
-status: true
-dependencies: {  }
-id: filtered_list
-label: 'Filtered List'
-icon_uuid: null
-icon_default: null
-description: ''
-behavior_plugins: {  }

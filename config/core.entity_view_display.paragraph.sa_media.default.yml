@@ -1,0 +1,62 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.media.sa_description
+    - field.field.paragraph.media.sa_header
+    - field.field.paragraph.media.sa_media
+    - field.field.paragraph.media.sa_styles
+    - paragraphs.paragraphs_type.sa_media
+  module:
+    - bootstrap_layout_classes
+    - nomarkup
+    - text
+id: paragraph.sa_media.default
+targetEntityType: paragraph
+bundle: sa_media
+mode: default
+content:
+  sa_description:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings:
+      nomarkup:
+        enabled: true
+        separator: '|'
+        referenced_entity: ''
+    weight: 1
+    region: content
+  sa_header:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings:
+      nomarkup:
+        enabled: true
+        separator: '|'
+        referenced_entity: ''
+    weight: 0
+    region: content
+  sa_media:
+    type: entity_reference_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings:
+      nomarkup:
+        enabled: true
+        separator: '|'
+        referenced_entity: 0
+    weight: 2
+    region: content
+  sa_styles:
+    type: bootstrap_layout_classes_formatter
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 3
+    region: content
+hidden: {  }
