@@ -2,8 +2,8 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.field.paragraph.accordion_item.sa_description
-    - field.field.paragraph.accordion_item.sa_header
+    - field.field.paragraph.sa_accordion_item.sa_description
+    - field.field.paragraph.sa_accordion_item.sa_header
     - paragraphs.paragraphs_type.sa_accordion_item
   module:
     - nomarkup

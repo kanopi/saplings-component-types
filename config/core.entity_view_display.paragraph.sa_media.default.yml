@@ -2,10 +2,10 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.field.paragraph.media.sa_description
-    - field.field.paragraph.media.sa_header
-    - field.field.paragraph.media.sa_media
-    - field.field.paragraph.media.sa_styles
+    - field.field.paragraph.sa_media.sa_description
+    - field.field.paragraph.sa_media.sa_header
+    - field.field.paragraph.sa_media.sa_media
+    - field.field.paragraph.sa_media.sa_styles
     - paragraphs.paragraphs_type.sa_media
   module:
     - bootstrap_layout_classes

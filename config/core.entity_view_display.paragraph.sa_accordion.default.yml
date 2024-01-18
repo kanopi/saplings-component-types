@@ -2,8 +2,8 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.field.paragraph.accordion.sa_accordion_item
-    - field.field.paragraph.accordion.sa_styles
+    - field.field.paragraph.sa_accordion.sa_accordion_item
+    - field.field.paragraph.sa_accordion.sa_styles
     - paragraphs.paragraphs_type.sa_accordion
   module:
     - bootstrap_layout_classes

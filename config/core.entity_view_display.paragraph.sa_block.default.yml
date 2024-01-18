@@ -2,10 +2,10 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.field.paragraph.block.sa_block
-    - field.field.paragraph.block.sa_description
-    - field.field.paragraph.block.sa_header
-    - field.field.paragraph.block.sa_styles
+    - field.field.paragraph.sa_block.sa_block
+    - field.field.paragraph.sa_block.sa_description
+    - field.field.paragraph.sa_block.sa_header
+    - field.field.paragraph.sa_block.sa_styles
     - paragraphs.paragraphs_type.sa_block
   module:
     - block_field

@@ -2,9 +2,9 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.field.paragraph.card.sa_card_image
-    - field.field.paragraph.card.sa_description
-    - field.field.paragraph.card.sa_header
+    - field.field.paragraph.sa_card.sa_card_image
+    - field.field.paragraph.sa_card.sa_description
+    - field.field.paragraph.sa_card.sa_header
     - paragraphs.paragraphs_type.sa_card
   module:
     - media_library

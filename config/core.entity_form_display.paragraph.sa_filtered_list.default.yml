@@ -2,10 +2,10 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.field.paragraph.filtered_list.sa_description
-    - field.field.paragraph.filtered_list.sa_filtered_list
-    - field.field.paragraph.filtered_list.sa_header
-    - field.field.paragraph.filtered_list.sa_styles
+    - field.field.paragraph.sa_filtered_list.sa_description
+    - field.field.paragraph.sa_filtered_list.sa_filtered_list
+    - field.field.paragraph.sa_filtered_list.sa_header
+    - field.field.paragraph.sa_filtered_list.sa_styles
     - paragraphs.paragraphs_type.sa_filtered_list
   module:
     - bootstrap_layout_classes

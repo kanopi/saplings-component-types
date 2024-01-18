@@ -2,7 +2,7 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.field.paragraph.carousel.sa_carousel_item
+    - field.field.paragraph.sa_carousel.sa_carousel_item
     - paragraphs.paragraphs_type.sa_carousel
   module:
     - ds
