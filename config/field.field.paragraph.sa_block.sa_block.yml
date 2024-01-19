@@ -6,7 +6,7 @@ dependencies:
     - paragraphs.paragraphs_type.sa_block
   module:
     - block_field
-id: paragraph.block.sa_block
+id: paragraph.sa_block.sa_block
 field_name: sa_block
 entity_type: paragraph
 bundle: sa_block

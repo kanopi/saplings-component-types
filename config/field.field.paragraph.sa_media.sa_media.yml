@@ -6,7 +6,7 @@ dependencies:
     - media.type.image
     - media.type.remote_video
     - paragraphs.paragraphs_type.sa_media
-id: paragraph.media.sa_media
+id: paragraph.sa_media.sa_media
 field_name: sa_media
 entity_type: paragraph
 bundle: sa_media

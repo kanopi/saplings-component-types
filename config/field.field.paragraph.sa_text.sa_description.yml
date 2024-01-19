@@ -6,7 +6,7 @@ dependencies:
     - paragraphs.paragraphs_type.sa_text
   module:
     - text
-id: paragraph.text.sa_description
+id: paragraph.sa_text.sa_description
 field_name: sa_description
 entity_type: paragraph
 bundle: sa_text

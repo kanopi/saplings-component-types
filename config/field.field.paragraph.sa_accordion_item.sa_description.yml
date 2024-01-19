@@ -6,7 +6,7 @@ dependencies:
     - paragraphs.paragraphs_type.sa_accordion_item
   module:
     - text
-id: paragraph.accordion_item.sa_description
+id: paragraph.sa_accordion_item.sa_description
 field_name: sa_description
 entity_type: paragraph
 bundle: sa_accordion_item

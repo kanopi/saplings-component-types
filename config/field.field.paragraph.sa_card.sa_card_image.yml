@@ -5,7 +5,7 @@ dependencies:
     - field.storage.paragraph.sa_card_image
     - media.type.image
     - paragraphs.paragraphs_type.sa_card
-id: paragraph.card.sa_card_image
+id: paragraph.sa_card.sa_card_image
 field_name: sa_card_image
 entity_type: paragraph
 bundle: sa_card
