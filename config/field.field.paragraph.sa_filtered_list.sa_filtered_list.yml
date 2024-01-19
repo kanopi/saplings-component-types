@@ -6,7 +6,7 @@ dependencies:
     - paragraphs.paragraphs_type.sa_filtered_list
   module:
     - viewsreference
-id: paragraph.filtered_list.sa_filtered_list
+id: paragraph.sa_filtered_list.sa_filtered_list
 field_name: sa_filtered_list
 entity_type: paragraph
 bundle:  sa_filtered_list

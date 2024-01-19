@@ -4,7 +4,7 @@ dependencies:
   config:
     - field.storage.paragraph.sa_styles
     - paragraphs.paragraphs_type.sa_filtered_list
-id: paragraph.filtered_list.sa_styles
+id: paragraph.sa_filtered_list.sa_styles
 field_name: sa_styles
 entity_type: paragraph
 bundle: sa_filtered_list

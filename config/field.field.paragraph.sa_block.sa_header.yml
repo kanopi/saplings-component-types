@@ -4,7 +4,7 @@ dependencies:
   config:
     - field.storage.paragraph.sa_header
     - paragraphs.paragraphs_type.sa_block
-id: paragraph.block.sa_header
+id: paragraph.sa_block.sa_header
 field_name: sa_header
 entity_type: paragraph
 bundle: sa_block

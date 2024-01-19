@@ -5,7 +5,7 @@ dependencies:
     - field.storage.paragraph.sa_carousel_image
     - media.type.image
     - paragraphs.paragraphs_type.sa_carousel_item
-id: paragraph.carousel_item.sa_carousel_image
+id: paragraph.sa_carousel_item.sa_carousel_image
 field_name: sa_carousel_image
 entity_type: paragraph
 bundle: sa_carousel_item

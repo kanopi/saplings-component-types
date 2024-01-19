@@ -1,6 +1,6 @@
 {
     "name": "kanopi/saplings-component-types",
-    "description": "Base configuration for Saplings component types.",
+    "description": "Installs Saplings component types.",
     "type": "drupal-recipe",
     "license": "GPL-2.0-or-later",
     "authors": [

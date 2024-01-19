@@ -4,7 +4,7 @@ dependencies:
   config:
     - field.storage.paragraph.sa_styles
     - paragraphs.paragraphs_type.sa_media
-id: paragraph.media.sa_styles
+id: paragraph.sa_media.sa_styles
 field_name: sa_styles
 entity_type: paragraph
 bundle: sa_media

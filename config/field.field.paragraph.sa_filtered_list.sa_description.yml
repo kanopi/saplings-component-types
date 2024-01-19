@@ -6,7 +6,7 @@ dependencies:
     - paragraphs.paragraphs_type.sa_filtered_list
   module:
     - text
-id: paragraph.filtered_list.sa_description
+id: paragraph.sa_filtered_list.sa_description
 field_name: sa_description
 entity_type: paragraph
 bundle: sa_filtered_list

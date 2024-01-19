@@ -6,7 +6,7 @@ dependencies:
     - paragraphs.paragraphs_type.sa_media
   module:
     - text
-id: paragraph.media.sa_description
+id: paragraph.sa_media.sa_description
 field_name: sa_description
 entity_type: paragraph
 bundle: sa_media

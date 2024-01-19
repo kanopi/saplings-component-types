@@ -1,5 +1,5 @@
 name: 'Saplings - Component types'
-description: 'Configuration for Saplings component types.'
+description: 'Installs Saplings component types.'
 type: 'Site'
 recipes:
   - saplings-component-base
@@ -17,10 +17,3 @@ install:
   - nomarkup
   - paragraphs
   - viewsreference
-config:
-  import:
-    # Core.
-    # module_name:
-    #  - one.config.name
-    # Contrib.
-    # block_field
