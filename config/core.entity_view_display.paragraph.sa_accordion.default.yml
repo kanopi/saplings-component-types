@@ -45,6 +45,14 @@ content:
         enabled: true
         separator: '|'
         referenced_entity: ''
+      ds:
+        ds_limit: ''
+        ft:
+          id: default
+          settings:
+            lb: ''
+            lb-col: false
+            classes: {  }
     weight: 4
     region: content
   sa_styles:
