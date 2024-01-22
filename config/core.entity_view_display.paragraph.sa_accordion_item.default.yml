@@ -6,7 +6,29 @@ dependencies:
     - field.field.paragraph.sa_accordion_item.sa_header
     - paragraphs.paragraphs_type.sa_accordion_item
   module:
+    - ds
     - nomarkup
+    - text
+third_party_settings:
+  ds:
+    layout:
+      id: pattern_accordion_item
+      library: null
+      disable_css: false
+      entity_classes: all_classes
+      settings:
+        pattern:
+          field_templates: default
+          settings:
+            opened: 0
+            opened_token: ''
+            heading_level: ''
+            item_id: ''
+    regions:
+      title:
+        - sa_header
+      content:
+        - sa_description
 id: paragraph.sa_accordion_item.default
 targetEntityType: paragraph
 bundle: sa_accordion_item
@@ -34,5 +56,5 @@ content:
         separator: '|'
         referenced_entity: ''
     weight: 0
-    region: content
+    region: title
 hidden: {  }
