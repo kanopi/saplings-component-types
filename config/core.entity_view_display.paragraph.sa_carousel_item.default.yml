@@ -16,7 +16,7 @@ third_party_settings:
       entity_classes: all_classes
       settings:
         pattern:
-          sa_templates: default
+          field_templates: only_content
     regions:
       image:
         - sa_carousel_image
@@ -33,16 +33,9 @@ content:
       link: false
     third_party_settings:
       nomarkup:
-        enabled: true
+        enabled: false
         separator: '|'
-        referenced_entity: 0
-      ds:
-        ft:
-          id: default
-          settings:
-            lb: ''
-            lb-col: false
-            classes: {  }
+        referenced_entity: ''
     weight: 0
     region: image
 hidden: {  }
