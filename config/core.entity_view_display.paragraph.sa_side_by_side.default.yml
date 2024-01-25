@@ -4,7 +4,7 @@ dependencies:
   config:
     - field.field.paragraph.sa_side_by_side.sa_media
     - field.field.paragraph.sa_side_by_side.sa_reverse_order
-    - field.field.paragraph.sa_side_by_side.sa_text
+    - field.field.paragraph.sa_side_by_side.sa_description
     - paragraphs.paragraphs_type.sa_side_by_side
   module:
     - text
@@ -32,7 +32,7 @@ content:
     third_party_settings: {}
     weight: 2
     region: content
-  sa_text:
+  sa_description:
     type: text_default
     label: hidden
     settings: {}

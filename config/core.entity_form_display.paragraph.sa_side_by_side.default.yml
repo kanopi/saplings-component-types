@@ -4,7 +4,7 @@ dependencies:
   config:
     - field.field.paragraph.sa_side_by_side.sa_media
     - field.field.paragraph.sa_side_by_side.sa_reverse_order
-    - field.field.paragraph.sa_side_by_side.sa_text
+    - field.field.paragraph.sa_side_by_side.sa_description
     - paragraphs.paragraphs_type.sa_side_by_side
   module:
     - media_library
@@ -28,7 +28,7 @@ content:
     settings:
       display_label: true
     third_party_settings: {}
-  sa_text:
+  sa_description:
     type: text_textarea
     weight: 0
     region: content
