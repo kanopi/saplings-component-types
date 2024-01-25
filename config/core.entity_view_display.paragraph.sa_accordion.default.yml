@@ -19,7 +19,7 @@ third_party_settings:
       entity_classes: all_classes
       settings:
         pattern:
-          sa_templates: default
+          field_templates: default
           variant: default
           settings:
             keep_open: 0
@@ -43,7 +43,7 @@ content:
     third_party_settings:
       nomarkup:
         enabled: true
-        separator: '|'
+        separator: ''
         referenced_entity: ''
       ds:
         ds_limit: ''
