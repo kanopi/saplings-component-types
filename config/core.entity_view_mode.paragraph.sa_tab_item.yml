@@ -1,0 +1,10 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs
+id: paragraph.sa_tab_item
+label: 'Tab Item'
+description: 'This is a button for the tab.'
+targetEntityType: paragraph
+cache: true
