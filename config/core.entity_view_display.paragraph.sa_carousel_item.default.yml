@@ -40,7 +40,7 @@ content:
     type: entity_reference_entity_view
     label: hidden
     settings:
-      view_mode: '5_4'
+      view_mode: 'sa_5_4'
       link: false
     third_party_settings:
       nomarkup:
