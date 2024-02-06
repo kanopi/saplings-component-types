@@ -46,20 +46,16 @@ content:
     weight: 3
     region: content
     settings:
-      usage: 2
+      usage: 0
       wrapper: 1
       container: true
       col: true
       text: true
-      offset: false
-      order: false
+      offset: true
       margin: true
       padding: true
-      gutter: false
-      align-items: false
-      align-self: false
-      justify-content: false
-      custom: false
+      justify-content: true
+      custom: true
     third_party_settings: {  }
 hidden:
   created: true
