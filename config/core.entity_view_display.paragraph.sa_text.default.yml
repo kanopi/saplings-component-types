@@ -28,7 +28,7 @@ content:
     weight: 1
     region: content
   sa_header:
-    type: string
+    type: wrapper_class
     label: hidden
     settings:
       class: ''
