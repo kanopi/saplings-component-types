@@ -4,12 +4,12 @@ dependencies:
   config:
     - field.field.paragraph.sa_filtered_list.sa_background
     - field.field.paragraph.sa_filtered_list.sa_col
-    - field.field.paragraph.sa_filtered_list.sa_margin
-    - field.field.paragraph.sa_filtered_list.sa_padding
-    - field.field.paragraph.sa_filtered_list.sa_width
     - field.field.paragraph.sa_filtered_list.sa_description
     - field.field.paragraph.sa_filtered_list.sa_filtered_list
     - field.field.paragraph.sa_filtered_list.sa_header
+    - field.field.paragraph.sa_filtered_list.sa_margin
+    - field.field.paragraph.sa_filtered_list.sa_padding
+    - field.field.paragraph.sa_filtered_list.sa_width
     - paragraphs.paragraphs_type.sa_filtered_list
   module:
     - field_group
@@ -65,4 +65,9 @@ content:
     third_party_settings: {  }
 hidden:
   created: true
+  sa_background: true
+  sa_col: true
+  sa_margin: true
+  sa_padding: true
+  sa_width: true
   status: true
