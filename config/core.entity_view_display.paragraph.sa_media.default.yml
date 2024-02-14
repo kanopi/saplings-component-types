@@ -2,13 +2,16 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.paragraph.sa_media.sa_background
+    - field.field.paragraph.sa_media.sa_col
     - field.field.paragraph.sa_media.sa_description
     - field.field.paragraph.sa_media.sa_header
+    - field.field.paragraph.sa_media.sa_margin
     - field.field.paragraph.sa_media.sa_media
-    - field.field.paragraph.sa_media.sa_styles
+    - field.field.paragraph.sa_media.sa_padding
+    - field.field.paragraph.sa_media.sa_width
     - paragraphs.paragraphs_type.sa_media
   module:
-    - bootstrap_layout_classes
     - element_class_formatter
     - nomarkup
     - text
@@ -29,7 +32,7 @@ content:
     weight: 1
     region: content
   sa_header:
-    type: string
+    type: wrapper_class
     label: hidden
     settings:
       class: ''
@@ -55,14 +58,12 @@ content:
       nomarkup:
         enabled: true
         separator: '|'
-        referenced_entity: 0
+        referenced_entity: '1'
     weight: 2
     region: content
-  sa_styles:
-    type: bootstrap_layout_classes_formatter
-    label: hidden
-    settings: {  }
-    third_party_settings: {  }
-    weight: 3
-    region: content
-hidden: {  }
+hidden:
+  sa_background: true
+  sa_col: true
+  sa_margin: true
+  sa_padding: true
+  sa_width: true

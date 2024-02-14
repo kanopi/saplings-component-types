@@ -2,12 +2,15 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.paragraph.sa_text.sa_background
+    - field.field.paragraph.sa_text.sa_col
+    - field.field.paragraph.sa_text.sa_margin
+    - field.field.paragraph.sa_text.sa_padding
+    - field.field.paragraph.sa_text.sa_width
     - field.field.paragraph.sa_text.sa_description
     - field.field.paragraph.sa_text.sa_header
-    - field.field.paragraph.sa_text.sa_styles
     - paragraphs.paragraphs_type.sa_text
   module:
-    - bootstrap_layout_classes
     - element_class_formatter
     - nomarkup
     - text
@@ -44,11 +47,10 @@ content:
         referenced_entity: ''
     weight: 0
     region: content
-  sa_styles:
-    type: bootstrap_layout_classes_formatter
-    label: hidden
-    settings: {  }
-    third_party_settings: {  }
-    weight: 3
-    region: content
-hidden: {  }
+hidden:
+  sa_tab_item: true
+  sa_background: true
+  sa_col: true
+  sa_margin: true
+  sa_padding: true
+  sa_width: true

@@ -1,0 +1,22 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.sa_width
+    - paragraphs.paragraphs_type.sa_filtered_list
+  module:
+    - options
+id: paragraph.sa_filtered_list.sa_width
+field_name: sa_width
+entity_type: paragraph
+bundle: sa_filtered_list
+label: Container
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: container
+default_value_callback: ''
+settings: {  }
+field_type: list_string

@@ -1,0 +1,22 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.sa_padding
+    - paragraphs.paragraphs_type.sa_filtered_list
+  module:
+    - options
+id: paragraph.sa_filtered_lists.sa_padding
+field_name: sa_padding
+entity_type: paragraph
+bundle: sa_filtered_list
+label: Padding
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 'pt-3 pb-3'
+default_value_callback: ''
+settings: {  }
+field_type: list_string
