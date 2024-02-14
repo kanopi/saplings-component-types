@@ -2,21 +2,78 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.paragraph.sa_accordion.sa_background
+    - field.field.paragraph.sa_accordion.sa_col
+    - field.field.paragraph.sa_accordion.sa_margin
+    - field.field.paragraph.sa_accordion.sa_padding
+    - field.field.paragraph.sa_accordion.sa_width
     - field.field.paragraph.sa_accordion.sa_accordion_item
-    - field.field.paragraph.sa_accordion.sa_styles
+    - field.field.paragraph.sa_accordion.sa_description
+    - field.field.paragraph.sa_accordion.sa_header
     - paragraphs.paragraphs_type.sa_accordion
   module:
-    - bootstrap_layout_classes
+    - field_group
     - paragraphs
     - text
+third_party_settings:
+  field_group:
+    group_styles:
+      children:
+        - sa_margin
+        - sa_padding
+        - sa_width
+        - sa_background
+        - sa_col
+      label: Styles
+      region: content
+      parent_name: ''
+      weight: 3
+      format_type: details
+      format_settings:
+        classes: row
+        show_empty_fields: false
+        id: ''
+        open: false
+        description: ''
+        required_fields: true
 id: paragraph.sa_accordion.default
 targetEntityType: paragraph
 bundle: sa_accordion
 mode: default
 content:
+  sa_background:
+    type: options_select
+    weight: 7
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  sa_col:
+    type: options_select
+    weight: 8
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  sa_margin:
+    type: options_select
+    weight: 4
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  sa_padding:
+    type: options_select
+    weight: 5
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  sa_width:
+    type: options_select
+    weight: 6
+    region: content
+    settings: {  }
+    third_party_settings: {  }
   sa_accordion_item:
     type: paragraphs
-    weight: 4
+    weight: 2
     region: content
     settings:
       title: Item
@@ -47,22 +104,6 @@ content:
     settings:
       size: 60
       placeholder: ''
-    third_party_settings: {  }
-  sa_styles:
-    type: bootstrap_layout_classes_widget
-    weight: 3
-    region: content
-    settings:
-      usage: 0
-      wrapper: 1
-      container: true
-      col: true
-      text: true
-      offset: true
-      margin: true
-      padding: true
-      justify-content: true
-      custom: true
     third_party_settings: {  }
 hidden:
   created: true

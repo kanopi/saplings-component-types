@@ -2,10 +2,16 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.paragraph.sa_tabs.sa_background
+    - field.field.paragraph.sa_tabs.sa_col
+    - field.field.paragraph.sa_tabs.sa_margin
+    - field.field.paragraph.sa_tabs.sa_padding
+    - field.field.paragraph.sa_tabs.sa_width
     - field.field.paragraph.sa_tabs.sa_tab_item
     - paragraphs.paragraphs_type.sa_tabs
   module:
     - entity_reference_revisions
+    - field_group
 id: paragraph.sa_tabs.default
 targetEntityType: paragraph
 bundle: sa_tabs
@@ -22,3 +28,8 @@ content:
     region: content
 hidden:
   sa_tab_item: true
+  sa_background: true
+  sa_col: true
+  sa_margin: true
+  sa_padding: true
+  sa_width: true
