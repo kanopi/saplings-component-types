@@ -10,7 +10,7 @@ id: paragraph.sa_tabs.sa_width
 field_name: sa_width
 entity_type: paragraph
 bundle: sa_tabs
-label: Width
+label: Container
 description: ''
 required: false
 translatable: false
