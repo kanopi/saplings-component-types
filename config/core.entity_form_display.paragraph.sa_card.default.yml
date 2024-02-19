@@ -2,11 +2,13 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.paragraph.sa_card.sa_link
     - field.field.paragraph.sa_card.sa_card_image
     - field.field.paragraph.sa_card.sa_description
     - field.field.paragraph.sa_card.sa_header
     - paragraphs.paragraphs_type.sa_card
   module:
+    - link
     - media_library
     - text
 id: paragraph.sa_card.default
@@ -14,6 +16,14 @@ targetEntityType: paragraph
 bundle: sa_card
 mode: default
 content:
+  sa_link:
+    type: link_default
+    weight: 3
+    region: content
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
   sa_card_image:
     type: media_library_widget
     weight: 2

@@ -8,6 +8,7 @@ install:
   # Core.
   - block_content
   - ckeditor5
+  - link
   - media
   - media_library
   - text

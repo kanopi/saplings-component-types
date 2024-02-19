@@ -2,7 +2,6 @@ langcode: en
 status: true
 dependencies:
   config:
-    - entity_browser.browser.media_entity_browser
     - field.field.paragraph.sa_media.sa_background
     - field.field.paragraph.sa_media.sa_col
     - field.field.paragraph.sa_media.sa_description
@@ -13,8 +12,9 @@ dependencies:
     - field.field.paragraph.sa_media.sa_width
     - paragraphs.paragraphs_type.sa_media
   module:
-    - entity_browser
     - field_group
+    - media_library
+    - media_library_edit
     - text
 third_party_settings:
   field_group:
@@ -33,7 +33,7 @@ third_party_settings:
       format_settings:
         classes: row
         show_empty_fields: false
-        id: ''
+        id: styles
         open: false
         description: ''
         required_fields: true
@@ -77,20 +77,16 @@ content:
     settings: {  }
     third_party_settings: {  }
   sa_media:
-    type: entity_browser_entity_reference
+    type: media_library_widget
     weight: 2
     region: content
     settings:
-      entity_browser: media_entity_browser
-      field_widget_display: rendered_entity
-      field_widget_edit: true
-      field_widget_remove: true
-      field_widget_replace: false
-      open: false
-      field_widget_display_settings:
-        view_mode: default
-      selection_mode: selection_append
-    third_party_settings: {  }
+      media_types:
+        - image
+        - remote_video
+    third_party_settings:
+      media_library_edit:
+        show_edit: '1'
   sa_padding:
     type: options_select
     weight: 3
