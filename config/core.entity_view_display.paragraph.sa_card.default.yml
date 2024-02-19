@@ -2,12 +2,14 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.paragraph.sa_card.sa_link
     - field.field.paragraph.sa_card.sa_card_image
     - field.field.paragraph.sa_card.sa_description
     - field.field.paragraph.sa_card.sa_header
     - paragraphs.paragraphs_type.sa_card
   module:
     - ds
+    - link
     - nomarkup
     - text
 third_party_settings:
@@ -35,11 +37,55 @@ third_party_settings:
         - sa_header
       content:
         - sa_description
+      footer:
+        - sa_link
 id: paragraph.sa_card.default
 targetEntityType: paragraph
 bundle: sa_card
 mode: default
 content:
+  sa_link:
+    type: link
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: '0'
+      target: '0'
+    third_party_settings:
+      nomarkup:
+        enabled: false
+        separator: '|'
+        referenced_entity: ''
+      ds:
+        ds_limit: ''
+        ft:
+          id: pattern
+          settings:
+            pattern: button-link
+            pattern_mapping:
+              'ds_field_template:sa_link__uri':
+                destination: url
+                weight: 0
+                plugin: ds_field_template
+                source: field_sa_link__uri
+              'ds_field_template:sa_link__title':
+                destination: label
+                weight: 1
+                plugin: ds_field_template
+                source: sa_link__title
+            pattern_settings:
+              button-link:
+                disabled_token: ''
+                label_visually_hidden_token: ''
+                stretched_link: '1'
+                stretched_link_token: ''
+                disabled: 0
+                label_visually_hidden: 0
+            pattern_variant: secondary__lg
+    weight: 3
+    region: footer
   sa_card_image:
     type: entity_reference_entity_view
     label: hidden
