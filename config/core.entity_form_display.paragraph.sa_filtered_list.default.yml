@@ -19,11 +19,11 @@ third_party_settings:
   field_group:
     group_styles:
       children:
+        - sa_background
+        - sa_col
         - sa_margin
         - sa_padding
         - sa_width
-        - sa_background
-        - sa_col
       label: Styles
       region: content
       parent_name: ''
@@ -41,6 +41,18 @@ targetEntityType: paragraph
 bundle: sa_filtered_list
 mode: default
 content:
+  sa_background:
+    type: options_select
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  sa_col:
+    type: options_select
+    weight: 1
+    region: content
+    settings: {  }
+    third_party_settings: {  }
   sa_description:
     type: text_textarea
     weight: 1
@@ -63,11 +75,24 @@ content:
       size: 60
       placeholder: ''
     third_party_settings: {  }
+  sa_margin:
+    type: options_select
+    weight: 2
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  sa_padding:
+    type: options_select
+    weight: 3
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  sa_width:
+    type: options_select
+    weight: 4
+    region: content
+    settings: {  }
+    third_party_settings: {  }
 hidden:
   created: true
-  sa_background: true
-  sa_col: true
-  sa_margin: true
-  sa_padding: true
-  sa_width: true
   status: true
