@@ -10,6 +10,7 @@ dependencies:
     - ds
     - nomarkup
     - text
+    - ui_patterns_field_formatters
 third_party_settings:
   ds:
     layout:
@@ -19,7 +20,7 @@ third_party_settings:
       entity_classes: all_classes
       settings:
         pattern:
-          field_templates: only_content
+          field_templates: default
           variant: default
           settings:
             image_position: top
@@ -35,6 +36,8 @@ third_party_settings:
         - sa_header
       content:
         - sa_description
+      footer:
+        - sa_link
 id: paragraph.sa_card.default
 targetEntityType: paragraph
 bundle: sa_card
@@ -94,4 +97,52 @@ content:
             lb: ''
     weight: 1
     region: header
+  sa_link:
+    type: pattern_all_formatter
+    label: hidden
+    settings:
+      type: link
+      settings:
+        trim_length: '80'
+        url_only: 0
+        url_plain: 0
+        rel: 0
+        target: 0
+      pattern: button-link
+      pattern_mapping:
+        'field_raw_properties:uri':
+          destination: url
+          weight: 0
+          plugin: field_raw_properties
+          source: uri
+        'field_meta_properties:_label':
+          destination: label
+          weight: 1
+          plugin: field_meta_properties
+          source: _label
+      pattern_settings:
+        button-link:
+          disabled_token: ''
+          label_visually_hidden_token: ''
+          stretched_link: '1'
+          stretched_link_token: ''
+          disabled: 0
+          label_visually_hidden: 0
+      pattern_variant: primary
+      variants_token: {  }
+    third_party_settings:
+      nomarkup:
+        enabled: false
+        separator: '|'
+        referenced_entity: ''
+      ds:
+        ds_limit: ''
+        ft:
+          id: default
+          settings:
+            lb: ''
+            lb-col: false
+            classes: {  }
+    weight: 3
+    region: footer
 hidden: {  }
