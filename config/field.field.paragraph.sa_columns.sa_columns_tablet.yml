@@ -1,0 +1,22 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.sa_columns_tablet
+    - paragraphs.paragraphs_type.sa_columns
+  module:
+    - options
+id: paragraph.sa_columns.sa_columns_tablet
+field_name: sa_columns_tablet
+entity_type: paragraph
+bundle: sa_columns
+label: 'Columns Tablet'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: '2'
+default_value_callback: ''
+settings: {  }
+field_type: list_string

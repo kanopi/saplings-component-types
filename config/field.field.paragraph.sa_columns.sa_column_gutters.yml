@@ -1,0 +1,22 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.sa_column_gutters
+    - paragraphs.paragraphs_type.sa_columns
+  module:
+    - options
+id: paragraph.sa_columns.sa_column_gutters
+field_name: sa_column_gutters
+entity_type: paragraph
+bundle: sa_columns
+label: 'Column Gutters'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: '4'
+default_value_callback: ''
+settings: {  }
+field_type: list_string
