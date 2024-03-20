@@ -1,0 +1,22 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.sa_columns_desktop
+    - paragraphs.paragraphs_type.sa_columns
+  module:
+    - options
+id: paragraph.sa_columns.sa_columns_desktop
+field_name: sa_columns_desktop
+entity_type: paragraph
+bundle: sa_columns
+label: 'Columns Desktop'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: '3'
+default_value_callback: ''
+settings: {  }
+field_type: list_string

@@ -1,0 +1,74 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.sa_column_items
+    - paragraphs.paragraphs_type.sa_block
+    - paragraphs.paragraphs_type.sa_card
+    - paragraphs.paragraphs_type.sa_carousel
+    - paragraphs.paragraphs_type.sa_columns
+    - paragraphs.paragraphs_type.sa_media
+    - paragraphs.paragraphs_type.sa_text
+  module:
+    - entity_reference_revisions
+id: paragraph.sa_columns.sa_column_items
+field_name: sa_column_items
+entity_type: paragraph
+bundle: sa_columns
+label: 'Column Items'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      sa_block: sa_block
+      sa_card: sa_card
+      sa_carousel: sa_carousel
+      sa_media: sa_media
+      sa_text: sa_text
+    negate: 0
+    target_bundles_drag_drop:
+      sa_accordion:
+        weight: 14
+        enabled: false
+      sa_accordion_item:
+        weight: 15
+        enabled: false
+      sa_block:
+        weight: 16
+        enabled: true
+      sa_card:
+        weight: 17
+        enabled: true
+      sa_carousel:
+        weight: 18
+        enabled: true
+      sa_carousel_item:
+        weight: 19
+        enabled: false
+      sa_columns:
+        weight: 20
+        enabled: false
+      sa_filtered_list:
+        weight: 21
+        enabled: false
+      sa_media:
+        weight: 22
+        enabled: true
+      sa_side_by_side:
+        weight: 23
+        enabled: false
+      sa_tab:
+        weight: 24
+        enabled: false
+      sa_tabs:
+        weight: 25
+        enabled: false
+      sa_text:
+        weight: 26
+        enabled: true
+field_type: entity_reference_revisions
