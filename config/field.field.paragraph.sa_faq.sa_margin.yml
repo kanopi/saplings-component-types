@@ -1,0 +1,20 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.sa_margin
+    - paragraphs.paragraphs_type.sa_faq
+  module:
+    - options
+id: paragraph.sa_faq.sa_margin
+field_name: sa_margin
+entity_type: paragraph
+bundle: sa_faq
+label: Margin
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string
