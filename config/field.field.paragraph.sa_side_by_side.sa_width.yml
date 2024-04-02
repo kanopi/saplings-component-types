@@ -10,13 +10,11 @@ id: paragraph.sa_side_by_side.sa_width
 field_name: sa_width
 entity_type: paragraph
 bundle: sa_side_by_side
-label: Container
+label: Width
 description: ''
 required: false
 translatable: false
-default_value:
-  -
-    value: container
+default_value: {  }
 default_value_callback: ''
 settings: {  }
 field_type: list_string

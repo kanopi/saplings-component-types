@@ -3,14 +3,14 @@ status: true
 dependencies:
   config:
     - field.field.paragraph.sa_side_by_side.sa_background
-    - field.field.paragraph.sa_side_by_side.sa_col
+    - field.field.paragraph.sa_side_by_side.sa_width
     - field.field.paragraph.sa_side_by_side.sa_description
     - field.field.paragraph.sa_side_by_side.sa_header
     - field.field.paragraph.sa_side_by_side.sa_margin
     - field.field.paragraph.sa_side_by_side.sa_media
     - field.field.paragraph.sa_side_by_side.sa_padding
     - field.field.paragraph.sa_side_by_side.sa_reverse_order
-    - field.field.paragraph.sa_side_by_side.sa_width
+    - field.field.paragraph.sa_side_by_side.sa_container
     - paragraphs.paragraphs_type.sa_side_by_side
   module:
     - field_group
@@ -24,8 +24,8 @@ third_party_settings:
         - sa_reverse_order
         - sa_margin
         - sa_padding
-        - sa_col
         - sa_width
+        - sa_container
         - sa_background
       label: Styles
       region: content
@@ -50,7 +50,7 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
-  sa_col:
+  sa_width:
     type: options_select
     weight: 7
     region: content
@@ -102,7 +102,7 @@ content:
     settings:
       display_label: true
     third_party_settings: {  }
-  sa_width:
+  sa_container:
     type: options_select
     weight: 8
     region: content

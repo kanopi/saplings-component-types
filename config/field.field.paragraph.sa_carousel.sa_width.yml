@@ -10,13 +10,11 @@ id: paragraph.sa_carousel.sa_width
 field_name: sa_width
 entity_type: paragraph
 bundle: sa_carousel
-label: Container
+label: Width
 description: ''
 required: false
 translatable: false
-default_value:
-  -
-    value: container
+default_value: {  }
 default_value_callback: ''
 settings: {  }
 field_type: list_string

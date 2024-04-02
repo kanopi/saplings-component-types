@@ -3,10 +3,10 @@ status: true
 dependencies:
   config:
     - field.field.paragraph.sa_text.sa_background
-    - field.field.paragraph.sa_text.sa_col
+    - field.field.paragraph.sa_text.sa_width
     - field.field.paragraph.sa_text.sa_margin
     - field.field.paragraph.sa_text.sa_padding
-    - field.field.paragraph.sa_text.sa_width
+    - field.field.paragraph.sa_text.sa_container
     - field.field.paragraph.sa_text.sa_description
     - field.field.paragraph.sa_text.sa_header
     - paragraphs.paragraphs_type.sa_text
@@ -50,7 +50,7 @@ content:
 hidden:
   sa_tab_item: true
   sa_background: true
-  sa_col: true
+  sa_width: true
   sa_margin: true
   sa_padding: true
-  sa_width: true
+  sa_container: true
