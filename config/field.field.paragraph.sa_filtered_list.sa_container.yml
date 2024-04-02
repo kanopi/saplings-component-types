@@ -2,19 +2,21 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.paragraph.sa_col
+    - field.storage.paragraph.sa_container
     - paragraphs.paragraphs_type.sa_filtered_list
   module:
     - options
-id: paragraph.sa_filtered_list.sa_col
-field_name: sa_col
+id: paragraph.sa_filtered_list.sa_container
+field_name: sa_container
 entity_type: paragraph
 bundle: sa_filtered_list
-label: Width
+label: Container
 description: ''
 required: false
 translatable: false
-default_value: {  }
+default_value:
+  -
+    value: container
 default_value_callback: ''
 settings: {  }
 field_type: list_string

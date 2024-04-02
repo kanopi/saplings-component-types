@@ -3,10 +3,10 @@ status: true
 dependencies:
   config:
     - field.field.paragraph.sa_accordion.sa_background
-    - field.field.paragraph.sa_accordion.sa_col
+    - field.field.paragraph.sa_accordion.sa_width
     - field.field.paragraph.sa_accordion.sa_margin
     - field.field.paragraph.sa_accordion.sa_padding
-    - field.field.paragraph.sa_accordion.sa_width
+    - field.field.paragraph.sa_accordion.sa_container
     - field.field.paragraph.sa_accordion.sa_accordion_item
     - field.field.paragraph.sa_accordion.sa_description
     - field.field.paragraph.sa_accordion.sa_header
@@ -95,7 +95,7 @@ content:
     region: content
 hidden:
   sa_background: true
-  sa_col: true
+  sa_width: true
   sa_margin: true
   sa_padding: true
-  sa_width: true
+  sa_container: true

@@ -3,10 +3,10 @@ status: true
 dependencies:
   config:
     - field.field.paragraph.sa_block.sa_background
-    - field.field.paragraph.sa_block.sa_col
+    - field.field.paragraph.sa_block.sa_width
     - field.field.paragraph.sa_block.sa_margin
     - field.field.paragraph.sa_block.sa_padding
-    - field.field.paragraph.sa_block.sa_width
+    - field.field.paragraph.sa_block.sa_container
     - field.field.paragraph.sa_block.sa_block
     - field.field.paragraph.sa_block.sa_description
     - field.field.paragraph.sa_block.sa_header
@@ -63,7 +63,7 @@ content:
     region: content
 hidden:
   sa_background: true
-  sa_col: true
+  sa_width: true
   sa_margin: true
   sa_padding: true
-  sa_width: true
+  sa_container: true

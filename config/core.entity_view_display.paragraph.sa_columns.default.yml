@@ -4,7 +4,7 @@ dependencies:
   config:
     - field.field.paragraph.sa_columns.sa_align_items_vertically
     - field.field.paragraph.sa_columns.sa_background
-    - field.field.paragraph.sa_columns.sa_col
+    - field.field.paragraph.sa_columns.sa_width
     - field.field.paragraph.sa_columns.sa_column_gutters
     - field.field.paragraph.sa_columns.sa_column_items
     - field.field.paragraph.sa_columns.sa_columns_desktop
@@ -15,7 +15,7 @@ dependencies:
     - field.field.paragraph.sa_columns.sa_justify_content_horizontal
     - field.field.paragraph.sa_columns.sa_margin
     - field.field.paragraph.sa_columns.sa_padding
-    - field.field.paragraph.sa_columns.sa_width
+    - field.field.paragraph.sa_columns.sa_container
     - paragraphs.paragraphs_type.sa_columns
   module:
     - element_class_formatter
@@ -67,7 +67,7 @@ content:
 hidden:
   sa_align_items_vertically: true
   sa_background: true
-  sa_col: true
+  sa_width: true
   sa_column_gutters: true
   sa_columns_desktop: true
   sa_columns_mobile: true
@@ -75,4 +75,4 @@ hidden:
   sa_justify_content_horizontal: true
   sa_margin: true
   sa_padding: true
-  sa_width: true
+  sa_container: true

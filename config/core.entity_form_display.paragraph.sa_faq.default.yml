@@ -4,12 +4,12 @@ dependencies:
   config:
     - field.field.paragraph.sa_faq.sa_faq_item
     - field.field.paragraph.sa_faq.sa_background
-    - field.field.paragraph.sa_faq.sa_col
+    - field.field.paragraph.sa_faq.sa_width
     - field.field.paragraph.sa_faq.sa_description
     - field.field.paragraph.sa_faq.sa_header
     - field.field.paragraph.sa_faq.sa_margin
     - field.field.paragraph.sa_faq.sa_padding
-    - field.field.paragraph.sa_faq.sa_width
+    - field.field.paragraph.sa_faq.sa_container
     - paragraphs.paragraphs_type.sa_faq
   module:
     - field_group
@@ -21,9 +21,9 @@ third_party_settings:
       children:
         - sa_margin
         - sa_padding
-        - sa_width
+        - sa_container
         - sa_background
-        - sa_col
+        - sa_width
       label: Styles
       region: content
       parent_name: ''
@@ -67,7 +67,7 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
-  sa_col:
+  sa_width:
     type: options_select
     weight: 7
     region: content
@@ -101,7 +101,7 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
-  sa_width:
+  sa_container:
     type: options_select
     weight: 5
     region: content

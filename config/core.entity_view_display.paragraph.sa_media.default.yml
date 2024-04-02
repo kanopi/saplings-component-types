@@ -3,13 +3,13 @@ status: true
 dependencies:
   config:
     - field.field.paragraph.sa_media.sa_background
-    - field.field.paragraph.sa_media.sa_col
+    - field.field.paragraph.sa_media.sa_width
     - field.field.paragraph.sa_media.sa_description
     - field.field.paragraph.sa_media.sa_header
     - field.field.paragraph.sa_media.sa_margin
     - field.field.paragraph.sa_media.sa_media
     - field.field.paragraph.sa_media.sa_padding
-    - field.field.paragraph.sa_media.sa_width
+    - field.field.paragraph.sa_media.sa_container
     - paragraphs.paragraphs_type.sa_media
   module:
     - element_class_formatter
@@ -63,7 +63,7 @@ content:
     region: content
 hidden:
   sa_background: true
-  sa_col: true
+  sa_width: true
   sa_margin: true
   sa_padding: true
-  sa_width: true
+  sa_container: true

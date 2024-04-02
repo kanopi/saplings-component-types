@@ -4,12 +4,12 @@ dependencies:
   config:
     - field.field.paragraph.sa_block.sa_background
     - field.field.paragraph.sa_block.sa_block
-    - field.field.paragraph.sa_block.sa_col
+    - field.field.paragraph.sa_block.sa_width
     - field.field.paragraph.sa_block.sa_description
     - field.field.paragraph.sa_block.sa_header
     - field.field.paragraph.sa_block.sa_margin
     - field.field.paragraph.sa_block.sa_padding
-    - field.field.paragraph.sa_block.sa_width
+    - field.field.paragraph.sa_block.sa_container
     - paragraphs.paragraphs_type.sa_block
   module:
     - block_field
@@ -20,10 +20,10 @@ third_party_settings:
     group_styles:
       children:
         - sa_background
-        - sa_col
+        - sa_width
         - sa_margin
         - sa_padding
-        - sa_width
+        - sa_container
       label: Styles
       region: content
       parent_name: ''
@@ -56,7 +56,7 @@ content:
       settings: {  }
       configuration_form: full
     third_party_settings: {  }
-  sa_col:
+  sa_width:
     type: options_select
     weight: 1
     region: content
@@ -90,7 +90,7 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
-  sa_width:
+  sa_container:
     type: options_select
     weight: 4
     region: content

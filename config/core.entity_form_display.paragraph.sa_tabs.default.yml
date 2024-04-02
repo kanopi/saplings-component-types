@@ -3,13 +3,13 @@ status: true
 dependencies:
   config:
     - field.field.paragraph.sa_tabs.sa_background
-    - field.field.paragraph.sa_tabs.sa_col
+    - field.field.paragraph.sa_tabs.sa_width
     - field.field.paragraph.sa_tabs.sa_description
     - field.field.paragraph.sa_tabs.sa_header
     - field.field.paragraph.sa_tabs.sa_margin
     - field.field.paragraph.sa_tabs.sa_padding
     - field.field.paragraph.sa_tabs.sa_tab_item
-    - field.field.paragraph.sa_tabs.sa_width
+    - field.field.paragraph.sa_tabs.sa_container
     - paragraphs.paragraphs_type.sa_tabs
   module:
     - field_group
@@ -20,10 +20,10 @@ third_party_settings:
     group_styles:
       children:
         - sa_background
-        - sa_col
+        - sa_width
         - sa_margin
         - sa_padding
-        - sa_width
+        - sa_container
       label: Styles
       region: content
       parent_name: ''
@@ -65,7 +65,7 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
-  sa_col:
+  sa_width:
     type: options_select
     weight: 1
     region: content
@@ -119,7 +119,7 @@ content:
         convert: '0'
         duplicate: duplicate
     third_party_settings: {  }
-  sa_width:
+  sa_container:
     type: options_select
     weight: 4
     region: content

@@ -4,7 +4,7 @@ dependencies:
   config:
     - field.field.paragraph.sa_columns.sa_align_items_vertically
     - field.field.paragraph.sa_columns.sa_background
-    - field.field.paragraph.sa_columns.sa_col
+    - field.field.paragraph.sa_columns.sa_width
     - field.field.paragraph.sa_columns.sa_column_gutters
     - field.field.paragraph.sa_columns.sa_column_items
     - field.field.paragraph.sa_columns.sa_columns_desktop
@@ -15,7 +15,7 @@ dependencies:
     - field.field.paragraph.sa_columns.sa_justify_content_horizontal
     - field.field.paragraph.sa_columns.sa_margin
     - field.field.paragraph.sa_columns.sa_padding
-    - field.field.paragraph.sa_columns.sa_width
+    - field.field.paragraph.sa_columns.sa_container
     - paragraphs.paragraphs_type.sa_columns
   module:
     - field_group
@@ -32,10 +32,10 @@ third_party_settings:
         - sa_align_items_vertically
         - sa_justify_content_horizontal
         - sa_background
-        - sa_col
+        - sa_width
         - sa_margin
         - sa_padding
-        - sa_width
+        - sa_container
       label: Styles
       region: content
       parent_name: ''
@@ -65,7 +65,7 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
-  sa_col:
+  sa_width:
     type: options_select
     weight: 19
     region: content
@@ -147,7 +147,7 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
-  sa_width:
+  sa_container:
     type: options_select
     weight: 22
     region: content
