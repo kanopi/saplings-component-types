@@ -9,6 +9,7 @@ dependencies:
     - paragraphs.paragraphs_type.sa_columns
     - paragraphs.paragraphs_type.sa_media
     - paragraphs.paragraphs_type.sa_text
+    - paragraphs.paragraphs_type.stat
   module:
     - entity_reference_revisions
 id: paragraph.sa_columns.sa_column_items
@@ -30,8 +31,12 @@ settings:
       sa_carousel: sa_carousel
       sa_media: sa_media
       sa_text: sa_text
+      stat: stat
     negate: 0
     target_bundles_drag_drop:
+      animated_statistics:
+        weight: 18
+        enabled: false
       sa_accordion:
         weight: 14
         enabled: false
@@ -70,5 +75,8 @@ settings:
         enabled: false
       sa_text:
         weight: 26
+        enabled: true
+      stat:
+        weight: 34
         enabled: true
 field_type: entity_reference_revisions
