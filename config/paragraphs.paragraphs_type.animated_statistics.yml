@@ -1,0 +1,10 @@
+uuid: 744208a2-bdcb-4bbd-bb88-5ecad70b344e
+langcode: en
+status: true
+dependencies: {  }
+id: animated_statistics
+label: 'Animated Statistics'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

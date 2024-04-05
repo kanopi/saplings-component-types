@@ -1,0 +1,80 @@
+uuid: 8ac4f4ca-87d7-4612-b8f2-bd27b2b3d4bb
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.stat.field_stat_description
+    - field.field.paragraph.stat.field_stat_number
+    - field.field.paragraph.stat.field_stat_prefix
+    - field.field.paragraph.stat.field_stat_suffix
+    - paragraphs.paragraphs_type.stat
+  module:
+    - ds
+    - nomarkup
+    - text
+third_party_settings:
+  ds:
+    layout:
+      id: pattern_animated-stat
+      library: null
+      disable_css: false
+      entity_classes: all_classes
+      settings:
+        pattern:
+          field_templates: default
+          variant: default
+    regions:
+      stat_description:
+        - field_stat_description
+      stat_number:
+        - field_stat_number
+      stat_prefix:
+        - field_stat_prefix
+      stat_suffix:
+        - field_stat_suffix
+id: paragraph.stat.default
+targetEntityType: paragraph
+bundle: stat
+mode: default
+content:
+  field_stat_description:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings:
+      nomarkup:
+        enabled: true
+        separator: '|'
+        referenced_entity: ''
+    weight: 0
+    region: stat_description
+  field_stat_number:
+    type: number_integer
+    label: hidden
+    settings:
+      thousand_separator: ''
+      prefix_suffix: false
+    third_party_settings:
+      nomarkup:
+        enabled: false
+        separator: '|'
+        referenced_entity: ''
+    weight: 1
+    region: stat_number
+  field_stat_prefix:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 2
+    region: stat_prefix
+  field_stat_suffix:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 3
+    region: stat_suffix
+hidden: {  }

@@ -1,0 +1,24 @@
+uuid: e0d59333-132b-4100-ad2e-69640b620aa3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.animated_statistics.field_animated_stat
+    - paragraphs.paragraphs_type.animated_statistics
+  module:
+    - entity_reference_revisions
+id: paragraph.animated_statistics.default
+targetEntityType: paragraph
+bundle: animated_statistics
+mode: default
+content:
+  field_animated_stat:
+    type: entity_reference_revisions_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }
