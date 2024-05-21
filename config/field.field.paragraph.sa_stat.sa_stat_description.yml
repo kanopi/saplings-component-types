@@ -2,15 +2,15 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.paragraph.field_stat_description
+    - field.storage.paragraph.sa_stat_description
     - filter.format.full_html
-    - paragraphs.paragraphs_type.stat
+    - paragraphs.paragraphs_type.sa_stat
   module:
     - text
-id: paragraph.stat.field_stat_description
-field_name: field_stat_description
+id: paragraph.sa_stat.sa_stat_description
+field_name: sa_stat_description
 entity_type: paragraph
-bundle: stat
+bundle: sa_stat
 label: 'Stat Description'
 description: ''
 required: true

@@ -2,12 +2,12 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.paragraph.field_stat_number
-    - paragraphs.paragraphs_type.stat
-id: paragraph.stat.field_stat_number
-field_name: field_stat_number
+    - field.storage.paragraph.sa_stat_number
+    - paragraphs.paragraphs_type.sa_stat
+id: paragraph.sa_stat.sa_stat_number
+field_name: sa_stat_number
 entity_type: paragraph
-bundle: stat
+bundle: sa_stat
 label: 'Stat Number'
 description: ''
 required: true

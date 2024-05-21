@@ -2,11 +2,11 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.field.paragraph.stat.field_stat_description
-    - field.field.paragraph.stat.field_stat_number
-    - field.field.paragraph.stat.field_stat_prefix
-    - field.field.paragraph.stat.field_stat_suffix
-    - paragraphs.paragraphs_type.stat
+    - field.field.paragraph.sa_stat.sa_stat_description
+    - field.field.paragraph.sa_stat.sa_stat_number
+    - field.field.paragraph.sa_stat.sa_stat_prefix
+    - field.field.paragraph.sa_stat.sa_stat_suffix
+    - paragraphs.paragraphs_type.sa_stat
   module:
     - ds
     - nomarkup
@@ -24,19 +24,19 @@ third_party_settings:
           variant: default
     regions:
       stat_description:
-        - field_stat_description
+        - sa_stat_description
       stat_number:
-        - field_stat_number
+        - sa_stat_number
       stat_prefix:
-        - field_stat_prefix
+        - sa_stat_prefix
       stat_suffix:
-        - field_stat_suffix
-id: paragraph.stat.default
+        - sa_stat_suffix
+id: paragraph.sa_stat.default
 targetEntityType: paragraph
-bundle: stat
+bundle: sa_stat
 mode: default
 content:
-  field_stat_description:
+  sa_stat_description:
     type: text_default
     label: hidden
     settings: {  }
@@ -47,7 +47,7 @@ content:
         referenced_entity: ''
     weight: 0
     region: stat_description
-  field_stat_number:
+  sa_stat_number:
     type: number_integer
     label: hidden
     settings:
@@ -60,7 +60,7 @@ content:
         referenced_entity: ''
     weight: 1
     region: stat_number
-  field_stat_prefix:
+  sa_stat_prefix:
     type: string
     label: hidden
     settings:
@@ -68,7 +68,7 @@ content:
     third_party_settings: {  }
     weight: 2
     region: stat_prefix
-  field_stat_suffix:
+  sa_stat_suffix:
     type: string
     label: hidden
     settings:

@@ -1,0 +1,18 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.sa_stat_prefix
+    - paragraphs.paragraphs_type.sa_stat
+id: paragraph.sa_stat.sa_stat_prefix
+field_name: sa_stat_prefix
+entity_type: paragraph
+bundle: sa_stat
+label: 'Stat Prefix'
+description: 'Use the prefix text to add symbols such as $ in front of the number'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string
