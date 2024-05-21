@@ -9,8 +9,11 @@ dependencies:
     - paragraphs.paragraphs_type.sa_columns
     - paragraphs.paragraphs_type.sa_media
     - paragraphs.paragraphs_type.sa_text
+    - paragraphs.paragraphs_type.sa_stat
   module:
     - entity_reference_revisions
+_core:
+  default_config_hash: v_eNqoj_Znc23Wo1ZyNzUgzYPwWCflDOCfq7hZY1Skw
 id: paragraph.sa_columns.sa_column_items
 field_name: sa_column_items
 entity_type: paragraph
@@ -30,6 +33,7 @@ settings:
       sa_carousel: sa_carousel
       sa_media: sa_media
       sa_text: sa_text
+      sa_stat: sa_stat
     negate: 0
     target_bundles_drag_drop:
       sa_accordion:
@@ -62,6 +66,9 @@ settings:
       sa_side_by_side:
         weight: 23
         enabled: false
+      sa_stat:
+        weight: 34
+        enabled: true
       sa_tab:
         weight: 24
         enabled: false

@@ -1,0 +1,23 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.sa_stat_description
+    - filter.format.full_html
+    - paragraphs.paragraphs_type.sa_stat
+  module:
+    - text
+id: paragraph.sa_stat.sa_stat_description
+field_name: sa_stat_description
+entity_type: paragraph
+bundle: sa_stat
+label: 'Stat Description'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats:
+    - full_html
+field_type: text_long

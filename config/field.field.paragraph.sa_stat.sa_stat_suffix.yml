@@ -1,0 +1,18 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.sa_stat_suffix
+    - paragraphs.paragraphs_type.sa_stat
+id: paragraph.sa_stat.sa_stat_suffix
+field_name: sa_stat_suffix
+entity_type: paragraph
+bundle: sa_stat
+label: 'Stat Suffix'
+description: 'Use the suffix text to add symbols such as % after the number'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string
