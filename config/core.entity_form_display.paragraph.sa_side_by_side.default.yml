@@ -19,9 +19,9 @@ dependencies:
     - text
 third_party_settings:
   field_group:
-    sa_reverse_order
     group_styles:
       children:
+        - sa_reverse_order
         - group_layout
       label: Styles
       region: content
