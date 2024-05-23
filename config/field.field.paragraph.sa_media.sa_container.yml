@@ -11,7 +11,7 @@ field_name: sa_container
 entity_type: paragraph
 bundle: sa_media
 label: Container
-description: ''
+description: 'The container width will determine how far the background color stretches across the screen and will control the total width of the container that holds the element. Choosing full width will allow the container to take up the fill width of the screen, and if a background color is chosen, it will stretch across the entire screen from start to end.'
 required: false
 translatable: false
 default_value:

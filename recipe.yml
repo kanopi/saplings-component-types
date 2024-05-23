@@ -20,5 +20,6 @@ install:
   - field_group
   - nomarkup
   - paragraphs
+  - paragraphs_edit
   - ui_patterns_field_formatters
   - viewsreference

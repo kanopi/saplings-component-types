@@ -25,27 +25,118 @@ third_party_settings:
   field_group:
     group_styles:
       children:
-        - sa_column_gutters
-        - sa_columns_desktop
-        - sa_columns_tablet
-        - sa_columns_mobile
-        - sa_align_items_vertically
-        - sa_justify_content_horizontal
-        - sa_background
-        - sa_width
-        - sa_margin
-        - sa_padding
-        - sa_container
+        - group_layout
       label: Styles
       region: content
       parent_name: ''
-      weight: 4
+      weight: 3
       format_type: details
+      format_settings:
+        classes: row
+        show_empty_fields: false
+        id: ''
+        open: false
+        description: ''
+        required_fields: true
+    group_layout:
+      children:
+        - group_columns
+        - group_width
+        - group_spacing
+        - group_background
+        - group_align
+      label: Layout
+      region: content
+      parent_name: group_styles
+      weight: 7
+      format_type: tabs
       format_settings:
         classes: ''
         show_empty_fields: false
         id: ''
-        open: false
+        direction: horizontal
+        width_breakpoint: 640
+    group_align:
+      children:
+        - sa_align_items_vertically
+        - sa_justify_content_horizontal
+      label: Alignment
+      region: content
+      parent_name: group_layout
+      weight: 26
+      format_type: tab
+      format_settings:
+        classes: ''
+        show_empty_fields: false
+        id: ''
+        formatter: closed
+        description: ''
+        required_fields: true
+        direction: horizontal
+        width_breakpoint: 640
+    group_columns:
+      children:
+        - sa_column_gutters
+        - sa_columns_desktop
+        - sa_columns_tablet
+        - sa_columns_mobile
+      label: Columns
+      region: content
+      parent_name: group_layout
+      weight: 13
+      format_type: tab
+      format_settings:
+        classes: ''
+        show_empty_fields: false
+        id: ''
+        formatter: closed
+        description: ''
+        required_fields: true
+    group_spacing:
+      children:
+        - sa_padding
+        - sa_margin
+      label: Spacing
+      region: content
+      parent_name: group_layout
+      weight: 24
+      format_type: tab
+      format_settings:
+        classes: ''
+        show_empty_fields: false
+        id: ''
+        formatter: closed
+        description: ''
+        required_fields: true
+    group_width:
+      children:
+        - sa_width
+        - sa_container
+      label: Width
+      region: content
+      parent_name: group_layout
+      weight: 23
+      format_type: tab
+      format_settings:
+        classes: ''
+        show_empty_fields: false
+        id: ''
+        formatter: closed
+        description: ''
+        required_fields: true
+    group_background:
+      children:
+        - sa_background
+      label: Background
+      region: content
+      parent_name: group_layout
+      weight: 25
+      format_type: tab
+      format_settings:
+        classes: ''
+        show_empty_fields: false
+        id: ''
+        formatter: closed
         description: ''
         required_fields: true
 id: paragraph.sa_columns.default

@@ -11,7 +11,7 @@ field_name: sa_width
 entity_type: paragraph
 bundle: sa_filtered_list
 label: Width
-description: ''
+description: 'The width setting controls the width of the element, but not the width of the container. The container width will determine how far the background color stretches across the screen and will control the total width of the container that holds the element.'
 required: false
 translatable: false
 default_value: {  }
