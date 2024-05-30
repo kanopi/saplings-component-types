@@ -19,11 +19,7 @@ third_party_settings:
   field_group:
     group_styles:
       children:
-        - sa_background
-        - sa_width
-        - sa_margin
-        - sa_padding
-        - sa_container
+        - group_layout
       label: Styles
       region: content
       parent_name: ''
@@ -34,6 +30,69 @@ third_party_settings:
         show_empty_fields: false
         id: ''
         open: false
+        description: ''
+        required_fields: true
+    group_layout:
+      children:
+        - group_spacing
+        - group_background
+        - group_width
+      label: Layout
+      region: content
+      parent_name: group_styles
+      weight: 20
+      format_type: tabs
+      format_settings:
+        classes: ''
+        show_empty_fields: false
+        id: ''
+        direction: horizontal
+        width_breakpoint: 640
+    group_spacing:
+      children:
+        - sa_margin
+        - sa_padding
+      label: Spacing
+      region: content
+      parent_name: group_layout
+      weight: 6
+      format_type: tab
+      format_settings:
+        classes: ''
+        show_empty_fields: false
+        id: ''
+        formatter: closed
+        description: ''
+        required_fields: true
+    group_width:
+      children:
+        - sa_container
+        - sa_width
+      label: Width
+      region: hidden
+      parent_name: group_layout
+      weight: 5
+      format_type: tab
+      format_settings:
+        classes: ''
+        show_empty_fields: false
+        id: ''
+        formatter: closed
+        description: ''
+        required_fields: true
+    group_background:
+      children:
+        - sa_background
+      label: Background
+      region: content
+      parent_name: group_layout
+      weight: 7
+      format_type: tab
+      format_settings:
+        classes: ''
+        show_empty_fields: false
+        id: ''
+        formatter: closed
         description: ''
         required_fields: true
 id: paragraph.sa_carousel.default
