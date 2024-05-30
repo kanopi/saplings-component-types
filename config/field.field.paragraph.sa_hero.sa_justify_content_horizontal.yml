@@ -1,0 +1,20 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.sa_justify_content_horizontal
+    - paragraphs.paragraphs_type.sa_hero
+  module:
+    - options
+id: paragraph.sa_hero.sa_justify_content_horizontal
+field_name: sa_justify_content_horizontal
+entity_type: paragraph
+bundle: sa_hero
+label: 'Justify Content Horizontally'
+description: 'Find out more by going <a href="https://getbootstrap.com/docs/5.0/utilities/flex/#justify-content">here</a>'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

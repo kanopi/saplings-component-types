@@ -1,0 +1,114 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.sa_hero.sa_hero_content
+    - field.field.paragraph.sa_hero.sa_hero_background
+    - field.field.paragraph.sa_hero.sa_overlay
+    - field.field.paragraph.sa_hero.sa_overlay_invert
+    - field.field.paragraph.sa_hero.sa_align_items_vertically
+    - field.field.paragraph.sa_hero.sa_container
+    - field.field.paragraph.sa_hero.sa_justify_content_horizontal
+    - field.field.paragraph.sa_hero.sa_margin
+    - field.field.paragraph.sa_hero.sa_padding
+    - field.field.paragraph.sa_hero.sa_width
+    - paragraphs.paragraphs_type.sa_hero
+  module:
+    - field_group
+    - media_library
+    - text
+third_party_settings:
+  field_group:
+    group_options:
+      children:
+        - sa_margin
+        - sa_padding
+        - sa_container
+        - sa_width
+        - sa_align_items_vertically
+        - sa_justify_content_horizontal
+        - sa_overlay
+        - sa_overlay_invert
+      label: Options
+      region: content
+      parent_name: ''
+      weight: 2
+      format_type: details
+      format_settings:
+        classes: ''
+        show_empty_fields: false
+        id: ''
+        open: false
+        description: ''
+        required_fields: true
+id: paragraph.sa_hero.default
+targetEntityType: paragraph
+bundle: sa_hero
+mode: default
+content:
+  sa_hero_content:
+    type: text_textarea
+    weight: 0
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  sa_hero_background:
+    type: media_library_widget
+    weight: 1
+    region: content
+    settings:
+      media_types: {  }
+    third_party_settings: {  }
+  sa_overlay:
+    type: options_select
+    weight: 9
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  sa_overlay_invert:
+    type: options_select
+    weight: 10
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  sa_align_items_vertically:
+    type: options_select
+    weight: 7
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  sa_container:
+    type: options_select
+    weight: 5
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  sa_justify_content_horizontal:
+    type: options_select
+    weight: 8
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  sa_margin:
+    type: options_select
+    weight: 3
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  sa_padding:
+    type: options_select
+    weight: 4
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  sa_width:
+    type: options_select
+    weight: 6
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true
