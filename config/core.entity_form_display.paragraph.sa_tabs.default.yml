@@ -2,6 +2,8 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.paragraph.sa_tabs.sa_display_as_vertical_tabs
+    - field.field.paragraph.sa_tabs.sa_accordion_mobile
     - field.field.paragraph.sa_tabs.sa_background
     - field.field.paragraph.sa_tabs.sa_width
     - field.field.paragraph.sa_tabs.sa_description
@@ -100,6 +102,20 @@ targetEntityType: paragraph
 bundle: sa_tabs
 mode: default
 content:
+  sa_display_as_vertical_tabs:
+    type: boolean_checkbox
+    weight: 21
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  sa_accordion_mobile:
+    type: boolean_checkbox
+    weight: 22
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
   field_tab_item:
     type: paragraphs
     weight: 0

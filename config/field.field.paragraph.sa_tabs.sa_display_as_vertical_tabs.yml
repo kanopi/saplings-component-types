@@ -1,0 +1,20 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.sa_display_as_vertical_tabs
+    - paragraphs.paragraphs_type.sa_tabs
+id: paragraph.sa_tabs.sa_display_as_vertical_tabs
+field_name: sa_display_as_vertical_tabs
+entity_type: paragraph
+bundle: sa_tabs
+label: 'Display as Vertical Tabs'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean
