@@ -2,6 +2,8 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.paragraph.sa_tabs.sa_display_as_vertical_tabs
+    - field.field.paragraph.sa_tabs.sa_accordion_mobile
     - field.field.paragraph.sa_tabs.sa_background
     - field.field.paragraph.sa_tabs.sa_width
     - field.field.paragraph.sa_tabs.sa_description
@@ -40,6 +42,26 @@ targetEntityType: paragraph
 bundle: sa_tabs
 mode: default
 content:
+  sa_display_as_vertical_tabs:
+    type: boolean
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  sa_accordion_mobile:
+    type: boolean
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    weight: 5
+    region: content
   field_tab_item:
     type: entity_reference_revisions_entity_view
     label: hidden
