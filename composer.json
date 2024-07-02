@@ -15,6 +15,7 @@
         "drupal/ds": "*",
         "drupal/element_class_formatter": "^2.0@beta",
         "drupal/entity_reference_revisions": "*",
+        "drupal/frontend_editing": "*",
         "drupal/nomarkup": "^1.0",
         "drupal/paragraphs": "*",
         "drupal/paragraphs_edit": "*",

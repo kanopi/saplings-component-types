@@ -1,0 +1,81 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.sa_stat.sa_label
+    - field.field.paragraph.sa_stat.sa_stat_description
+    - field.field.paragraph.sa_stat.sa_stat_number
+    - field.field.paragraph.sa_stat.sa_stat_prefix
+    - field.field.paragraph.sa_stat.sa_stat_suffix
+    - paragraphs.paragraphs_type.sa_stat
+  module:
+    - ds
+    - nomarkup
+    - text
+third_party_settings:
+  ds:
+    layout:
+      id: pattern_animated-stat
+      library: null
+      disable_css: false
+      entity_classes: all_classes
+      settings:
+        pattern:
+          field_templates: default
+          variant: default
+    regions:
+      stat_description:
+        - sa_stat_description
+      stat_number:
+        - sa_stat_number
+      stat_prefix:
+        - sa_stat_prefix
+      stat_suffix:
+        - sa_stat_suffix
+id: paragraph.sa_stat.default
+targetEntityType: paragraph
+bundle: sa_stat
+mode: default
+content:
+  sa_stat_description:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings:
+      nomarkup:
+        enabled: true
+        separator: '|'
+        referenced_entity: ''
+    weight: 0
+    region: stat_description
+  sa_stat_number:
+    type: number_integer
+    label: hidden
+    settings:
+      thousand_separator: ''
+      prefix_suffix: false
+    third_party_settings:
+      nomarkup:
+        enabled: false
+        separator: '|'
+        referenced_entity: ''
+    weight: 1
+    region: stat_number
+  sa_stat_prefix:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 2
+    region: stat_prefix
+  sa_stat_suffix:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 3
+    region: stat_suffix
+hidden:
+  sa_label: true
