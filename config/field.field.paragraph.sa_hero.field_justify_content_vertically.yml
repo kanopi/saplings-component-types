@@ -1,0 +1,23 @@
+uuid: 7b888df6-87a4-4c1b-84e8-ed6fa042d08c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_justify_content_vertically
+    - paragraphs.paragraphs_type.sa_hero
+  module:
+    - options
+id: paragraph.sa_hero.field_justify_content_vertically
+field_name: field_justify_content_vertically
+entity_type: paragraph
+bundle: sa_hero
+label: 'Justify Content Vertically'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: justify-content-center
+default_value_callback: ''
+settings: {  }
+field_type: list_string

@@ -1,0 +1,102 @@
+uuid: 78cc740f-f815-4b86-aa0d-162cd4c20829
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.sa_hero.field_justify_content_vertically
+    - field.field.paragraph.sa_hero.sa_container
+    - field.field.paragraph.sa_hero.sa_hero_background
+    - field.field.paragraph.sa_hero.sa_hero_content
+    - field.field.paragraph.sa_hero.sa_justify_content_horizontal
+    - field.field.paragraph.sa_hero.sa_margin
+    - field.field.paragraph.sa_hero.sa_overlay
+    - field.field.paragraph.sa_hero.sa_overlay_invert
+    - field.field.paragraph.sa_hero.sa_padding
+    - field.field.paragraph.sa_hero.sa_width
+    - paragraphs.paragraphs_type.sa_hero
+  module:
+    - nomarkup
+    - options
+    - text
+id: paragraph.sa_hero.default
+targetEntityType: paragraph
+bundle: sa_hero
+mode: default
+content:
+  field_justify_content_vertically:
+    type: list_key
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 10
+    region: content
+  sa_container:
+    type: list_key
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  sa_hero_background:
+    type: entity_reference_entity_view
+    label: hidden
+    settings:
+      view_mode: hero
+      link: false
+    third_party_settings:
+      nomarkup:
+        enabled: false
+        separator: '|'
+        referenced_entity: '0'
+    weight: 6
+    region: content
+  sa_hero_content:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 7
+    region: content
+  sa_justify_content_horizontal:
+    type: list_key
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  sa_margin:
+    type: list_key
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  sa_overlay:
+    type: list_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 8
+    region: content
+  sa_overlay_invert:
+    type: list_key
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 9
+    region: content
+  sa_padding:
+    type: list_key
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 5
+    region: content
+  sa_width:
+    type: list_key
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 3
+    region: content
+hidden: {  }

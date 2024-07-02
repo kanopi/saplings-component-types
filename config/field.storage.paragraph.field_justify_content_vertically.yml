@@ -1,0 +1,30 @@
+uuid: 3614c753-5577-494d-a47c-5ce690f8c24c
+langcode: en
+status: true
+dependencies:
+  module:
+    - options
+    - paragraphs
+id: paragraph.field_justify_content_vertically
+field_name: field_justify_content_vertically
+entity_type: paragraph
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: justify-content-start
+      label: 'Justify Start'
+    -
+      value: justify-content-center
+      label: 'Justify Center'
+    -
+      value: justify-content-end
+      label: 'Justify End'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false
