@@ -4,10 +4,14 @@ dependencies:
   config:
     - field.field.paragraph.sa_faq_item.sa_description
     - field.field.paragraph.sa_faq_item.sa_header
+    - field.field.paragraph.sa_faq_item.sa_label
     - paragraphs.paragraphs_type.sa_faq_item
   module:
+    - element_class_formatter
     - nomarkup
     - text
+_core:
+  default_config_hash: 08x_iTHS4_xFCxnYnZwm0PJrMEG71nkgd2NjG2xOk94
 id: paragraph.sa_faq_item.default
 targetEntityType: paragraph
 bundle: sa_faq_item
@@ -25,10 +29,15 @@ content:
     weight: 1
     region: content
   sa_header:
-    type: string
+    type: wrapper_class
     label: hidden
     settings:
-      link_to_entity: false
+      class: h3
+      tag: div
+      link: false
+      link_class: ''
+      summary: false
+      trim: 200
     third_party_settings:
       nomarkup:
         enabled: true
@@ -36,4 +45,5 @@ content:
         referenced_entity: ''
     weight: 0
     region: content
-hidden: {  }
+hidden:
+  sa_label: true
