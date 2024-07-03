@@ -10,8 +10,6 @@ dependencies:
     - element_class_formatter
     - nomarkup
     - text
-_core:
-  default_config_hash: 08x_iTHS4_xFCxnYnZwm0PJrMEG71nkgd2NjG2xOk94
 id: paragraph.sa_faq_item.default
 targetEntityType: paragraph
 bundle: sa_faq_item
