@@ -7,7 +7,6 @@ dependencies:
     - field.field.paragraph.sa_faq_item.sa_label
     - paragraphs.paragraphs_type.sa_faq_item
   module:
-    - element_class_formatter
     - nomarkup
     - text
 id: paragraph.sa_faq_item.default
@@ -27,15 +26,10 @@ content:
     weight: 1
     region: content
   sa_header:
-    type: wrapper_class
+    type: string
     label: hidden
     settings:
-      class: h3
-      tag: div
-      link: false
-      link_class: ''
-      summary: false
-      trim: 200
+      link_to_entity: false
     third_party_settings:
       nomarkup:
         enabled: true

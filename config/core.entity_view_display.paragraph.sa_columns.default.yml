@@ -4,18 +4,19 @@ dependencies:
   config:
     - field.field.paragraph.sa_columns.sa_align_items_vertically
     - field.field.paragraph.sa_columns.sa_background
-    - field.field.paragraph.sa_columns.sa_width
     - field.field.paragraph.sa_columns.sa_column_gutters
     - field.field.paragraph.sa_columns.sa_column_items
     - field.field.paragraph.sa_columns.sa_columns_desktop
     - field.field.paragraph.sa_columns.sa_columns_mobile
     - field.field.paragraph.sa_columns.sa_columns_tablet
+    - field.field.paragraph.sa_columns.sa_container
     - field.field.paragraph.sa_columns.sa_description
     - field.field.paragraph.sa_columns.sa_header
     - field.field.paragraph.sa_columns.sa_justify_content_horizontal
+    - field.field.paragraph.sa_columns.sa_label
     - field.field.paragraph.sa_columns.sa_margin
     - field.field.paragraph.sa_columns.sa_padding
-    - field.field.paragraph.sa_columns.sa_container
+    - field.field.paragraph.sa_columns.sa_width
     - paragraphs.paragraphs_type.sa_columns
   module:
     - element_class_formatter
@@ -38,7 +39,7 @@ content:
         enabled: true
         separator: ''
         referenced_entity: ''
-    weight: 3
+    weight: 2
     region: content
   sa_description:
     type: text_default
@@ -67,12 +68,13 @@ content:
 hidden:
   sa_align_items_vertically: true
   sa_background: true
-  sa_width: true
   sa_column_gutters: true
   sa_columns_desktop: true
   sa_columns_mobile: true
   sa_columns_tablet: true
+  sa_container: true
   sa_justify_content_horizontal: true
+  sa_label: true
   sa_margin: true
   sa_padding: true
-  sa_container: true
+  sa_width: true

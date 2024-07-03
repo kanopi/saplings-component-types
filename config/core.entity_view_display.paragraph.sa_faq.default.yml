@@ -2,14 +2,15 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.field.paragraph.sa_faq.sa_faq_item
     - field.field.paragraph.sa_faq.sa_background
-    - field.field.paragraph.sa_faq.sa_width
+    - field.field.paragraph.sa_faq.sa_container
     - field.field.paragraph.sa_faq.sa_description
+    - field.field.paragraph.sa_faq.sa_faq_item
     - field.field.paragraph.sa_faq.sa_header
+    - field.field.paragraph.sa_faq.sa_label
     - field.field.paragraph.sa_faq.sa_margin
     - field.field.paragraph.sa_faq.sa_padding
-    - field.field.paragraph.sa_faq.sa_container
+    - field.field.paragraph.sa_faq.sa_width
     - paragraphs.paragraphs_type.sa_faq
   module:
     - element_class_formatter
@@ -21,6 +22,13 @@ targetEntityType: paragraph
 bundle: sa_faq
 mode: default
 content:
+  sa_description:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
   sa_faq_item:
     type: entity_reference_revisions_entity_view
     label: hidden
@@ -33,13 +41,6 @@ content:
         separator: ''
         referenced_entity: ''
     weight: 2
-    region: content
-  sa_description:
-    type: text_default
-    label: hidden
-    settings: {  }
-    third_party_settings: {  }
-    weight: 1
     region: content
   sa_header:
     type: wrapper_class
@@ -60,7 +61,8 @@ content:
     region: content
 hidden:
   sa_background: true
-  sa_width: true
+  sa_container: true
+  sa_label: true
   sa_margin: true
   sa_padding: true
-  sa_container: true
+  sa_width: true

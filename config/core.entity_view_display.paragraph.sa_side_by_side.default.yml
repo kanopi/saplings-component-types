@@ -3,14 +3,15 @@ status: true
 dependencies:
   config:
     - field.field.paragraph.sa_side_by_side.sa_background
-    - field.field.paragraph.sa_side_by_side.sa_width
+    - field.field.paragraph.sa_side_by_side.sa_container
     - field.field.paragraph.sa_side_by_side.sa_description
     - field.field.paragraph.sa_side_by_side.sa_header
+    - field.field.paragraph.sa_side_by_side.sa_label
     - field.field.paragraph.sa_side_by_side.sa_margin
     - field.field.paragraph.sa_side_by_side.sa_media
     - field.field.paragraph.sa_side_by_side.sa_padding
     - field.field.paragraph.sa_side_by_side.sa_reverse_order
-    - field.field.paragraph.sa_side_by_side.sa_container
+    - field.field.paragraph.sa_side_by_side.sa_width
     - paragraphs.paragraphs_type.sa_side_by_side
   module:
     - element_class_formatter
@@ -22,13 +23,6 @@ targetEntityType: paragraph
 bundle: sa_side_by_side
 mode: default
 content:
-  sa_width:
-    type: list_default
-    label: above
-    settings: {  }
-    third_party_settings: {  }
-    weight: 4
-    region: content
   sa_description:
     type: text_default
     label: hidden
@@ -80,8 +74,16 @@ content:
     third_party_settings: {  }
     weight: 3
     region: content
+  sa_width:
+    type: list_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 4
+    region: content
 hidden:
   sa_background: true
+  sa_container: true
+  sa_label: true
   sa_margin: true
   sa_padding: true
-  sa_container: true

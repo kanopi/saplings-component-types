@@ -2,16 +2,17 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.field.paragraph.sa_tabs.sa_display_as_vertical_tabs
     - field.field.paragraph.sa_tabs.sa_accordion_mobile
     - field.field.paragraph.sa_tabs.sa_background
-    - field.field.paragraph.sa_tabs.sa_width
+    - field.field.paragraph.sa_tabs.sa_container
     - field.field.paragraph.sa_tabs.sa_description
+    - field.field.paragraph.sa_tabs.sa_display_as_vertical_tabs
     - field.field.paragraph.sa_tabs.sa_header
+    - field.field.paragraph.sa_tabs.sa_label
     - field.field.paragraph.sa_tabs.sa_margin
     - field.field.paragraph.sa_tabs.sa_padding
     - field.field.paragraph.sa_tabs.sa_tab_item
-    - field.field.paragraph.sa_tabs.sa_container
+    - field.field.paragraph.sa_tabs.sa_width
     - paragraphs.paragraphs_type.sa_tabs
   module:
     - element_class_formatter
@@ -28,7 +29,7 @@ third_party_settings:
       label: Styles
       parent_name: ''
       region: hidden
-      weight: 3
+      weight: 9
       format_type: details
       format_settings:
         classes: ''
@@ -42,26 +43,6 @@ targetEntityType: paragraph
 bundle: sa_tabs
 mode: default
 content:
-  sa_display_as_vertical_tabs:
-    type: boolean
-    label: above
-    settings:
-      format: default
-      format_custom_false: ''
-      format_custom_true: ''
-    third_party_settings: {  }
-    weight: 4
-    region: content
-  sa_accordion_mobile:
-    type: boolean
-    label: above
-    settings:
-      format: default
-      format_custom_false: ''
-      format_custom_true: ''
-    third_party_settings: {  }
-    weight: 5
-    region: content
   field_tab_item:
     type: entity_reference_revisions_entity_view
     label: hidden
@@ -71,12 +52,32 @@ content:
     third_party_settings: {  }
     weight: 0
     region: content
+  sa_accordion_mobile:
+    type: boolean
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    weight: 4
+    region: content
   sa_description:
     type: text_default
     label: hidden
     settings: {  }
     third_party_settings: {  }
     weight: 1
+    region: content
+  sa_display_as_vertical_tabs:
+    type: boolean
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    weight: 3
     region: content
   sa_header:
     type: wrapper_class
@@ -110,7 +111,8 @@ content:
     region: content
 hidden:
   sa_background: true
-  sa_width: true
+  sa_container: true
+  sa_label: true
   sa_margin: true
   sa_padding: true
-  sa_container: true
+  sa_width: true

@@ -5,6 +5,7 @@ dependencies:
     - field.field.paragraph.sa_card.sa_card_image
     - field.field.paragraph.sa_card.sa_description
     - field.field.paragraph.sa_card.sa_header
+    - field.field.paragraph.sa_card.sa_label
     - field.field.paragraph.sa_card.sa_link
     - paragraphs.paragraphs_type.sa_card
   module:
@@ -100,6 +101,14 @@ content:
             lb: ''
     weight: 1
     region: header
+  sa_label:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
   sa_link:
     type: pattern_all_formatter
     label: hidden
