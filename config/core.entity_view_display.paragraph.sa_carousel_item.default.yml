@@ -4,6 +4,7 @@ dependencies:
   config:
     - field.field.paragraph.sa_carousel_item.sa_carousel_caption
     - field.field.paragraph.sa_carousel_item.sa_carousel_image
+    - field.field.paragraph.sa_carousel_item.sa_label
     - paragraphs.paragraphs_type.sa_carousel_item
   module:
     - ds
@@ -46,7 +47,7 @@ content:
       nomarkup:
         enabled: false
         separator: '|'
-        referenced_entity: 0
+        referenced_entity: '0'
       ds:
         ft:
           id: default
@@ -56,4 +57,5 @@ content:
             classes: {  }
     weight: 0
     region: image
-hidden: {  }
+hidden:
+  sa_label: true

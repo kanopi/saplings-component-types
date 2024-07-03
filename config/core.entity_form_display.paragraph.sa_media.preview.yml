@@ -2,21 +2,21 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.field.paragraph.sa_accordion.sa_accordion_item
-    - field.field.paragraph.sa_accordion.sa_accordion_mobile
-    - field.field.paragraph.sa_accordion.sa_background
-    - field.field.paragraph.sa_accordion.sa_container
-    - field.field.paragraph.sa_accordion.sa_description
-    - field.field.paragraph.sa_accordion.sa_display_as_vertical_tabs
-    - field.field.paragraph.sa_accordion.sa_header
-    - field.field.paragraph.sa_accordion.sa_label
-    - field.field.paragraph.sa_accordion.sa_margin
-    - field.field.paragraph.sa_accordion.sa_padding
-    - field.field.paragraph.sa_accordion.sa_width
-    - paragraphs.paragraphs_type.sa_accordion
+    - core.entity_form_mode.paragraph.preview
+    - field.field.paragraph.sa_media.sa_background
+    - field.field.paragraph.sa_media.sa_container
+    - field.field.paragraph.sa_media.sa_description
+    - field.field.paragraph.sa_media.sa_header
+    - field.field.paragraph.sa_media.sa_label
+    - field.field.paragraph.sa_media.sa_margin
+    - field.field.paragraph.sa_media.sa_media
+    - field.field.paragraph.sa_media.sa_padding
+    - field.field.paragraph.sa_media.sa_width
+    - paragraphs.paragraphs_type.sa_media
   module:
     - field_group
-    - paragraphs
+    - media_library
+    - media_library_edit
     - text
 third_party_settings:
   field_group:
@@ -26,7 +26,7 @@ third_party_settings:
       label: Styles
       region: content
       parent_name: ''
-      weight: 5
+      weight: 4
       format_type: details
       format_settings:
         classes: row
@@ -69,8 +69,8 @@ third_party_settings:
         required_fields: true
     group_width:
       children:
-        - sa_container
         - sa_width
+        - sa_container
       label: Width
       region: hidden
       parent_name: group_layout
@@ -98,47 +98,20 @@ third_party_settings:
         formatter: closed
         description: ''
         required_fields: true
-id: paragraph.sa_accordion.default
+id: paragraph.sa_media.preview
 targetEntityType: paragraph
-bundle: sa_accordion
-mode: default
+bundle: sa_media
+mode: preview
 content:
-  sa_accordion_item:
-    type: paragraphs
-    weight: 3
-    region: content
-    settings:
-      title: Item
-      title_plural: Items
-      edit_mode: closed
-      closed_mode: summary
-      autocollapse: none
-      closed_mode_threshold: 0
-      add_mode: dropdown
-      form_display_mode: default
-      default_paragraph_type: sa_accordion_item
-      features:
-        add_above: '0'
-        collapse_edit_all: collapse_edit_all
-        convert: '0'
-        duplicate: duplicate
-    third_party_settings: {  }
-  sa_accordion_mobile:
-    type: boolean_checkbox
-    weight: 7
-    region: content
-    settings:
-      display_label: true
-    third_party_settings: {  }
   sa_background:
     type: options_select
-    weight: 7
+    weight: 0
     region: content
     settings: {  }
     third_party_settings: {  }
   sa_container:
     type: options_select
-    weight: 6
+    weight: 4
     region: content
     settings: {  }
     third_party_settings: {  }
@@ -149,13 +122,6 @@ content:
     settings:
       rows: 5
       placeholder: ''
-    third_party_settings: {  }
-  sa_display_as_vertical_tabs:
-    type: boolean_checkbox
-    weight: 6
-    region: content
-    settings:
-      display_label: true
     third_party_settings: {  }
   sa_header:
     type: string_textfield
@@ -175,19 +141,30 @@ content:
     third_party_settings: {  }
   sa_margin:
     type: options_select
-    weight: 4
+    weight: 2
     region: content
     settings: {  }
     third_party_settings: {  }
+  sa_media:
+    type: media_library_widget
+    weight: 3
+    region: content
+    settings:
+      media_types:
+        - image
+        - remote_video
+    third_party_settings:
+      media_library_edit:
+        show_edit: '1'
   sa_padding:
     type: options_select
-    weight: 5
+    weight: 3
     region: content
     settings: {  }
     third_party_settings: {  }
   sa_width:
     type: options_select
-    weight: 8
+    weight: 1
     region: content
     settings: {  }
     third_party_settings: {  }

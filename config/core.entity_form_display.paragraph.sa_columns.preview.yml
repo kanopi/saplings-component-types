@@ -2,18 +2,23 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.field.paragraph.sa_accordion.sa_accordion_item
-    - field.field.paragraph.sa_accordion.sa_accordion_mobile
-    - field.field.paragraph.sa_accordion.sa_background
-    - field.field.paragraph.sa_accordion.sa_container
-    - field.field.paragraph.sa_accordion.sa_description
-    - field.field.paragraph.sa_accordion.sa_display_as_vertical_tabs
-    - field.field.paragraph.sa_accordion.sa_header
-    - field.field.paragraph.sa_accordion.sa_label
-    - field.field.paragraph.sa_accordion.sa_margin
-    - field.field.paragraph.sa_accordion.sa_padding
-    - field.field.paragraph.sa_accordion.sa_width
-    - paragraphs.paragraphs_type.sa_accordion
+    - core.entity_form_mode.paragraph.preview
+    - field.field.paragraph.sa_columns.sa_align_items_vertically
+    - field.field.paragraph.sa_columns.sa_background
+    - field.field.paragraph.sa_columns.sa_column_gutters
+    - field.field.paragraph.sa_columns.sa_column_items
+    - field.field.paragraph.sa_columns.sa_columns_desktop
+    - field.field.paragraph.sa_columns.sa_columns_mobile
+    - field.field.paragraph.sa_columns.sa_columns_tablet
+    - field.field.paragraph.sa_columns.sa_container
+    - field.field.paragraph.sa_columns.sa_description
+    - field.field.paragraph.sa_columns.sa_header
+    - field.field.paragraph.sa_columns.sa_justify_content_horizontal
+    - field.field.paragraph.sa_columns.sa_label
+    - field.field.paragraph.sa_columns.sa_margin
+    - field.field.paragraph.sa_columns.sa_padding
+    - field.field.paragraph.sa_columns.sa_width
+    - paragraphs.paragraphs_type.sa_columns
   module:
     - field_group
     - paragraphs
@@ -26,7 +31,7 @@ third_party_settings:
       label: Styles
       region: content
       parent_name: ''
-      weight: 5
+      weight: 4
       format_type: details
       format_settings:
         classes: row
@@ -37,13 +42,15 @@ third_party_settings:
         required_fields: true
     group_layout:
       children:
+        - group_columns
+        - group_width
         - group_spacing
         - group_background
-        - group_width
+        - group_align
       label: Layout
       region: content
       parent_name: group_styles
-      weight: 20
+      weight: 7
       format_type: tabs
       format_settings:
         classes: ''
@@ -51,6 +58,42 @@ third_party_settings:
         id: ''
         direction: horizontal
         width_breakpoint: 640
+    group_align:
+      children:
+        - sa_align_items_vertically
+        - sa_justify_content_horizontal
+      label: Alignment
+      region: content
+      parent_name: group_layout
+      weight: 26
+      format_type: tab
+      format_settings:
+        classes: ''
+        show_empty_fields: false
+        id: ''
+        formatter: closed
+        description: ''
+        required_fields: true
+        direction: horizontal
+        width_breakpoint: 640
+    group_columns:
+      children:
+        - sa_column_gutters
+        - sa_columns_desktop
+        - sa_columns_tablet
+        - sa_columns_mobile
+      label: Columns
+      region: content
+      parent_name: group_layout
+      weight: 13
+      format_type: tab
+      format_settings:
+        classes: ''
+        show_empty_fields: false
+        id: ''
+        formatter: closed
+        description: ''
+        required_fields: true
     group_spacing:
       children:
         - sa_margin
@@ -58,7 +101,7 @@ third_party_settings:
       label: Spacing
       region: content
       parent_name: group_layout
-      weight: 6
+      weight: 24
       format_type: tab
       format_settings:
         classes: ''
@@ -69,12 +112,12 @@ third_party_settings:
         required_fields: true
     group_width:
       children:
-        - sa_container
         - sa_width
+        - sa_container
       label: Width
-      region: hidden
+      region: content
       parent_name: group_layout
-      weight: 5
+      weight: 23
       format_type: tab
       format_settings:
         classes: ''
@@ -89,7 +132,7 @@ third_party_settings:
       label: Background
       region: content
       parent_name: group_layout
-      weight: 7
+      weight: 25
       format_type: tab
       format_settings:
         classes: ''
@@ -98,47 +141,68 @@ third_party_settings:
         formatter: closed
         description: ''
         required_fields: true
-id: paragraph.sa_accordion.default
+id: paragraph.sa_columns.preview
 targetEntityType: paragraph
-bundle: sa_accordion
-mode: default
+bundle: sa_columns
+mode: preview
 content:
-  sa_accordion_item:
+  sa_align_items_vertically:
+    type: options_select
+    weight: 16
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  sa_background:
+    type: options_select
+    weight: 18
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  sa_column_gutters:
+    type: options_select
+    weight: 12
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  sa_column_items:
     type: paragraphs
     weight: 3
     region: content
     settings:
-      title: Item
-      title_plural: Items
-      edit_mode: closed
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: open
       closed_mode: summary
       autocollapse: none
       closed_mode_threshold: 0
       add_mode: dropdown
       form_display_mode: default
-      default_paragraph_type: sa_accordion_item
+      default_paragraph_type: ''
       features:
-        add_above: '0'
         collapse_edit_all: collapse_edit_all
-        convert: '0'
         duplicate: duplicate
     third_party_settings: {  }
-  sa_accordion_mobile:
-    type: boolean_checkbox
-    weight: 7
-    region: content
-    settings:
-      display_label: true
-    third_party_settings: {  }
-  sa_background:
+  sa_columns_desktop:
     type: options_select
-    weight: 7
+    weight: 13
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  sa_columns_mobile:
+    type: options_select
+    weight: 15
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  sa_columns_tablet:
+    type: options_select
+    weight: 14
     region: content
     settings: {  }
     third_party_settings: {  }
   sa_container:
     type: options_select
-    weight: 6
+    weight: 22
     region: content
     settings: {  }
     third_party_settings: {  }
@@ -150,13 +214,6 @@ content:
       rows: 5
       placeholder: ''
     third_party_settings: {  }
-  sa_display_as_vertical_tabs:
-    type: boolean_checkbox
-    weight: 6
-    region: content
-    settings:
-      display_label: true
-    third_party_settings: {  }
   sa_header:
     type: string_textfield
     weight: 1
@@ -164,6 +221,12 @@ content:
     settings:
       size: 60
       placeholder: ''
+    third_party_settings: {  }
+  sa_justify_content_horizontal:
+    type: options_select
+    weight: 17
+    region: content
+    settings: {  }
     third_party_settings: {  }
   sa_label:
     type: string_textfield
@@ -175,19 +238,19 @@ content:
     third_party_settings: {  }
   sa_margin:
     type: options_select
-    weight: 4
+    weight: 20
     region: content
     settings: {  }
     third_party_settings: {  }
   sa_padding:
     type: options_select
-    weight: 5
+    weight: 21
     region: content
     settings: {  }
     third_party_settings: {  }
   sa_width:
     type: options_select
-    weight: 8
+    weight: 19
     region: content
     settings: {  }
     third_party_settings: {  }

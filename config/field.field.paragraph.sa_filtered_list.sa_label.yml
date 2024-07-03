@@ -1,0 +1,18 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.sa_label
+    - paragraphs.paragraphs_type.sa_filtered_list
+id: paragraph.sa_filtered_list.sa_label
+field_name: sa_label
+entity_type: paragraph
+bundle: sa_filtered_list
+label: 'Label (Not Displayed)'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

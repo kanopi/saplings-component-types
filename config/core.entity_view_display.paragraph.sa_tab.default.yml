@@ -4,6 +4,7 @@ dependencies:
   config:
     - field.field.paragraph.sa_tab.sa_description
     - field.field.paragraph.sa_tab.sa_header
+    - field.field.paragraph.sa_tab.sa_label
     - paragraphs.paragraphs_type.sa_tab
   module:
     - nomarkup
@@ -26,3 +27,4 @@ content:
     region: content
 hidden:
   sa_header: true
+  sa_label: true

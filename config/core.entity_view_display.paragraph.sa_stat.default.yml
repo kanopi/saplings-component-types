@@ -2,6 +2,7 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.paragraph.sa_stat.sa_label
     - field.field.paragraph.sa_stat.sa_stat_description
     - field.field.paragraph.sa_stat.sa_stat_number
     - field.field.paragraph.sa_stat.sa_stat_prefix
@@ -76,4 +77,5 @@ content:
     third_party_settings: {  }
     weight: 3
     region: stat_suffix
-hidden: {  }
+hidden:
+  sa_label: true

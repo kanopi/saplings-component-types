@@ -1,0 +1,62 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_form_mode.paragraph.preview
+    - field.field.paragraph.sa_card.sa_card_image
+    - field.field.paragraph.sa_card.sa_description
+    - field.field.paragraph.sa_card.sa_header
+    - field.field.paragraph.sa_card.sa_label
+    - field.field.paragraph.sa_card.sa_link
+    - paragraphs.paragraphs_type.sa_card
+  module:
+    - link
+    - media_library
+    - text
+id: paragraph.sa_card.preview
+targetEntityType: paragraph
+bundle: sa_card
+mode: preview
+content:
+  sa_card_image:
+    type: media_library_widget
+    weight: 3
+    region: content
+    settings:
+      media_types: {  }
+    third_party_settings: {  }
+  sa_description:
+    type: text_textarea
+    weight: 2
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  sa_header:
+    type: string_textfield
+    weight: 1
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  sa_label:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  sa_link:
+    type: link_default
+    weight: 4
+    region: content
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

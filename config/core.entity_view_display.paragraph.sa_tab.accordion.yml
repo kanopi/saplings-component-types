@@ -5,6 +5,7 @@ dependencies:
     - core.entity_view_mode.paragraph.accordion
     - field.field.paragraph.sa_tab.sa_description
     - field.field.paragraph.sa_tab.sa_header
+    - field.field.paragraph.sa_tab.sa_label
     - paragraphs.paragraphs_type.sa_tab
   module:
     - ds
@@ -60,4 +61,5 @@ content:
     third_party_settings: {  }
     weight: 0
     region: title
-hidden: {  }
+hidden:
+  sa_label: true
