@@ -1,0 +1,60 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_form_mode.paragraph.preview
+    - field.field.paragraph.sa_stat.sa_label
+    - field.field.paragraph.sa_stat.sa_stat_description
+    - field.field.paragraph.sa_stat.sa_stat_number
+    - field.field.paragraph.sa_stat.sa_stat_prefix
+    - field.field.paragraph.sa_stat.sa_stat_suffix
+    - paragraphs.paragraphs_type.sa_stat
+  module:
+    - text
+id: paragraph.sa_stat.preview
+targetEntityType: paragraph
+bundle: sa_stat
+mode: preview
+content:
+  sa_label:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  sa_stat_description:
+    type: text_textarea
+    weight: 3
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  sa_stat_number:
+    type: number
+    weight: 1
+    region: content
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+  sa_stat_prefix:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  sa_stat_suffix:
+    type: string_textfield
+    weight: 2
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

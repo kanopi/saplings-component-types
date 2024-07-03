@@ -2,6 +2,7 @@ langcode: en
 status: true
 dependencies:
   config:
+    - core.entity_form_mode.paragraph.preview
     - field.field.paragraph.sa_accordion.sa_accordion_item
     - field.field.paragraph.sa_accordion.sa_accordion_mobile
     - field.field.paragraph.sa_accordion.sa_background
@@ -98,10 +99,10 @@ third_party_settings:
         formatter: closed
         description: ''
         required_fields: true
-id: paragraph.sa_accordion.default
+id: paragraph.sa_accordion.preview
 targetEntityType: paragraph
 bundle: sa_accordion
-mode: default
+mode: preview
 content:
   sa_accordion_item:
     type: paragraphs
