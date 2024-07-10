@@ -3,7 +3,7 @@ status: true
 dependencies:
   config:
     - field.storage.paragraph.sa_column_items
-    - paragraphs.paragraphs_type.existing_content_card
+    - paragraphs.paragraphs_type.sa_existing_content_card
     - paragraphs.paragraphs_type.sa_block
     - paragraphs.paragraphs_type.sa_card
     - paragraphs.paragraphs_type.sa_carousel
