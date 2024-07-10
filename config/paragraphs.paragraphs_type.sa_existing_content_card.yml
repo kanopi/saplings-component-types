@@ -1,0 +1,10 @@
+uuid: 0a90fac9-6997-4c0d-acc6-856d9fd83cac
+langcode: en
+status: true
+dependencies: {  }
+id: sa_existing_content_card
+label: 'Existing Content card'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }
