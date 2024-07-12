@@ -1,0 +1,36 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_form_mode.paragraph.preview
+    - field.field.paragraph.sa_existing_content_card.sa_existing_content
+    - field.field.paragraph.sa_existing_content_card.sa_label
+    - paragraphs.paragraphs_type.sa_existing_content_card
+  module:
+    - text
+id: paragraph.sa_existing_content_card.preview
+targetEntityType: paragraph
+bundle: sa_existing_content_card
+mode: preview
+content:
+  sa_existing_content_card:
+    type: entity_reference_autocomplete
+    weight: 0
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+      third_party_settings: {  }
+  sa_label:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

@@ -3,6 +3,7 @@ status: true
 dependencies:
   config:
     - field.storage.paragraph.sa_column_items
+    - paragraphs.paragraphs_type.sa_existing_content_card
     - paragraphs.paragraphs_type.sa_block
     - paragraphs.paragraphs_type.sa_card
     - paragraphs.paragraphs_type.sa_carousel
@@ -30,12 +31,16 @@ settings:
     target_bundles:
       sa_block: sa_block
       sa_card: sa_card
+      sa_existing_content_card: sa_existing_content_card
       sa_carousel: sa_carousel
       sa_media: sa_media
       sa_text: sa_text
       sa_stat: sa_stat
     negate: 0
     target_bundles_drag_drop:
+      sa_existing_content_card:
+        weight: 18
+        enabled: true
       sa_accordion:
         weight: 14
         enabled: false

@@ -1,0 +1,24 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.sa_paragraph.existing_content_card.sa_existing_content
+    - paragraphs.paragraphs_type.sa_existing_content_card
+id: paragraph.sa_existing_content_card.default
+targetEntityType: paragraph
+bundle: sa_existing_content_card
+mode: default
+content:
+  sa_existing_content:
+    type: entity_reference_autocomplete
+    weight: 0
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

@@ -1,0 +1,30 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.sa_existing_content
+    - node.type.sa_page
+    - node.type.sa_post
+    - paragraphs.paragraphs_type.sa_existing_content_card
+id: paragraph.sa_existing_content_card.sa_existing_content
+field_name: sa_existing_content
+entity_type: paragraph
+bundle: sa_existing_content_card
+label: 'Existing Content'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      sa_page: sa_page
+      sa_post: sa_post
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: sa_page
+field_type: entity_reference

@@ -1,0 +1,9 @@
+langcode: en
+status: true
+dependencies: {  }
+id: sa_existing_content_card
+label: 'Existing Content card'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

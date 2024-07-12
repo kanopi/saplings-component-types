@@ -1,0 +1,27 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.sa_existing_content_card.sa_existing_content
+    - paragraphs.paragraphs_type.sa_existing_content_card
+  module:
+    - nomarkup
+id: paragraph.sa_existing_content_card.default
+targetEntityType: paragraph
+bundle: existing_content_card
+mode: default
+content:
+  sa_existing_content:
+    type: entity_reference_entity_view
+    label: hidden
+    settings:
+      view_mode: teaser
+      link: false
+    third_party_settings:
+      nomarkup:
+        enabled: true
+        separator: '|'
+        referenced_entity: '1'
+    weight: 0
+    region: content
+hidden: {  }
