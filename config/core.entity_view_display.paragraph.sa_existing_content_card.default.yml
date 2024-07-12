@@ -8,7 +8,7 @@ dependencies:
     - nomarkup
 id: paragraph.sa_existing_content_card.default
 targetEntityType: paragraph
-bundle: existing_content_card
+bundle: sa_existing_content_card
 mode: default
 content:
   sa_existing_content:
