@@ -18,6 +18,7 @@
         "drupal/nomarkup": "^1.0",
         "drupal/paragraphs": "*",
         "drupal/paragraphs_edit": "*",
+        "drupal/swiper_formatter": "^2.0@beta",
         "drupal/ui_patterns_field_formatters": "*",
         "drupal/ui_patterns_field_group": "*",
         "drupal/viewsreference": "^2.0@beta",
