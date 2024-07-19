@@ -2,7 +2,7 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.field.paragraph.multi_item_carousel.sa_existing_content
+    - field.field.paragraph.sa_multi_item_carousel.sa_existing_content
     - paragraphs.paragraphs_type.sa_multi_item_carousel
 id: paragraph.sa_multi_item_carousel.default
 targetEntityType: paragraph
