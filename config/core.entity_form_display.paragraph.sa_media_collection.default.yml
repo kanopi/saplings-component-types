@@ -1,0 +1,67 @@
+uuid: 6f422d63-f63b-462b-b7d0-608b0acb0c49
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.media_collection.sa_description
+    - field.field.paragraph.media_collection.sa_margin
+    - field.field.paragraph.media_collection.sa_media_multiple
+    - field.field.paragraph.media_collection.sa_padding
+    - paragraphs.paragraphs_type.media_collection
+  module:
+    - field_group
+    - media_library
+    - text
+third_party_settings:
+  field_group:
+    group_layout:
+      children:
+        - sa_margin
+        - sa_padding
+      label: Layout
+      region: content
+      parent_name: ''
+      weight: 2
+      format_type: details
+      format_settings:
+        classes: ''
+        show_empty_fields: false
+        id: ''
+        open: false
+        description: ''
+        required_fields: true
+id: paragraph.media_collection.default
+targetEntityType: paragraph
+bundle: media_collection
+mode: default
+content:
+  sa_description:
+    type: text_textarea
+    weight: 1
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  sa_margin:
+    type: options_select
+    weight: 3
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  sa_media_multiple:
+    type: media_library_widget
+    weight: 0
+    region: content
+    settings:
+      media_types: {  }
+    third_party_settings: {  }
+  sa_padding:
+    type: options_select
+    weight: 4
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

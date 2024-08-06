@@ -1,0 +1,23 @@
+uuid: dfc8bf8e-d739-444f-8d69-f87b4ba8b694
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.sa_padding
+    - paragraphs.paragraphs_type.media_collection
+  module:
+    - options
+id: paragraph.media_collection.sa_padding
+field_name: sa_padding
+entity_type: paragraph
+bundle: media_collection
+label: Padding
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 'pt-3 pb-3'
+default_value_callback: ''
+settings: {  }
+field_type: list_string

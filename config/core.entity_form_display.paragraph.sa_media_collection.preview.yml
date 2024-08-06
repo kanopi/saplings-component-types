@@ -1,0 +1,42 @@
+uuid: 764511fe-a0ab-44bb-b394-a53ca2c787f7
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_form_mode.paragraph.preview
+    - field.field.paragraph.media_collection.sa_description
+    - field.field.paragraph.media_collection.sa_margin
+    - field.field.paragraph.media_collection.sa_media_multiple
+    - field.field.paragraph.media_collection.sa_padding
+    - paragraphs.paragraphs_type.media_collection
+  module:
+    - text
+id: paragraph.media_collection.preview
+targetEntityType: paragraph
+bundle: media_collection
+mode: preview
+content:
+  sa_description:
+    type: text_textarea
+    weight: 2
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  sa_margin:
+    type: options_select
+    weight: 4
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  sa_padding:
+    type: options_select
+    weight: 5
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  created: true
+  sa_media_multiple: true
+  status: true

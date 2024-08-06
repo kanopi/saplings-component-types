@@ -1,0 +1,24 @@
+uuid: 1932fadf-0c3f-4acb-ac35-078b8b33b0a0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.media.sa_caption
+    - filter.format.full_html
+    - media.type.image
+  module:
+    - text
+id: media.image.sa_caption
+field_name: sa_caption
+entity_type: media
+bundle: image
+label: Caption
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats:
+    - full_html
+field_type: text_long

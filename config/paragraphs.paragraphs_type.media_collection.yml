@@ -1,0 +1,10 @@
+uuid: a828a731-1823-4428-88e9-61e03cec6b34
+langcode: en
+status: true
+dependencies: {  }
+id: media_collection
+label: 'Media Collection'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

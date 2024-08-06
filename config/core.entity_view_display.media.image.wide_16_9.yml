@@ -1,0 +1,39 @@
+uuid: dab858cc-8426-414f-9a9b-398cc8f75e48
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.media.wide_16_9
+    - field.field.media.image.field_media_image
+    - field.field.media.image.sa_caption
+    - media.type.image
+  module:
+    - easy_responsive_images
+_core:
+  default_config_hash: bW1eLJNCKJ7Xp5MzkYy3yCMaH065ELtAJw8hIWsqt-o
+id: media.image.wide_16_9
+targetEntityType: media
+bundle: image
+mode: wide_16_9
+content:
+  field_media_image:
+    type: easy_responsive_images
+    label: visually_hidden
+    settings:
+      image_link: ''
+      image_handling: aspect_ratio
+      aspect_ratio: '16_9'
+      multiplier: 1x
+      image_loading:
+        attribute: lazy
+      cover: 0
+      image_style: ''
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  created: true
+  name: true
+  sa_caption: true
+  thumbnail: true
+  uid: true

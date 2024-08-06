@@ -1,0 +1,11 @@
+uuid: 716e76e0-40fa-4606-8d76-0116a3b26fd6
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+id: media.media_collection
+label: 'Media Collection'
+description: ''
+targetEntityType: media
+cache: true
