@@ -1,0 +1,38 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.media.wide_3_2
+    - field.field.media.image.field_media_image
+    - field.field.media.image.sa_caption
+    - media.type.image
+  module:
+    - easy_responsive_images
+_core:
+  default_config_hash: AfHt_1pdHk5V2ZufBMaLobi1zSqIAWsVBbPX7wOFUfU
+id: media.image.wide_3_2
+targetEntityType: media
+bundle: image
+mode: wide_3_2
+content:
+  field_media_image:
+    type: easy_responsive_images
+    label: visually_hidden
+    settings:
+      image_link: ''
+      image_handling: aspect_ratio
+      aspect_ratio: '3_2'
+      multiplier: 1x
+      image_loading:
+        attribute: lazy
+      cover: 0
+      image_style: ''
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  created: true
+  name: true
+  sa_caption: true
+  thumbnail: true
+  uid: true

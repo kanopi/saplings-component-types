@@ -1,0 +1,23 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.media.sa_caption
+    - filter.format.full_html
+    - media.type.remote_video
+  module:
+    - text
+id: media.remote_video.sa_caption
+field_name: sa_caption
+entity_type: media
+bundle: remote_video
+label: Caption
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats:
+    - full_html
+field_type: text_long

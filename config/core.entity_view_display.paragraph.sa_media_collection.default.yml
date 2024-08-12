@@ -1,0 +1,61 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.media_collection.sa_container
+    - field.field.paragraph.media_collection.sa_description
+    - field.field.paragraph.media_collection.sa_header
+    - field.field.paragraph.media_collection.sa_margin
+    - field.field.paragraph.media_collection.sa_media_multiple
+    - field.field.paragraph.media_collection.sa_padding
+    - paragraphs.paragraphs_type.media_collection
+  module:
+    - element_class_formatter
+    - nomarkup
+    - text
+id: paragraph.media_collection.default
+targetEntityType: paragraph
+bundle: media_collection
+mode: default
+content:
+  sa_description:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  sa_header:
+    type: wrapper_class
+    label: hidden
+    settings:
+      class: ''
+      tag: h2
+      link: false
+      link_class: ''
+      summary: false
+      trim: 200
+    third_party_settings:
+      nomarkup:
+        enabled: false
+        separator: '|'
+        referenced_entity: ''
+    weight: 0
+    region: content
+  sa_media_multiple:
+    type: entity_reference_entity_view
+    label: hidden
+    settings:
+      view_mode: media_collection
+      link: false
+    third_party_settings:
+      nomarkup:
+        enabled: false
+        separator: '|'
+        referenced_entity: '0'
+    weight: 2
+    region: content
+hidden:
+  sa_container: true
+  sa_margin: true
+  sa_padding: true
