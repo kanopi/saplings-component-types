@@ -7,6 +7,7 @@ dependencies:
     - field.field.paragraph.media_collection.sa_margin
     - field.field.paragraph.media_collection.sa_media_multiple
     - field.field.paragraph.media_collection.sa_padding
+    - field.field.paragraph.media_collection.sa_label
     - paragraphs.paragraphs_type.media_collection
   module:
     - text
@@ -34,6 +35,14 @@ content:
     weight: 5
     region: content
     settings: {  }
+    third_party_settings: {  }
+  sa_label:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
     third_party_settings: {  }
 hidden:
   created: true

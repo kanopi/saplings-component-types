@@ -2,7 +2,9 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.paragraph.media_collection.sa_container
     - field.field.paragraph.media_collection.sa_description
+    - field.field.paragraph.media_collection.sa_header
     - field.field.paragraph.media_collection.sa_margin
     - field.field.paragraph.media_collection.sa_media_multiple
     - field.field.paragraph.media_collection.sa_padding
@@ -15,12 +17,13 @@ third_party_settings:
   field_group:
     group_layout:
       children:
+        - sa_container
         - sa_margin
         - sa_padding
       label: Layout
       region: content
       parent_name: ''
-      weight: 2
+      weight: 3
       format_type: details
       format_settings:
         classes: ''
@@ -34,6 +37,12 @@ targetEntityType: paragraph
 bundle: media_collection
 mode: default
 content:
+  sa_container:
+    type: options_select
+    weight: 22
+    region: content
+    settings: {  }
+    third_party_settings: {  }
   sa_description:
     type: text_textarea
     weight: 1
@@ -42,22 +51,30 @@ content:
       rows: 5
       placeholder: ''
     third_party_settings: {  }
+  sa_header:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
   sa_margin:
     type: options_select
-    weight: 3
+    weight: 23
     region: content
     settings: {  }
     third_party_settings: {  }
   sa_media_multiple:
     type: media_library_widget
-    weight: 0
+    weight: 2
     region: content
     settings:
       media_types: {  }
     third_party_settings: {  }
   sa_padding:
     type: options_select
-    weight: 4
+    weight: 24
     region: content
     settings: {  }
     third_party_settings: {  }
