@@ -21,5 +21,6 @@ install:
   - nomarkup
   - paragraphs
   - paragraphs_edit
+  - swiper_formatter
   - ui_patterns_field_formatters
   - viewsreference

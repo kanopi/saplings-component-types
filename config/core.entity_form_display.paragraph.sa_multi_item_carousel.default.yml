@@ -2,11 +2,11 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.field.paragraph.sa_existing_content_card.sa_existing_content
-    - paragraphs.paragraphs_type.sa_existing_content_card
-id: paragraph.sa_existing_content_card.default
+    - field.field.paragraph.sa_multi_item_carousel.sa_existing_content
+    - paragraphs.paragraphs_type.sa_multi_item_carousel
+id: paragraph.sa_multi_item_carousel.default
 targetEntityType: paragraph
-bundle: sa_existing_content_card
+bundle: sa_multi_item_carousel
 mode: default
 content:
   sa_existing_content:

@@ -1,0 +1,32 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.sa_multi_item_carousel.sa_existing_content
+    - paragraphs.paragraphs_type.sa_multi_item_carousel
+    - swiper_formatter.swiper_formatter.default
+  module:
+    - nomarkup
+    - swiper_formatter
+id: paragraph.sa_multi_item_carousel.default
+targetEntityType: paragraph
+bundle: sa_multi_item_carousel
+mode: default
+content:
+  sa_existing_content:
+    type: swiper_formatter_entity
+    label: hidden
+    settings:
+      view_mode: teaser
+      template: default
+      caption: ''
+      custom_link: null
+      link: false
+    third_party_settings:
+      nomarkup:
+        enabled: true
+        separator: ''
+        referenced_entity: ''
+    weight: 0
+    region: content
+hidden: {  }
