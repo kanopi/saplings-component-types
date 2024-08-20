@@ -28,7 +28,7 @@ third_party_settings:
       label: Styles
       region: content
       parent_name: ''
-      weight: 3
+      weight: 4
       format_type: details
       format_settings:
         classes: row
@@ -71,8 +71,8 @@ third_party_settings:
         required_fields: true
     group_width:
       children:
-        - sa_container
         - sa_width
+        - sa_container
       label: Width
       region: hidden
       parent_name: group_layout
@@ -100,6 +100,8 @@ third_party_settings:
         formatter: closed
         description: ''
         required_fields: true
+_core:
+  default_config_hash: orCAZZw3_akQjgMudMjgEeSdac744rrlI6T7_cpj4Ek
 id: paragraph.sa_side_by_side.preview
 targetEntityType: paragraph
 bundle: sa_side_by_side
@@ -119,7 +121,7 @@ content:
     third_party_settings: {  }
   sa_description:
     type: text_textarea
-    weight: 1
+    weight: 2
     region: content
     settings:
       rows: 5
@@ -127,7 +129,7 @@ content:
     third_party_settings: {  }
   sa_header:
     type: string_textfield
-    weight: 0
+    weight: 1
     region: content
     settings:
       size: 60
@@ -149,7 +151,7 @@ content:
     third_party_settings: {  }
   sa_media:
     type: media_library_widget
-    weight: 2
+    weight: 3
     region: content
     settings:
       media_types:

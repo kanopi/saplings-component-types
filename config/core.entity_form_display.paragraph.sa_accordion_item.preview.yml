@@ -1,3 +1,4 @@
+uuid: d238cfcc-ffaa-4133-8cc3-fc19f706197a
 langcode: en
 status: true
 dependencies:
@@ -9,6 +10,8 @@ dependencies:
     - paragraphs.paragraphs_type.sa_accordion_item
   module:
     - text
+_core:
+  default_config_hash: 70SjzViF8tXzDnXjtozDVq1xcaK_bC3w9aFafinKThQ
 id: paragraph.sa_accordion_item.preview
 targetEntityType: paragraph
 bundle: sa_accordion_item
@@ -16,7 +19,7 @@ mode: preview
 content:
   sa_description:
     type: text_textarea
-    weight: 1
+    weight: 2
     region: content
     settings:
       rows: 5
@@ -24,7 +27,7 @@ content:
     third_party_settings: {  }
   sa_header:
     type: string_textfield
-    weight: 0
+    weight: 1
     region: content
     settings:
       size: 60
