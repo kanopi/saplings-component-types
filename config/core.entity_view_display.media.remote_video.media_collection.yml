@@ -5,7 +5,7 @@ dependencies:
     - core.entity_view_mode.media.media_collection
     - field.field.media.remote_video.field_media_oembed_video
     - field.field.media.remote_video.sa_caption
-    - image.style.responsive_16_9_1000w
+    - image.style.responsive_16_9_1100w
     - media.type.remote_video
   module:
     - image
@@ -40,7 +40,7 @@ content:
     label: hidden
     settings:
       image_link: ''
-      image_style: responsive_16_9_1000w
+      image_style: responsive_16_9_1100w
       image_loading:
         attribute: lazy
     third_party_settings:
