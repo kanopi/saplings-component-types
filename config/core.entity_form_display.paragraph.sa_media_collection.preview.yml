@@ -13,6 +13,7 @@ dependencies:
     - paragraphs.paragraphs_type.media_collection
   module:
     - field_group
+    - media_library
     - text
 third_party_settings:
   field_group:
@@ -24,7 +25,7 @@ third_party_settings:
       label: Layout
       region: content
       parent_name: ''
-      weight: 4
+      weight: 7
       format_type: details
       format_settings:
         classes: ''
@@ -41,7 +42,7 @@ mode: preview
 content:
   sa_container:
     type: options_select
-    weight: 7
+    weight: 3
     region: content
     settings: {  }
     third_party_settings: {  }
@@ -71,23 +72,20 @@ content:
     third_party_settings: {  }
   sa_margin:
     type: options_select
-    weight: 8
+    weight: 4
     region: content
     settings: {  }
     third_party_settings: {  }
   sa_media_multiple:
-    type: entity_reference_autocomplete
-    weight: 3
+    type: media_library_widget
+    weight: 6
     region: content
     settings:
-      match_operator: CONTAINS
-      match_limit: 10
-      size: 60
-      placeholder: ''
+      media_types: {  }
     third_party_settings: {  }
   sa_padding:
     type: options_select
-    weight: 9
+    weight: 5
     region: content
     settings: {  }
     third_party_settings: {  }
