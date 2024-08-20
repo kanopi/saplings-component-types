@@ -97,8 +97,6 @@ third_party_settings:
         formatter: closed
         description: ''
         required_fields: true
-_core:
-  default_config_hash: q9ZnQyFol0c4ovLqij7gzJvGrIAyI2vQDiFb1X7b8C4
 id: paragraph.sa_carousel.preview
 targetEntityType: paragraph
 bundle: sa_carousel
