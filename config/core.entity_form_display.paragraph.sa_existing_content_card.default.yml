@@ -2,7 +2,7 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.field.paragraph.existing_content_card.sa_existing_content
+    - field.field.paragraph.sa_existing_content_card.sa_existing_content
     - paragraphs.paragraphs_type.sa_existing_content_card
 id: paragraph.sa_existing_content_card.default
 targetEntityType: paragraph
