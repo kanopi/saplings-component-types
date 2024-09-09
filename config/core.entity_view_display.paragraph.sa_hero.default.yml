@@ -2,7 +2,7 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.field.paragraph.sa_hero.field_justify_content_vertically
+    - field.field.paragraph.sa_hero.sa_justify_content_vertically
     - field.field.paragraph.sa_hero.sa_container
     - field.field.paragraph.sa_hero.sa_hero_background
     - field.field.paragraph.sa_hero.sa_hero_content
@@ -22,7 +22,7 @@ targetEntityType: paragraph
 bundle: sa_hero
 mode: default
 content:
-  field_justify_content_vertically:
+  sa_justify_content_vertically:
     type: list_key
     label: hidden
     settings: {  }
