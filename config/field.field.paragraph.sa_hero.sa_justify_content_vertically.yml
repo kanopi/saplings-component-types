@@ -1,0 +1,22 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.sa_justify_content_vertically
+    - paragraphs.paragraphs_type.sa_hero
+  module:
+    - options
+id: paragraph.sa_hero.sa_justify_content_vertically
+field_name: sa_justify_content_vertically
+entity_type: paragraph
+bundle: sa_hero
+label: 'Justify Content Vertically'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: justify-content-center
+default_value_callback: ''
+settings: {  }
+field_type: list_string

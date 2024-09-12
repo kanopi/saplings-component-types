@@ -1,0 +1,20 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.sa_include_mute_button
+    - paragraphs.paragraphs_type.sa_hero
+id: paragraph.sa_hero.sa_include_mute_button
+field_name: sa_include_mute_button
+entity_type: paragraph
+bundle: sa_hero
+label: 'Include Mute Button'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean
