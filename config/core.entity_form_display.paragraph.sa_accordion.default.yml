@@ -3,11 +3,9 @@ status: true
 dependencies:
   config:
     - field.field.paragraph.sa_accordion.sa_accordion_item
-    - field.field.paragraph.sa_accordion.sa_accordion_mobile
     - field.field.paragraph.sa_accordion.sa_background
     - field.field.paragraph.sa_accordion.sa_container
     - field.field.paragraph.sa_accordion.sa_description
-    - field.field.paragraph.sa_accordion.sa_display_as_vertical_tabs
     - field.field.paragraph.sa_accordion.sa_header
     - field.field.paragraph.sa_accordion.sa_label
     - field.field.paragraph.sa_accordion.sa_margin
@@ -98,6 +96,8 @@ third_party_settings:
         formatter: closed
         description: ''
         required_fields: true
+_core:
+  default_config_hash: 23eYwah-Uiblu4xD8vFmjzjlFXJXRc92X-QZqaIb3eI
 id: paragraph.sa_accordion.default
 targetEntityType: paragraph
 bundle: sa_accordion
@@ -123,13 +123,6 @@ content:
         convert: '0'
         duplicate: duplicate
     third_party_settings: {  }
-  sa_accordion_mobile:
-    type: boolean_checkbox
-    weight: 7
-    region: content
-    settings:
-      display_label: true
-    third_party_settings: {  }
   sa_background:
     type: options_select
     weight: 7
@@ -149,13 +142,6 @@ content:
     settings:
       rows: 5
       placeholder: ''
-    third_party_settings: {  }
-  sa_display_as_vertical_tabs:
-    type: boolean_checkbox
-    weight: 6
-    region: content
-    settings:
-      display_label: true
     third_party_settings: {  }
   sa_header:
     type: string_textfield
