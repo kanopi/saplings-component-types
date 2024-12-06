@@ -12,6 +12,7 @@
     ],
     "require": {
         "drupal/block_field": "^1.0@RC",
+        "drupal/core": ">=10.4",
         "drupal/ds": "^3.24",
         "drupal/element_class_formatter": "^2.0@beta",
         "drupal/entity_reference_revisions": "^1.12",
@@ -22,6 +23,6 @@
         "drupal/ui_patterns_field_group": "^2.0.x-dev@dev",
         "drupal/viewsreference": "^2.0@beta",
         "kanopi/saplings-component-base": "^1",
-        "kanopi/saplings-editorial": "^1"
+        "kanopi/saplings-media": "^1"
     }
 }

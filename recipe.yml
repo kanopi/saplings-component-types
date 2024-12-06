@@ -3,7 +3,7 @@ description: 'Installs Saplings component types.'
 type: 'Site'
 recipes:
   - saplings-component-base
-  - saplings-editorial
+  - saplings-media
 install:
   # Core.
   - block_content
@@ -62,4 +62,3 @@ config:
     - field.storage.paragraph.sa_stat_prefix
     - field.storage.paragraph.sa_stat_suffix
     - field.storage.paragraph.sa_tab_item
-
