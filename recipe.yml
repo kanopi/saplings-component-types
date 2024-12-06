@@ -23,3 +23,43 @@ install:
   - paragraphs_edit
   - ui_patterns_field_formatters
   - viewsreference
+config:
+  # Treat the field storage config strictly.
+  # All others will be skipped if they exist.
+  strict:
+    - field.storage.media.sa_caption
+    - field.storage.paragraph.sa_accordion_item
+    - field.storage.paragraph.sa_accordion_mobile
+    - field.storage.paragraph.sa_align_items_vertically
+    - field.storage.paragraph.sa_block
+    - field.storage.paragraph.sa_card_image
+    - field.storage.paragraph.sa_carousel_caption
+    - field.storage.paragraph.sa_carousel_image
+    - field.storage.paragraph.sa_carousel_item
+    - field.storage.paragraph.sa_column_gutters
+    - field.storage.paragraph.sa_column_items
+    - field.storage.paragraph.sa_columns_desktop
+    - field.storage.paragraph.sa_columns_mobile
+    - field.storage.paragraph.sa_columns_tablet
+    - field.storage.paragraph.sa_display_as_vertical_tabs
+    - field.storage.paragraph.sa_existing_content
+    - field.storage.paragraph.sa_faq_item
+    - field.storage.paragraph.sa_filtered_list
+    - field.storage.paragraph.sa_hero_background
+    - field.storage.paragraph.sa_hero_content
+    - field.storage.paragraph.sa_include_mute_button
+    - field.storage.paragraph.sa_include_pause_button
+    - field.storage.paragraph.sa_justify_content_horizontal
+    - field.storage.paragraph.sa_justify_content_vertically
+    - field.storage.paragraph.sa_link
+    - field.storage.paragraph.sa_media_multiple
+    - field.storage.paragraph.sa_media
+    - field.storage.paragraph.sa_overlay_invert
+    - field.storage.paragraph.sa_overlay
+    - field.storage.paragraph.sa_reverse_order
+    - field.storage.paragraph.sa_stat_description
+    - field.storage.paragraph.sa_stat_number
+    - field.storage.paragraph.sa_stat_prefix
+    - field.storage.paragraph.sa_stat_suffix
+    - field.storage.paragraph.sa_tab_item
+
