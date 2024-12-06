@@ -12,16 +12,16 @@
     ],
     "require": {
         "drupal/block_field": "^1.0@RC",
-        "drupal/ds": "*",
+        "drupal/ds": "^3.24",
         "drupal/element_class_formatter": "^2.0@beta",
-        "drupal/entity_reference_revisions": "*",
+        "drupal/entity_reference_revisions": "^1.12",
         "drupal/nomarkup": "^1.0",
-        "drupal/paragraphs": "*",
-        "drupal/paragraphs_edit": "*",
-        "drupal/ui_patterns_field_formatters": "*",
-        "drupal/ui_patterns_field_group": "*",
+        "drupal/paragraphs": "^1.18",
+        "drupal/paragraphs_edit": "^3.0",
+        "drupal/ui_patterns_field_formatters": "^2.1",
+        "drupal/ui_patterns_field_group": "^2.0.x-dev@dev",
         "drupal/viewsreference": "^2.0@beta",
-        "kanopi/saplings-component-base": "*",
-        "kanopi/saplings-editorial": "*"
-     }
+        "kanopi/saplings-component-base": "^1",
+        "kanopi/saplings-editorial": "^1"
+    }
 }
