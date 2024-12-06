@@ -1,6 +1,6 @@
 {
     "name": "kanopi/saplings-component-types",
-    "description": "Installs Saplings component types.",
+    "description": "Creates Saplings components.",
     "type": "drupal-recipe",
     "license": "GPL-2.0-or-later",
     "authors": [
@@ -23,6 +23,7 @@
         "drupal/ui_patterns_field_group": "^2.0.x-dev@dev",
         "drupal/viewsreference": "^2.0@beta",
         "kanopi/saplings-component-base": "^1",
+        "kanopi/saplings-full-html-editor": "^1",
         "kanopi/saplings-media": "^1"
     }
 }

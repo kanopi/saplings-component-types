@@ -1,13 +1,13 @@
-name: 'Saplings - Component types'
-description: 'Installs Saplings component types.'
+name: 'Saplings - Components'
+description: 'Creates Saplings components.'
 type: 'Site'
 recipes:
   - saplings-component-base
+  - saplings-full-html-editor
   - saplings-media
 install:
   # Core.
   - block_content
-  - ckeditor5
   - link
   - media
   - media_library
