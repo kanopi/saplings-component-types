@@ -8,14 +8,14 @@ dependencies:
     - field.field.paragraph.media_collection.sa_margin
     - field.field.paragraph.media_collection.sa_media_multiple
     - field.field.paragraph.media_collection.sa_padding
-    - paragraphs.paragraphs_type.media_collection
+    - paragraphs.paragraphs_type.sa_media_collection
   module:
     - element_class_formatter
     - nomarkup
     - text
 id: paragraph.media_collection.default
 targetEntityType: paragraph
-bundle: media_collection
+bundle: sa_media_collection
 mode: default
 content:
   sa_description:
