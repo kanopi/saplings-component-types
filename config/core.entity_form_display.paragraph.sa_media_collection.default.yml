@@ -32,7 +32,7 @@ third_party_settings:
         open: false
         description: ''
         required_fields: true
-id: paragraph.media_collection.default
+id: paragraph.sa_media_collection.default
 targetEntityType: paragraph
 bundle: sa_media_collection
 mode: default

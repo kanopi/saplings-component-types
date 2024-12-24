@@ -3,11 +3,11 @@ status: true
 dependencies:
   config:
     - field.storage.paragraph.sa_label
-    - paragraphs.paragraphs_type.media_collection
-id: paragraph.media_collection.sa_label
+    - paragraphs.paragraphs_type.sa_media_collection
+id: paragraph.sa_media_collection.sa_label
 field_name: sa_label
 entity_type: paragraph
-bundle: media_collection
+bundle: sa_media_collection
 label: 'Label (Not Displayed)'
 description: ''
 required: false

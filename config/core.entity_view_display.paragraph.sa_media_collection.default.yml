@@ -13,7 +13,7 @@ dependencies:
     - element_class_formatter
     - nomarkup
     - text
-id: paragraph.media_collection.default
+id: paragraph.sa_media_collection.default
 targetEntityType: paragraph
 bundle: sa_media_collection
 mode: default
