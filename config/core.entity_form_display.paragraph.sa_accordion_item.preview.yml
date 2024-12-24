@@ -1,4 +1,3 @@
-uuid: d238cfcc-ffaa-4133-8cc3-fc19f706197a
 langcode: en
 status: true
 dependencies:
@@ -10,8 +9,6 @@ dependencies:
     - paragraphs.paragraphs_type.sa_accordion_item
   module:
     - text
-_core:
-  default_config_hash: 70SjzViF8tXzDnXjtozDVq1xcaK_bC3w9aFafinKThQ
 id: paragraph.sa_accordion_item.preview
 targetEntityType: paragraph
 bundle: sa_accordion_item
