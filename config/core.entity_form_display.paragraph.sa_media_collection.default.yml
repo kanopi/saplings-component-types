@@ -2,12 +2,12 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.field.paragraph.media_collection.sa_container
-    - field.field.paragraph.media_collection.sa_description
-    - field.field.paragraph.media_collection.sa_header
-    - field.field.paragraph.media_collection.sa_margin
-    - field.field.paragraph.media_collection.sa_media_multiple
-    - field.field.paragraph.media_collection.sa_padding
+    - field.field.paragraph.sa_media_collection.sa_container
+    - field.field.paragraph.sa_media_collection.sa_description
+    - field.field.paragraph.sa_media_collection.sa_header
+    - field.field.paragraph.sa_media_collection.sa_margin
+    - field.field.paragraph.sa_media_collection.sa_media_multiple
+    - field.field.paragraph.sa_media_collection.sa_padding
     - paragraphs.paragraphs_type.sa_media_collection
   module:
     - field_group
@@ -32,7 +32,7 @@ third_party_settings:
         open: false
         description: ''
         required_fields: true
-id: paragraph.media_collection.default
+id: paragraph.sa_media_collection.default
 targetEntityType: paragraph
 bundle: sa_media_collection
 mode: default

@@ -5,11 +5,11 @@ dependencies:
     - field.storage.paragraph.sa_media_multiple
     - media.type.image
     - media.type.remote_video
-    - paragraphs.paragraphs_type.media_collection
-id: paragraph.media_collection.sa_media_multiple
+    - paragraphs.paragraphs_type.sa_media_collection
+id: paragraph.sa_media_collection.sa_media_multiple
 field_name: sa_media_multiple
 entity_type: paragraph
-bundle: media_collection
+bundle: sa_media_collection
 label: 'Media Multiple'
 description: ''
 required: false
