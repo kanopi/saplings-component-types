@@ -20,7 +20,6 @@
         "drupal/paragraphs": "^1.18",
         "drupal/paragraphs_edit": "^3.0",
         "drupal/ui_patterns_field_formatters": "^2.1",
-        "drupal/ui_patterns_field_group": "^2.0.x-dev@dev",
         "drupal/viewsreference": "^2.0@beta",
         "kanopi/saplings-component-base": "^1",
         "kanopi/saplings-full-html-editor": "^1",
