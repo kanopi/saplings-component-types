@@ -6,7 +6,7 @@ dependencies:
     - node.type.sa_page
     - node.type.sa_post
     - paragraphs.paragraphs_type.sa_multi_item_carousel
-id: paragraph.multi_item_carousel.sa_existing_content
+id: paragraph.sa_multi_item_carousel.sa_existing_content
 field_name: sa_existing_content
 entity_type: paragraph
 bundle: sa_multi_item_carousel
