@@ -2,13 +2,13 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.paragraph.sa_accordion_mobile
-    - paragraphs.paragraphs_type.sa_accordion
-id: paragraph.sa_accordion.sa_accordion_mobile
-field_name: sa_accordion_mobile
+    - field.storage.paragraph.sa_include_mute_button
+    - paragraphs.paragraphs_type.sa_hero
+id: paragraph.sa_hero.sa_include_mute_button
+field_name: sa_include_mute_button
 entity_type: paragraph
-bundle: sa_accordion
-label: 'Display as Accordion on Mobile'
+bundle: sa_hero
+label: 'Include Mute Button'
 description: ''
 required: false
 translatable: false

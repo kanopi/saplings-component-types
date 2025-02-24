@@ -14,15 +14,16 @@ dependencies:
     - paragraphs.paragraphs_type.sa_text
   module:
     - field_group
+    - text
 third_party_settings:
   field_group:
     group_styles:
       children:
         - group_layout
       label: Styles
-      region: hidden
+      region: content
       parent_name: ''
-      weight: 7
+      weight: 3
       format_type: details
       format_settings:
         classes: row
@@ -37,7 +38,7 @@ third_party_settings:
         - group_spacing
         - group_background
       label: Layout
-      region: hidden
+      region: content
       parent_name: group_styles
       weight: 20
       format_type: tabs
@@ -52,7 +53,7 @@ third_party_settings:
         - sa_margin
         - sa_padding
       label: Spacing
-      region: hidden
+      region: content
       parent_name: group_layout
       weight: 6
       format_type: tab
@@ -68,7 +69,7 @@ third_party_settings:
         - sa_container
         - sa_width
       label: Width
-      region: hidden
+      region: content
       parent_name: group_layout
       weight: 5
       format_type: tab
@@ -83,7 +84,7 @@ third_party_settings:
       children:
         - sa_background
       label: Background
-      region: hidden
+      region: content
       parent_name: group_layout
       weight: 7
       format_type: tab
@@ -99,6 +100,26 @@ targetEntityType: paragraph
 bundle: sa_text
 mode: preview
 content:
+  sa_background:
+    type: options_select
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  sa_container:
+    type: options_select
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  sa_description:
+    type: text_textarea
+    weight: 2
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
   sa_header:
     type: string_textfield
     weight: 1
@@ -115,12 +136,24 @@ content:
       size: 60
       placeholder: ''
     third_party_settings: {  }
+  sa_margin:
+    type: options_select
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  sa_padding:
+    type: options_select
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  sa_width:
+    type: options_select
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
 hidden:
   created: true
-  sa_background: true
-  sa_container: true
-  sa_description: true
-  sa_margin: true
-  sa_padding: true
-  sa_width: true
   status: true

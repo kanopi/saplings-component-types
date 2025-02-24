@@ -1,8 +1,8 @@
 langcode: en
 status: true
 dependencies: {  }
-id: sa_stat
-label: Stat
+id: sa_media_collection
+label: 'Media Collection'
 icon_uuid: null
 icon_default: null
 description: ''

@@ -44,7 +44,7 @@ swiper_options:
     loadPrevNext: false
     loadPrevNextAmount: 1
     scrollingElement: window
-  source: remote
+  source: local_minified
   breakpointsBase: window
   autoHeight: true
   width: null

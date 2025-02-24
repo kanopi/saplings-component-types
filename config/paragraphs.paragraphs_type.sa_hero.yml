@@ -1,8 +1,8 @@
 langcode: en
 status: true
 dependencies: {  }
-id: sa_stat
-label: Stat
+id: sa_hero
+label: Hero
 icon_uuid: null
 icon_default: null
 description: ''

@@ -1,18 +1,24 @@
-# Saplings Component Types
+![saplings](https://github.com/kanopi/saplings/assets/5177009/a6377e32-deb2-49d8-873a-f3dd5a36fa7c)
 
-## Overview
+# Saplings - Components
 
-Welcome to the Saplings Component Types repository! This repository handles Paragraphs component types within the Saplings application.
+Creates Saplings components.
 
 ## Features
 
-- Manages Paragraphs component types used in Saplings.
-
-## Getting Started
-
-To start using Saplings Component Types, follow these steps:
-
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/kanopi/saplings-component-types.git
-   ``
+* Creates the following Paragraphs components:
+  * Accordion/Accordion Item
+  * Block
+  * Card
+  * Card (Existing)
+  * Carousel/Carousel Item
+  * Columns
+  * FAQ/FAQ Item
+  * Filtered List
+  * Hero
+  * Media
+  * Media Collection
+  * Side by Side
+  * Statistics
+  * Tab/Tabs
+  * Text
