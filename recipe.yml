@@ -27,6 +27,8 @@ install:
 config:
   # Treat the field storage config strictly.
   # All others will be skipped if they exist.
+  import:
+    swiper_formatter: "*"
   strict:
     - field.storage.media.sa_caption
     - field.storage.paragraph.sa_accordion_item
