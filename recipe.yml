@@ -21,11 +21,14 @@ install:
   - nomarkup
   - paragraphs
   - paragraphs_edit
+  - swiper_formatter
   - ui_patterns_field_formatters
   - viewsreference
 config:
   # Treat the field storage config strictly.
   # All others will be skipped if they exist.
+  import:
+    swiper_formatter: "*"
   strict:
     - field.storage.media.sa_caption
     - field.storage.paragraph.sa_accordion_item

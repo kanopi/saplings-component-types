@@ -1,0 +1,68 @@
+langcode: en
+status: true
+dependencies: {  }
+id: default
+label: Default
+description: 'This default template is mostly for demonstration purpose, feel free to edit it or create (as many) new ones.'
+breakpoint: false
+swiper_options:
+  autoplay:
+    enabled: false
+    delay: 4000
+    disableOnInteraction: true
+    pauseOnMouseEnter: false
+    reverseDirection: false
+    stopOnLastSlide: false
+    waitForTransition: true
+  navigation:
+    enabled: true
+    hideOnClick: false
+  pagination:
+    enabled: true
+    type: bullets
+    dynamicBullets: false
+    clickable: true
+  scrollbar:
+    enabled: false
+    draggable: false
+    dragSize: auto
+    hide: true
+    snapOnRelease: false
+  breakpoints:
+    -
+      breakpoint: '768'
+      swiper_template: mobile
+      weight: '0'
+    -
+      breakpoint: '960'
+      swiper_template: desktop
+      weight: '1'
+  lazy:
+    enabled: false
+    checkInView: false
+    loadOnTransitionStart: false
+    loadPrevNext: false
+    loadPrevNextAmount: 1
+    scrollingElement: window
+  source: local_minified
+  breakpointsBase: window
+  autoHeight: true
+  width: null
+  height: null
+  observer: 0
+  updateOnWindowResize: true
+  resizeObserver: true
+  direction: horizontal
+  effect: slide
+  loop: true
+  rewind: 0
+  centeredSlides: 0
+  speed: 300
+  slidesPerView: 1.5
+  spaceBetween: 10
+  slidesPerGroup: 1
+  loopedSlides: 1
+  noSwipingSelector: '.no-swipe, button, input'
+  mousewheel: 0
+  grabCursor: 0
+  cssMode: 0
