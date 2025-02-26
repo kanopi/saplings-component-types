@@ -1,0 +1,76 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.latest_news
+    - field.field.node.sa_post.sa_author
+    - field.field.node.sa_post.sa_author_url
+    - field.field.node.sa_post.sa_body
+    - field.field.node.sa_post.sa_category
+    - field.field.node.sa_post.sa_description
+    - field.field.node.sa_post.sa_external_source
+    - field.field.node.sa_post.sa_featured_image
+    - field.field.node.sa_post.sa_header_position
+    - field.field.node.sa_post.sa_overlay
+    - field.field.node.sa_post.sa_related_posts
+    - field.field.node.sa_post.sa_robots
+    - field.field.node.sa_post.sa_seo_description
+    - field.field.node.sa_post.sa_seo_image
+    - field.field.node.sa_post.sa_seo_page_title
+    - field.field.node.sa_post.sa_type
+    - node.type.sa_post
+  module:
+    - element_class_formatter
+    - nomarkup
+    - text
+    - user
+_core:
+  default_config_hash: Awd0_VToENrnk14UpryOp49wqsQlwAmah4CPjVnmRI0
+id: node.sa_post.latest_news
+targetEntityType: node
+bundle: sa_post
+mode: latest_news
+content:
+  sa_body:
+    type: text_summary_or_trimmed
+    label: hidden
+    settings:
+      trim_length: 200
+    third_party_settings:
+      nomarkup:
+        enabled: true
+        separator: '|'
+        referenced_entity: ''
+    weight: 0
+    region: content
+  sa_type:
+    type: entity_reference_label_class
+    label: hidden
+    settings:
+      link: false
+      class: tag
+      tag: span
+    third_party_settings:
+      nomarkup:
+        enabled: true
+        separator: '|'
+        referenced_entity: ''
+    weight: 1
+    region: content
+hidden:
+  links: true
+  published_at: true
+  sa_author: true
+  sa_author_url: true
+  sa_category: true
+  sa_description: true
+  sa_external_source: true
+  sa_featured_image: true
+  sa_header_position: true
+  sa_overlay: true
+  sa_related_posts: true
+  sa_robots: true
+  sa_seo_description: true
+  sa_seo_image: true
+  sa_seo_page_title: true
+  search_api_excerpt: true

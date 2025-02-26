@@ -1,0 +1,30 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_latest_news_view
+    - paragraphs.paragraphs_type.latest_news
+  module:
+    - viewsreference
+id: paragraph.latest_news.field_latest_news_view
+field_name: field_latest_news_view
+entity_type: paragraph
+bundle: latest_news
+label: 'Latest News View'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:view'
+  handler_settings:
+    target_bundles: null
+    auto_create: false
+  plugin_types:
+    block: block
+  preselect_views:
+    latest_news: latest_news
+  enabled_settings:
+    argument: argument
+field_type: viewsreference
