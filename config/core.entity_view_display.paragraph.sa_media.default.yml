@@ -15,12 +15,108 @@ dependencies:
   module:
     - element_class_formatter
     - nomarkup
+    - options
+    - sdc_display
     - text
+third_party_settings:
+  sdc_display:
+    enabled: true
+    component:
+      machine_name: 'arbor:container'
+      show_deprecated: null
+    mappings:
+      static:
+        props:
+          container: null
+          margin: null
+          padding: null
+          background: null
+          width: null
+          variant: null
+        slots:
+          header:
+            value: ''
+            format: full_html
+          description:
+            value: ''
+            format: full_html
+          content:
+            value: ''
+            format: full_html
+      dynamic:
+        props:
+          attributes: ''
+          container: sa_container
+          margin: sa_margin
+          padding: sa_padding
+          background: sa_background
+          width: sa_width
+          variant: null
+        slots:
+          header:
+            sa_header: sa_header
+            sa_background: null
+            sa_container: null
+            sa_description: null
+            sa_margin: null
+            sa_media: null
+            sa_padding: null
+            sa_width: null
+          description:
+            sa_description: sa_description
+            sa_background: null
+            sa_container: null
+            sa_header: null
+            sa_margin: null
+            sa_media: null
+            sa_padding: null
+            sa_width: null
+          content:
+            sa_media: sa_media
+            sa_background: null
+            sa_container: null
+            sa_description: null
+            sa_header: null
+            sa_margin: null
+            sa_padding: null
+            sa_width: null
 id: paragraph.sa_media.default
 targetEntityType: paragraph
 bundle: sa_media
 mode: default
 content:
+  sa_background:
+    type: list_key
+    label: hidden
+    settings: {  }
+    third_party_settings:
+      nomarkup:
+        enabled: true
+        separator: '|'
+        referenced_entity: ''
+      sdc_display:
+        enabled: 0
+        component:
+          machine_name: null
+          show_deprecated: 0
+    weight: 3
+    region: content
+  sa_container:
+    type: list_key
+    label: hidden
+    settings: {  }
+    third_party_settings:
+      nomarkup:
+        enabled: true
+        separator: '|'
+        referenced_entity: ''
+      sdc_display:
+        enabled: 0
+        component:
+          machine_name: null
+          show_deprecated: 0
+    weight: 4
+    region: content
   sa_description:
     type: text_default
     label: hidden
@@ -49,6 +145,22 @@ content:
         referenced_entity: ''
     weight: 0
     region: content
+  sa_margin:
+    type: list_key
+    label: hidden
+    settings: {  }
+    third_party_settings:
+      nomarkup:
+        enabled: true
+        separator: '|'
+        referenced_entity: ''
+      sdc_display:
+        enabled: 0
+        component:
+          machine_name: null
+          show_deprecated: 0
+    weight: 5
+    region: content
   sa_media:
     type: entity_reference_entity_view
     label: hidden
@@ -62,10 +174,37 @@ content:
         referenced_entity: '1'
     weight: 2
     region: content
+  sa_padding:
+    type: list_key
+    label: hidden
+    settings: {  }
+    third_party_settings:
+      nomarkup:
+        enabled: true
+        separator: '|'
+        referenced_entity: ''
+      sdc_display:
+        enabled: 0
+        component:
+          machine_name: null
+          show_deprecated: 0
+    weight: 6
+    region: content
+  sa_width:
+    type: list_key
+    label: hidden
+    settings: {  }
+    third_party_settings:
+      nomarkup:
+        enabled: true
+        separator: '|'
+        referenced_entity: ''
+      sdc_display:
+        enabled: 0
+        component:
+          machine_name: null
+          show_deprecated: 0
+    weight: 7
+    region: content
 hidden:
-  sa_background: true
-  sa_container: true
   sa_label: true
-  sa_margin: true
-  sa_padding: true
-  sa_width: true
