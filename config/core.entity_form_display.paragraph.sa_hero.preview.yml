@@ -2,6 +2,7 @@ langcode: en
 status: true
 dependencies:
   config:
+    - core.entity_form_mode.paragraph.preview
     - field.field.paragraph.sa_hero.sa_container
     - field.field.paragraph.sa_hero.sa_hero_background
     - field.field.paragraph.sa_hero.sa_hero_content
@@ -22,16 +23,15 @@ third_party_settings:
   field_group:
     group_options:
       children:
-        - sa_margin
-        - sa_padding
         - sa_container
         - sa_width
-        - sa_justify_content_horizontal
+        - sa_margin
+        - sa_padding
+        - sa_include_mute_button
+        - sa_include_pause_button
         - sa_justify_content_vertically
         - sa_overlay
         - sa_overlay_invert
-        - sa_include_pause_button
-        - sa_include_mute_button
       label: Options
       region: content
       parent_name: ''
@@ -41,17 +41,18 @@ third_party_settings:
         classes: ''
         show_empty_fields: false
         id: ''
+        label_as_html: false
         open: false
         description: ''
         required_fields: true
-id: paragraph.sa_hero.default
+id: paragraph.sa_hero.preview
 targetEntityType: paragraph
 bundle: sa_hero
-mode: default
+mode: preview
 content:
   sa_container:
     type: options_select
-    weight: 5
+    weight: 3
     region: content
     settings: {  }
     third_party_settings: {  }
@@ -72,51 +73,51 @@ content:
     third_party_settings: {  }
   sa_include_mute_button:
     type: boolean_checkbox
-    weight: 12
+    weight: 7
     region: content
     settings:
       display_label: true
     third_party_settings: {  }
   sa_include_pause_button:
     type: boolean_checkbox
-    weight: 11
+    weight: 8
     region: content
     settings:
       display_label: true
     third_party_settings: {  }
   sa_justify_content_vertically:
     type: options_select
-    weight: 8
+    weight: 9
     region: content
     settings: {  }
     third_party_settings: {  }
   sa_margin:
     type: options_select
-    weight: 3
+    weight: 5
     region: content
     settings: {  }
     third_party_settings: {  }
   sa_overlay:
     type: options_select
-    weight: 9
+    weight: 10
     region: content
     settings: {  }
     third_party_settings: {  }
   sa_overlay_invert:
     type: options_select
-    weight: 10
+    weight: 11
     region: content
     settings: {  }
     third_party_settings: {  }
   sa_padding:
     type: options_select
-    weight: 4
+    weight: 6
     region: content
     settings: {  }
     third_party_settings: {  }
   sa_width:
     type: options_select
-    weight: 6
+    weight: 4
     region: content
     settings: {  }
     third_party_settings: {  }
