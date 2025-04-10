@@ -2,6 +2,7 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.paragraph.sa_stat.field_count_down
     - field.field.paragraph.sa_stat.sa_label
     - field.field.paragraph.sa_stat.sa_stat_description
     - field.field.paragraph.sa_stat.sa_stat_number
@@ -9,45 +10,73 @@ dependencies:
     - field.field.paragraph.sa_stat.sa_stat_suffix
     - paragraphs.paragraphs_type.sa_stat
   module:
-    - ds
     - nomarkup
+    - sdc_display
     - text
 third_party_settings:
-  ds:
-    layout:
-      id: pattern_animated-stat
-      library: null
-      disable_css: false
-      entity_classes: all_classes
-      settings:
-        pattern:
-          field_templates: default
-          variant: default
-    regions:
-      stat_description:
-        - sa_stat_description
-      stat_number:
-        - sa_stat_number
-      stat_prefix:
-        - sa_stat_prefix
-      stat_suffix:
-        - sa_stat_suffix
+  sdc_display:
+    enabled: true
+    component:
+      machine_name: 'arbor:stats'
+      show_deprecated: null
+    mappings:
+      static:
+        slots:
+          number:
+            value: ''
+            format: full_html
+          description:
+            value: ''
+            format: full_html
+          prefix:
+            value: ''
+            format: full_html
+          suffix:
+            value: ''
+            format: full_html
+      dynamic:
+        props:
+          count_down: field_count_down
+        slots:
+          number:
+            sa_stat_number: sa_stat_number
+          description:
+            sa_stat_description: sa_stat_description
+          prefix:
+            sa_stat_prefix: sa_stat_prefix
+          suffix:
+            sa_stat_suffix: sa_stat_suffix
 id: paragraph.sa_stat.default
 targetEntityType: paragraph
 bundle: sa_stat
 mode: default
 content:
-  sa_stat_description:
-    type: text_default
+  field_count_down:
+    type: boolean
     label: hidden
-    settings: {  }
+    settings:
+      format: boolean
+      format_custom_false: ''
+      format_custom_true: ''
     third_party_settings:
       nomarkup:
         enabled: true
         separator: '|'
         referenced_entity: ''
+      sdc_display:
+        enabled: 0
+        component:
+          machine_name: null
+          show_deprecated: 0
+    weight: 4
+    region: content
+  sa_stat_description:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
     weight: 0
-    region: stat_description
+    region: content
   sa_stat_number:
     type: number_integer
     label: hidden
@@ -56,11 +85,16 @@ content:
       prefix_suffix: false
     third_party_settings:
       nomarkup:
-        enabled: false
+        enabled: true
         separator: '|'
         referenced_entity: ''
+      sdc_display:
+        enabled: 0
+        component:
+          machine_name: null
+          show_deprecated: 0
     weight: 1
-    region: stat_number
+    region: content
   sa_stat_prefix:
     type: string
     label: hidden
@@ -68,7 +102,7 @@ content:
       link_to_entity: false
     third_party_settings: {  }
     weight: 2
-    region: stat_prefix
+    region: content
   sa_stat_suffix:
     type: string
     label: hidden
@@ -76,6 +110,6 @@ content:
       link_to_entity: false
     third_party_settings: {  }
     weight: 3
-    region: stat_suffix
+    region: content
 hidden:
   sa_label: true

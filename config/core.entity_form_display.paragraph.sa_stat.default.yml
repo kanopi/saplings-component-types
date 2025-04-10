@@ -2,6 +2,8 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.paragraph.sa_stat.field_count_down
+    - field.field.paragraph.sa_stat.sa_label
     - field.field.paragraph.sa_stat.sa_stat_description
     - field.field.paragraph.sa_stat.sa_stat_number
     - field.field.paragraph.sa_stat.sa_stat_prefix
@@ -14,6 +16,13 @@ targetEntityType: paragraph
 bundle: sa_stat
 mode: default
 content:
+  field_count_down:
+    type: boolean_checkbox
+    weight: 4
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
   sa_stat_description:
     type: text_textarea
     weight: 3
@@ -47,4 +56,5 @@ content:
     third_party_settings: {  }
 hidden:
   created: true
+  sa_label: true
   status: true

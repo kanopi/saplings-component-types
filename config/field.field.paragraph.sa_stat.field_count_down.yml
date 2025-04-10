@@ -1,0 +1,20 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_count_down
+    - paragraphs.paragraphs_type.sa_stat
+id: paragraph.sa_stat.field_count_down
+field_name: field_count_down
+entity_type: paragraph
+bundle: sa_stat
+label: 'Count Down'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean
