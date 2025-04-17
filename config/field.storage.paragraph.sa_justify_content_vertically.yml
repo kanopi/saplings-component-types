@@ -11,13 +11,13 @@ type: list_string
 settings:
   allowed_values:
     -
-      value: justify-content-start
+      value: justify-content-lg-start
       label: 'Justify Start'
     -
-      value: justify-content-center
+      value: justify-content-lg-center
       label: 'Justify Center'
     -
-      value: justify-content-end
+      value: justify-content-lg-end
       label: 'Justify End'
   allowed_values_function: ''
 module: options
