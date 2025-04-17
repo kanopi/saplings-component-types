@@ -17,12 +17,99 @@ dependencies:
     - element_class_formatter
     - nomarkup
     - options
+    - sdc_display
     - text
+third_party_settings:
+  sdc_display:
+    enabled: true
+    component:
+      machine_name: 'arbor:side_by_side'
+      show_deprecated: null
+    mappings:
+      static:
+        props:
+          reverse_order: null
+          container: null
+          margin: null
+          padding: null
+          background: null
+          width: null
+        slots:
+          col_1_content:
+            value: ''
+            format: full_html
+          col_2_content:
+            value: ''
+            format: full_html
+      dynamic:
+        props:
+          reverse_order: sa_reverse_order
+          container: sa_container
+          margin: sa_margin
+          padding: sa_padding
+          background: sa_background
+          width: sa_width
+          attributes: null
+          col_1_attributes: null
+          col_2_attributes: null
+        slots:
+          col_1_content:
+            sa_media: sa_media
+            sa_background: null
+            sa_container: null
+            sa_description: null
+            sa_header: null
+            sa_margin: null
+            sa_padding: null
+            sa_reverse_order: null
+            sa_width: null
+          col_2_content:
+            sa_description: sa_description
+            sa_header: sa_header
+            sa_background: null
+            sa_container: null
+            sa_margin: null
+            sa_media: null
+            sa_padding: null
+            sa_reverse_order: null
+            sa_width: null
 id: paragraph.sa_side_by_side.default
 targetEntityType: paragraph
 bundle: sa_side_by_side
 mode: default
 content:
+  sa_background:
+    type: list_key
+    label: hidden
+    settings: {  }
+    third_party_settings:
+      nomarkup:
+        enabled: true
+        separator: '|'
+        referenced_entity: ''
+      sdc_display:
+        enabled: 0
+        component:
+          machine_name: null
+          show_deprecated: 0
+    weight: 5
+    region: content
+  sa_container:
+    type: list_key
+    label: hidden
+    settings: {  }
+    third_party_settings:
+      nomarkup:
+        enabled: true
+        separator: '|'
+        referenced_entity: ''
+      sdc_display:
+        enabled: 0
+        component:
+          machine_name: null
+          show_deprecated: 0
+    weight: 6
+    region: content
   sa_description:
     type: text_default
     label: hidden
@@ -32,7 +119,7 @@ content:
         enabled: true
         separator: '|'
         referenced_entity: ''
-    weight: 1
+    weight: 2
     region: content
   sa_header:
     type: wrapper_class
@@ -49,7 +136,23 @@ content:
         enabled: false
         separator: '|'
         referenced_entity: ''
-    weight: 0
+    weight: 1
+    region: content
+  sa_margin:
+    type: list_key
+    label: hidden
+    settings: {  }
+    third_party_settings:
+      nomarkup:
+        enabled: true
+        separator: '|'
+        referenced_entity: ''
+      sdc_display:
+        enabled: 0
+        component:
+          machine_name: null
+          show_deprecated: 0
+    weight: 7
     region: content
   sa_media:
     type: entity_reference_entity_view
@@ -62,7 +165,23 @@ content:
         enabled: true
         separator: '|'
         referenced_entity: '1'
-    weight: 2
+    weight: 0
+    region: content
+  sa_padding:
+    type: list_key
+    label: hidden
+    settings: {  }
+    third_party_settings:
+      nomarkup:
+        enabled: true
+        separator: '|'
+        referenced_entity: ''
+      sdc_display:
+        enabled: 0
+        component:
+          machine_name: null
+          show_deprecated: 0
+    weight: 8
     region: content
   sa_reverse_order:
     type: boolean
@@ -75,15 +194,20 @@ content:
     weight: 3
     region: content
   sa_width:
-    type: list_default
-    label: above
+    type: list_key
+    label: hidden
     settings: {  }
-    third_party_settings: {  }
+    third_party_settings:
+      nomarkup:
+        enabled: true
+        separator: '|'
+        referenced_entity: ''
+      sdc_display:
+        enabled: 0
+        component:
+          machine_name: null
+          show_deprecated: 0
     weight: 4
     region: content
 hidden:
-  sa_background: true
-  sa_container: true
   sa_label: true
-  sa_margin: true
-  sa_padding: true
