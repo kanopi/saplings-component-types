@@ -13,39 +13,69 @@ dependencies:
     - field.field.paragraph.sa_accordion.sa_width
     - paragraphs.paragraphs_type.sa_accordion
   module:
-    - ds
     - element_class_formatter
     - entity_reference_revisions
     - field_group
+    - layout_builder
     - nomarkup
-    - text
+    - options
+    - sdc_display
 third_party_settings:
+  layout_builder:
+    enabled: false
+    allow_custom: false
+  sdc_display:
+    enabled: true
+    component:
+      machine_name: 'arbor:container'
+      show_deprecated: null
+    mappings:
+      static:
+        slots:
+          header:
+            value: ''
+            format: full_html
+          description:
+            value: ''
+            format: full_html
+          content:
+            value: ''
+            format: full_html
+      dynamic:
+        props:
+          attributes: ''
+          container: sa_container
+          margin: sa_margin
+          padding: sa_padding
+          background: sa_background
+          width: sa_width
+        slots:
+          header:
+            sa_header: sa_header
+          description:
+            sa_description: sa_description
+          content:
+            sa_accordion_item: sa_accordion_item
   field_group:
-    group_accordion:
-      children:
-        - sa_accordion_item
-      label: Accordion
+    group_classes:
+      children: {  }
+      label: Classes
       parent_name: ''
-      region: content
-      weight: 3
-      format_type: pattern_formatter
+      region: hidden
+      weight: 10
+      format_type: html_element
       format_settings:
-        pattern: accordion
-        pattern_mapping:
-          'fields:sa_accordion_item':
-            destination: content
-            weight: 0
-            plugin: fields
-            source: sa_accordion_item
-        pattern_settings:
-          accordion:
-            keep_open_token: ''
-            accordion_id: ''
-            keep_open: 0
-        show_empty_fields: 0
-        pattern_variant: default
-_core:
-  default_config_hash: cyu47bbjW_8QVLbKjPXBrbCSgKnXVQNeGCyS_D_yCrM
+        classes: ''
+        show_empty_fields: false
+        id: ''
+        label_as_html: false
+        element: div
+        show_label: false
+        label_element: h3
+        label_element_classes: ''
+        attributes: ''
+        effect: none
+        speed: fast
 id: paragraph.sa_accordion.default
 targetEntityType: paragraph
 bundle: sa_accordion
@@ -55,51 +85,149 @@ content:
     type: entity_reference_revisions_entity_view
     label: hidden
     settings:
-      view_mode: default
+      view_mode: accordion
       link: ''
     third_party_settings:
       nomarkup:
         enabled: true
         separator: ''
         referenced_entity: ''
-      ds:
-        ds_limit: ''
-        ft:
-          id: default
-          settings:
-            lb: ''
-            lb-col: false
-            classes: {  }
-    weight: 1
+      sdc_display:
+        enabled: '1'
+        component:
+          machine_name: 'ui_suite_bootstrap:accordion'
+          show_deprecated: 0
+        mappings:
+          static:
+            props:
+              accordion_id: arbor
+              keep_open: false
+            slots:
+              content:
+                value: ''
+                format: full_html
+          dynamic:
+            mapped: content
+    weight: 0
     region: content
-  sa_description:
-    type: text_default
+  sa_background:
+    type: list_key
     label: hidden
     settings: {  }
-    third_party_settings: {  }
+    third_party_settings:
+      nomarkup:
+        enabled: true
+        separator: '|'
+        referenced_entity: ''
+      sdc_display:
+        enabled: 0
+        component:
+          machine_name: null
+          show_deprecated: 0
     weight: 1
     region: content
-  sa_header:
-    type: wrapper_class
+  sa_container:
+    type: list_key
     label: hidden
+    settings: {  }
+    third_party_settings:
+      nomarkup:
+        enabled: true
+        separator: '|'
+        referenced_entity: ''
+      sdc_display:
+        enabled: 0
+        component:
+          machine_name: null
+          show_deprecated: 0
+    weight: 2
+    region: content
+  sa_description:
+    type: wrapper_class
+    label: above
     settings:
       class: ''
-      tag: h2
+      tag: div
       link: false
       link_class: ''
       summary: false
       trim: 200
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  sa_header:
+    type: wrapper_class
+    label: above
+    settings:
+      class: ''
+      tag: div
+      link: false
+      link_class: ''
+      summary: false
+      trim: 200
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  sa_label:
+    type: wrapper_class
+    label: above
+    settings:
+      class: ''
+      tag: div
+      link: false
+      link_class: ''
+      summary: false
+      trim: 200
+    third_party_settings: {  }
+    weight: 5
+    region: content
+  sa_margin:
+    type: list_key
+    label: hidden
+    settings: {  }
     third_party_settings:
       nomarkup:
-        enabled: false
+        enabled: true
         separator: '|'
         referenced_entity: ''
-    weight: 0
+      sdc_display:
+        enabled: 0
+        component:
+          machine_name: null
+          show_deprecated: 0
+    weight: 6
+    region: content
+  sa_padding:
+    type: list_key
+    label: hidden
+    settings: {  }
+    third_party_settings:
+      nomarkup:
+        enabled: true
+        separator: '|'
+        referenced_entity: ''
+      sdc_display:
+        enabled: 0
+        component:
+          machine_name: null
+          show_deprecated: 0
+    weight: 7
+    region: content
+  sa_width:
+    type: list_key
+    label: hidden
+    settings: {  }
+    third_party_settings:
+      nomarkup:
+        enabled: true
+        separator: '|'
+        referenced_entity: ''
+      sdc_display:
+        enabled: 0
+        component:
+          machine_name: null
+          show_deprecated: 0
+    weight: 8
     region: content
 hidden:
-  sa_background: true
-  sa_container: true
-  sa_label: true
-  sa_margin: true
-  sa_padding: true
-  sa_width: true
+  layout_builder__layout: true
