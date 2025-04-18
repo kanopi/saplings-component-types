@@ -8,7 +8,20 @@ dependencies:
     - paragraphs.paragraphs_type.sa_tab
   module:
     - nomarkup
+    - sdc_display
     - text
+third_party_settings:
+  sdc_display:
+    enabled: false
+    component:
+      machine_name: ''
+    mappings:
+      static:
+        props: {  }
+        slots: {  }
+      dynamic:
+        props: {  }
+        slots: {  }
 id: paragraph.sa_tab.default
 targetEntityType: paragraph
 bundle: sa_tab
@@ -20,9 +33,14 @@ content:
     settings: {  }
     third_party_settings:
       nomarkup:
-        enabled: true
+        enabled: false
         separator: '|'
         referenced_entity: ''
+      sdc_display:
+        enabled: 0
+        component:
+          machine_name: null
+          show_deprecated: 0
     weight: 0
     region: content
 hidden:

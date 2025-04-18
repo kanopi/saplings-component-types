@@ -8,30 +8,42 @@ dependencies:
     - field.field.paragraph.sa_tab.sa_label
     - paragraphs.paragraphs_type.sa_tab
   module:
-    - ds
-    - element_class_formatter
     - nomarkup
+    - sdc_display
     - text
 third_party_settings:
-  ds:
-    layout:
-      id: pattern_accordion_item
-      library: null
-      disable_css: false
-      entity_classes: all_classes
-      settings:
-        pattern:
-          field_templates: default
-          settings:
-            opened: 0
-            opened_token: ''
-            heading_level: ''
-            item_id: ''
-    regions:
-      title:
-        - sa_header
-      content:
-        - sa_description
+  sdc_display:
+    enabled: true
+    component:
+      machine_name: 'ui_suite_bootstrap:accordion_item'
+      show_deprecated: null
+    mappings:
+      static:
+        props:
+          item_id: arbor
+          opened: null
+          heading_level: null
+        slots:
+          title:
+            value: ''
+            format: full_html
+          content:
+            value: ''
+            format: full_html
+      dynamic:
+        props:
+          item_id: sa_header
+          button_attributes: sa_header
+          attributes: null
+          opened: null
+          heading_level: null
+        slots:
+          title:
+            sa_header: sa_header
+            sa_description: null
+          content:
+            sa_description: sa_description
+            sa_header: null
 id: paragraph.sa_tab.accordion
 targetEntityType: paragraph
 bundle: sa_tab
@@ -49,17 +61,12 @@ content:
     weight: 1
     region: content
   sa_header:
-    type: wrapper_class
+    type: string
     label: hidden
     settings:
-      class: ''
-      tag: div
-      link: false
-      link_class: ''
-      summary: false
-      trim: 200
+      link_to_entity: false
     third_party_settings: {  }
     weight: 0
-    region: title
+    region: content
 hidden:
   sa_label: true
