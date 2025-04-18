@@ -1,0 +1,57 @@
+uuid: ea5e4bb2-ad24-4f94-9377-08077fe6e710
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.media.media_collection
+    - field.field.media.remote_video.field_media_oembed_video
+    - field.field.media.remote_video.sa_caption
+    - media.type.remote_video
+  module:
+    - image
+    - lite_youtube_embed
+    - sdc_display
+third_party_settings:
+  sdc_display:
+    enabled: false
+    component:
+      machine_name: ''
+    mappings:
+      static:
+        props: {  }
+        slots: {  }
+      dynamic:
+        props: {  }
+        slots: {  }
+_core:
+  default_config_hash: ZdPcl2hPxl5pgv3pI-07R7h51OjeUeKJTy-ab1NfM34
+id: media.remote_video.media_collection
+targetEntityType: media
+bundle: remote_video
+mode: media_collection
+content:
+  field_media_oembed_video:
+    type: lite_youtube_embed
+    label: hidden
+    settings:
+      max_width: 0
+      max_height: 0
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  thumbnail:
+    type: image
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: ''
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden:
+  created: true
+  name: true
+  sa_caption: true
+  uid: true
