@@ -1,0 +1,20 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.sa_width
+    - paragraphs.paragraphs_type.sa_testimonial
+  module:
+    - options
+id: paragraph.sa_testimonial.sa_width
+field_name: sa_width
+entity_type: paragraph
+bundle: sa_testimonial
+label: Width
+description: 'The width setting controls the width of the element, but not the width of the container. The container width will determine how far the background color stretches across the screen and will control the total width of the container that holds the element.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string
