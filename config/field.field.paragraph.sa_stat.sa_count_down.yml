@@ -2,10 +2,10 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.paragraph.field_count_down
+    - field.storage.paragraph.sa_stat_count_down
     - paragraphs.paragraphs_type.sa_stat
-id: paragraph.sa_stat.field_count_down
-field_name: field_count_down
+id: paragraph.sa_stat.sa_stat_count_down
+field_name: sa_stat_count_down
 entity_type: paragraph
 bundle: sa_stat
 label: 'Count Down'
