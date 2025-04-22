@@ -33,6 +33,27 @@ third_party_settings:
       show_deprecated: null
     mappings:
       static:
+        props:
+          margin: null
+          padding: null
+          background: null
+          width: null
+          align_items_vertically: null
+          justify_content_horizontal: null
+          with_container: null
+          container: null
+          gutters: null
+          gutters_horizontal: null
+          gutters_vertical: null
+          row_cols: null
+          col_xs: null
+          col_sm: null
+          col_md: null
+          col_lg: null
+          col_xl: null
+          col_xxl: null
+          col_offset: null
+          spacing_margin_bottom: null
         slots:
           header:
             value: ''
@@ -49,6 +70,8 @@ third_party_settings:
           padding: sa_padding
           background: sa_background
           width: sa_width
+          align_items_vertically: sa_align_items_vertically
+          justify_content_horizontal: sa_justify_content_horizontal
           container: sa_container
           gutters: sa_column_gutters
           gutters_horizontal: sa_column_gutters
@@ -60,13 +83,59 @@ third_party_settings:
           col_xl: sa_columns_desktop
           col_xxl: sa_columns_desktop
           spacing_margin_bottom: sa_margin
+          attributes: null
+          with_container: null
+          container_attributes: null
+          container_wrapper_attributes: null
+          col_lg: null
+          col_offset: null
+          col_attributes: null
         slots:
           header:
             sa_header: sa_header
+            sa_align_items_vertically: null
+            sa_background: null
+            sa_column_gutters: null
+            sa_column_items: null
+            sa_columns_desktop: null
+            sa_columns_mobile: null
+            sa_columns_tablet: null
+            sa_container: null
+            sa_description: null
+            sa_justify_content_horizontal: null
+            sa_margin: null
+            sa_padding: null
+            sa_width: null
           description:
             sa_description: sa_description
+            sa_align_items_vertically: null
+            sa_background: null
+            sa_column_gutters: null
+            sa_column_items: null
+            sa_columns_desktop: null
+            sa_columns_mobile: null
+            sa_columns_tablet: null
+            sa_container: null
+            sa_header: null
+            sa_justify_content_horizontal: null
+            sa_margin: null
+            sa_padding: null
+            sa_width: null
           content:
             sa_column_items: sa_column_items
+            sa_align_items_vertically: null
+            sa_background: null
+            sa_column_gutters: null
+            sa_columns_desktop: null
+            sa_columns_mobile: null
+            sa_columns_tablet: null
+            sa_container: null
+            sa_description: null
+            sa_header: null
+            sa_justify_content_horizontal: null
+            sa_margin: null
+            sa_padding: null
+            sa_width: null
 id: paragraph.sa_columns.default
 targetEntityType: paragraph
 bundle: sa_columns
