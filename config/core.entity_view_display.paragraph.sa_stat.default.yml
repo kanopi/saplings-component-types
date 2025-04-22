@@ -2,7 +2,7 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.field.paragraph.sa_stat.field_count_down
+    - field.field.paragraph.sa_stat.sa_stat_count_down
     - field.field.paragraph.sa_stat.sa_label
     - field.field.paragraph.sa_stat.sa_stat_description
     - field.field.paragraph.sa_stat.sa_stat_number
@@ -36,7 +36,7 @@ third_party_settings:
             format: full_html
       dynamic:
         props:
-          count_down: field_count_down
+          sa_stat_count_down: sa_stat_count_down
         slots:
           number:
             sa_stat_number: sa_stat_number
@@ -51,7 +51,7 @@ targetEntityType: paragraph
 bundle: sa_stat
 mode: default
 content:
-  field_count_down:
+  sa_stat_count_down:
     type: boolean
     label: hidden
     settings:

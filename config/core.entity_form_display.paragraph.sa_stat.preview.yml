@@ -3,7 +3,7 @@ status: true
 dependencies:
   config:
     - core.entity_form_mode.paragraph.preview
-    - field.field.paragraph.sa_stat.field_count_down
+    - field.field.paragraph.sa_stat.sa_stat_count_down
     - field.field.paragraph.sa_stat.sa_label
     - field.field.paragraph.sa_stat.sa_stat_description
     - field.field.paragraph.sa_stat.sa_stat_number
