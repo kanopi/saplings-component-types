@@ -13,10 +13,6 @@ dependencies:
     - nomarkup
     - sdc_display
     - text
-    - ui_patterns
-    - ui_patterns_field_formatters
-  theme:
-    - ui_suite_bootstrap
 third_party_settings:
   sdc_display:
     enabled: true
@@ -110,32 +106,15 @@ content:
     weight: 2
     region: content
   sa_link:
-    type: ui_patterns_component_per_item
+    type: link_class
     label: hidden
     settings:
-      ui_patterns:
-        component_id: 'ui_suite_bootstrap:button'
-        variant_id:
-          source_id: select
-          source:
-            value: primary
-        props:
-          attributes:
-            source_id: attributes
-            source:
-              value: stretched-link
-          disabled:
-            source_id: checkbox
-          label_visually_hidden:
-            source_id: checkbox
-          url:
-            source_id: 'field_property:paragraph:sa_link:uri'
-        slots:
-          label:
-            sources:
-              -
-                source_id: 'field_property:paragraph:sa_link:title'
-                _weight: '0'
+      class: 'btn btn-primary'
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: '0'
+      target: '0'
     third_party_settings:
       nomarkup:
         enabled: true
@@ -150,6 +129,8 @@ content:
             props:
               url: ''
               variant: primary
+              disabled: false
+              label_visually_hidden: false
             slots:
               label:
                 value: ''
