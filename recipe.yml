@@ -22,7 +22,6 @@ install:
   - paragraphs
   - paragraphs_edit
   - swiper_formatter
-  - ui_patterns_field_formatters
   - viewsreference
 config:
   # Treat the field storage config strictly.
