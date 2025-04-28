@@ -4,7 +4,6 @@ dependencies:
   config:
     - core.entity_form_mode.paragraph.preview
     - field.field.paragraph.sa_existing_content_card.sa_existing_content
-    - field.field.paragraph.sa_existing_content_card.sa_label
     - paragraphs.paragraphs_type.sa_existing_content_card
 id: paragraph.sa_existing_content_card.preview
 targetEntityType: paragraph
@@ -31,14 +30,6 @@ content:
       size: 60
       placeholder: ''
       third_party_settings: {  }
-  sa_label:
-    type: string_textfield
-    weight: 0
-    region: content
-    settings:
-      size: 60
-      placeholder: ''
-    third_party_settings: {  }
 hidden:
   created: true
   status: true

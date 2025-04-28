@@ -1,14 +1,15 @@
+uuid: c63364e8-29a9-4ab0-a14a-8c117b49537a
 langcode: en
 status: true
 dependencies:
   config:
     - field.field.paragraph.sa_text.sa_background
-    - field.field.paragraph.sa_text.sa_width
+    - field.field.paragraph.sa_text.sa_container
     - field.field.paragraph.sa_text.sa_description
     - field.field.paragraph.sa_text.sa_header
     - field.field.paragraph.sa_text.sa_margin
     - field.field.paragraph.sa_text.sa_padding
-    - field.field.paragraph.sa_text.sa_container
+    - field.field.paragraph.sa_text.sa_width
     - paragraphs.paragraphs_type.sa_text
   module:
     - field_group
@@ -104,9 +105,9 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
-  sa_width:
+  sa_container:
     type: options_select
-    weight: 1
+    weight: 4
     region: content
     settings: {  }
     third_party_settings: {  }
@@ -138,9 +139,9 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
-  sa_container:
+  sa_width:
     type: options_select
-    weight: 4
+    weight: 1
     region: content
     settings: {  }
     third_party_settings: {  }

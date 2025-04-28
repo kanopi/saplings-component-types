@@ -4,30 +4,24 @@ dependencies:
   module:
     - options
     - paragraphs
-id: paragraph.sa_column_gutters
-field_name: sa_column_gutters
+id: paragraph.sa_overlay_opacity
+field_name: sa_overlay_opacity
 entity_type: paragraph
 type: list_string
 settings:
   allowed_values:
     -
-      value: gx-5
-      label: '5'
+      value: bg-opacity-10
+      label: 10%
     -
-      value: gx-4
-      label: '4'
+      value: bg-opacity-25
+      label: 25%
     -
-      value: gx-3
-      label: '3'
+      value: bg-opacity-50
+      label: 50%
     -
-      value: gx-2
-      label: '2'
-    -
-      value: gx-1
-      label: '1'
-    -
-      value: gx-0
-      label: Zero
+      value: bg-opacity-75
+      label: 75%
   allowed_values_function: ''
 module: options
 locked: false

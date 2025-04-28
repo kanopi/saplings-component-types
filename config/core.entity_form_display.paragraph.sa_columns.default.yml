@@ -2,6 +2,7 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.paragraph.sa_columns.sa_vertical_column_gutters
     - field.field.paragraph.sa_columns.sa_align_items_vertically
     - field.field.paragraph.sa_columns.sa_background
     - field.field.paragraph.sa_columns.sa_column_gutters
@@ -13,7 +14,6 @@ dependencies:
     - field.field.paragraph.sa_columns.sa_description
     - field.field.paragraph.sa_columns.sa_header
     - field.field.paragraph.sa_columns.sa_justify_content_horizontal
-    - field.field.paragraph.sa_columns.sa_label
     - field.field.paragraph.sa_columns.sa_margin
     - field.field.paragraph.sa_columns.sa_padding
     - field.field.paragraph.sa_columns.sa_width
@@ -78,6 +78,7 @@ third_party_settings:
     group_columns:
       children:
         - sa_column_gutters
+        - sa_vertical_column_gutters
         - sa_columns_desktop
         - sa_columns_tablet
         - sa_columns_mobile
@@ -145,6 +146,12 @@ targetEntityType: paragraph
 bundle: sa_columns
 mode: default
 content:
+  sa_vertical_column_gutters:
+    type: options_select
+    weight: 13
+    region: content
+    settings: {  }
+    third_party_settings: {  }
   sa_align_items_vertically:
     type: options_select
     weight: 16
@@ -185,19 +192,19 @@ content:
     third_party_settings: {  }
   sa_columns_desktop:
     type: options_select
-    weight: 13
+    weight: 14
     region: content
     settings: {  }
     third_party_settings: {  }
   sa_columns_mobile:
     type: options_select
-    weight: 15
+    weight: 16
     region: content
     settings: {  }
     third_party_settings: {  }
   sa_columns_tablet:
     type: options_select
-    weight: 14
+    weight: 15
     region: content
     settings: {  }
     third_party_settings: {  }
@@ -249,5 +256,4 @@ content:
     third_party_settings: {  }
 hidden:
   created: true
-  sa_label: true
   status: true

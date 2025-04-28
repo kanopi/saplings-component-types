@@ -5,7 +5,6 @@ dependencies:
     - field.field.paragraph.sa_media_collection.sa_container
     - field.field.paragraph.sa_media_collection.sa_description
     - field.field.paragraph.sa_media_collection.sa_header
-    - field.field.paragraph.sa_media_collection.sa_label
     - field.field.paragraph.sa_media_collection.sa_margin
     - field.field.paragraph.sa_media_collection.sa_media_multiple
     - field.field.paragraph.sa_media_collection.sa_padding
@@ -24,6 +23,11 @@ third_party_settings:
       show_deprecated: null
     mappings:
       static:
+        props:
+          container: null
+          margin: null
+          padding: null
+          variant: null
         slots:
           header:
             value: ''
@@ -44,17 +48,37 @@ third_party_settings:
         slots:
           header:
             sa_header: sa_header
+            sa_container: null
+            sa_description: null
+            sa_label: null
+            sa_margin: null
+            sa_media_multiple: null
+            sa_padding: null
           description:
             sa_description: sa_description
+            sa_container: null
+            sa_header: null
+            sa_label: null
+            sa_margin: null
+            sa_media_multiple: null
+            sa_padding: null
           content:
             sa_media_multiple: sa_media_multiple
+            sa_container: null
+            sa_description: null
+            sa_header: null
+            sa_label: null
+            sa_margin: null
+            sa_padding: null
+_core:
+  default_config_hash: BFckfHIwJO09hSwnegVbErg7lXWP_vzdu1d2Xehhuhc
 id: paragraph.sa_media_collection.default
 targetEntityType: paragraph
 bundle: sa_media_collection
 mode: default
 content:
   sa_container:
-    type: list_default
+    type: list_key
     label: hidden
     settings: {  }
     third_party_settings:
@@ -93,21 +117,8 @@ content:
         referenced_entity: ''
     weight: 0
     region: content
-  sa_label:
-    type: wrapper_class
-    label: above
-    settings:
-      class: ''
-      tag: div
-      link: false
-      link_class: ''
-      summary: false
-      trim: 200
-    third_party_settings: {  }
-    weight: 0
-    region: content
   sa_margin:
-    type: list_default
+    type: list_key
     label: hidden
     settings: {  }
     third_party_settings:
@@ -136,7 +147,7 @@ content:
     weight: 2
     region: content
   sa_padding:
-    type: list_default
+    type: list_key
     label: hidden
     settings: {  }
     third_party_settings:

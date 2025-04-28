@@ -2,27 +2,26 @@ langcode: en
 status: true
 dependencies:
   config:
-    - core.entity_form_mode.paragraph.preview
-    - field.field.paragraph.sa_card.sa_card_image
-    - field.field.paragraph.sa_card.sa_description
-    - field.field.paragraph.sa_card.sa_header
-    - field.field.paragraph.sa_card.sa_link
-    - paragraphs.paragraphs_type.sa_card
+    - field.field.paragraph.sa_feature.sa_icon
+    - field.field.paragraph.sa_feature.sa_description
+    - field.field.paragraph.sa_feature.sa_header
+    - field.field.paragraph.sa_feature.sa_link
+    - paragraphs.paragraphs_type.sa_feature
   module:
     - link
-    - media_library
     - text
-id: paragraph.sa_card.preview
+    - ui_icons_field
+id: paragraph.sa_feature.default
 targetEntityType: paragraph
-bundle: sa_card
-mode: preview
+bundle: sa_feature
+mode: default
 content:
-  sa_card_image:
-    type: media_library_widget
-    weight: 3
+  sa_icon:
+    type: icon_widget
+    weight: 0
     region: content
     settings:
-      media_types: {  }
+      icon_selector: icon_picker
     third_party_settings: {  }
   sa_description:
     type: text_textarea
@@ -42,7 +41,7 @@ content:
     third_party_settings: {  }
   sa_link:
     type: link_default
-    weight: 4
+    weight: 3
     region: content
     settings:
       placeholder_url: ''

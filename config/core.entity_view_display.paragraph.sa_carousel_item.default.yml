@@ -4,7 +4,6 @@ dependencies:
   config:
     - field.field.paragraph.sa_carousel_item.sa_carousel_caption
     - field.field.paragraph.sa_carousel_item.sa_carousel_image
-    - field.field.paragraph.sa_carousel_item.sa_label
     - paragraphs.paragraphs_type.sa_carousel_item
   module:
     - ds
@@ -56,6 +55,8 @@ third_party_settings:
         - sa_carousel_image
       caption:
         - sa_carousel_caption
+_core:
+  default_config_hash: PcRFX6dPjxyT3kXG-xOOgmabUk4PzsbXpQVne1JLx5M
 id: paragraph.sa_carousel_item.default
 targetEntityType: paragraph
 bundle: sa_carousel_item
@@ -96,5 +97,4 @@ content:
           show_deprecated: 0
     weight: 0
     region: image
-hidden:
-  sa_label: true
+hidden: {  }

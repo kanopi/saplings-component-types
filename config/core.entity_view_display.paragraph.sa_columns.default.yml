@@ -2,6 +2,7 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.paragraph.sa_columns.sa_vertical_column_gutters
     - field.field.paragraph.sa_columns.sa_align_items_vertically
     - field.field.paragraph.sa_columns.sa_background
     - field.field.paragraph.sa_columns.sa_column_gutters
@@ -13,7 +14,6 @@ dependencies:
     - field.field.paragraph.sa_columns.sa_description
     - field.field.paragraph.sa_columns.sa_header
     - field.field.paragraph.sa_columns.sa_justify_content_horizontal
-    - field.field.paragraph.sa_columns.sa_label
     - field.field.paragraph.sa_columns.sa_margin
     - field.field.paragraph.sa_columns.sa_padding
     - field.field.paragraph.sa_columns.sa_width
@@ -73,26 +73,27 @@ third_party_settings:
           align_items_vertically: sa_align_items_vertically
           justify_content_horizontal: sa_justify_content_horizontal
           container: sa_container
-          gutters: sa_column_gutters
           gutters_horizontal: sa_column_gutters
-          gutters_vertical: sa_column_gutters
-          row_cols: ''
+          gutters_vertical: sa_vertical_column_gutters
           col_xs: sa_columns_mobile
           col_sm: sa_columns_mobile
           col_md: sa_columns_tablet
+          col_lg: sa_columns_desktop
           col_xl: sa_columns_desktop
           col_xxl: sa_columns_desktop
-          spacing_margin_bottom: sa_margin
           attributes: null
           with_container: null
           container_attributes: null
           container_wrapper_attributes: null
-          col_lg: null
+          gutters: null
+          row_cols: null
           col_offset: null
+          spacing_margin_bottom: null
           col_attributes: null
         slots:
           header:
             sa_header: sa_header
+            sa_vertical_column_gutters: null
             sa_align_items_vertically: null
             sa_background: null
             sa_column_gutters: null
@@ -108,6 +109,7 @@ third_party_settings:
             sa_width: null
           description:
             sa_description: sa_description
+            sa_vertical_column_gutters: null
             sa_align_items_vertically: null
             sa_background: null
             sa_column_gutters: null
@@ -123,6 +125,7 @@ third_party_settings:
             sa_width: null
           content:
             sa_column_items: sa_column_items
+            sa_vertical_column_gutters: null
             sa_align_items_vertically: null
             sa_background: null
             sa_column_gutters: null
@@ -136,11 +139,29 @@ third_party_settings:
             sa_margin: null
             sa_padding: null
             sa_width: null
+_core:
+  default_config_hash: VceDe0h4-croJH4gWChxdzK_v3lNDrW6lOIvQSD3MZM
 id: paragraph.sa_columns.default
 targetEntityType: paragraph
 bundle: sa_columns
 mode: default
 content:
+  sa_vertical_column_gutters:
+    type: list_key
+    label: hidden
+    settings: {  }
+    third_party_settings:
+      nomarkup:
+        enabled: true
+        separator: '|'
+        referenced_entity: ''
+      sdc_display:
+        enabled: 0
+        component:
+          machine_name: null
+          show_deprecated: 0
+    weight: 15
+    region: content
   sa_align_items_vertically:
     type: list_key
     label: hidden
@@ -374,5 +395,4 @@ content:
           show_deprecated: 0
     weight: 14
     region: content
-hidden:
-  sa_label: true
+hidden: {  }
