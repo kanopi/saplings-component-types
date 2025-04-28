@@ -3,7 +3,6 @@ status: true
 dependencies:
   config:
     - field.field.paragraph.sa_stat.sa_stat_count_down
-    - field.field.paragraph.sa_stat.sa_label
     - field.field.paragraph.sa_stat.sa_stat_description
     - field.field.paragraph.sa_stat.sa_stat_number
     - field.field.paragraph.sa_stat.sa_stat_prefix
@@ -21,6 +20,9 @@ third_party_settings:
       show_deprecated: null
     mappings:
       static:
+        props:
+          count_down: null
+          variant: null
         slots:
           number:
             value: ''
@@ -36,16 +38,36 @@ third_party_settings:
             format: full_html
       dynamic:
         props:
-          sa_stat_count_down: sa_stat_count_down
+          count_down: sa_stat_count_down
+          attributes: null
+          variant: null
         slots:
           number:
             sa_stat_number: sa_stat_number
+            sa_stat_count_down: null
+            sa_stat_description: null
+            sa_stat_prefix: null
+            sa_stat_suffix: null
           description:
             sa_stat_description: sa_stat_description
+            sa_stat_count_down: null
+            sa_stat_number: null
+            sa_stat_prefix: null
+            sa_stat_suffix: null
           prefix:
             sa_stat_prefix: sa_stat_prefix
+            sa_stat_count_down: null
+            sa_stat_description: null
+            sa_stat_number: null
+            sa_stat_suffix: null
           suffix:
             sa_stat_suffix: sa_stat_suffix
+            sa_stat_count_down: null
+            sa_stat_description: null
+            sa_stat_number: null
+            sa_stat_prefix: null
+_core:
+  default_config_hash: magq_4A4LcgrHnjkNwJsULmywK8ZwtUHJXSWJiSCvJM
 id: paragraph.sa_stat.default
 targetEntityType: paragraph
 bundle: sa_stat
@@ -111,5 +133,4 @@ content:
     third_party_settings: {  }
     weight: 3
     region: content
-hidden:
-  sa_label: true
+hidden: {  }

@@ -9,7 +9,6 @@ dependencies:
     - field.field.paragraph.sa_tabs.sa_description
     - field.field.paragraph.sa_tabs.sa_display_as_vertical_tabs
     - field.field.paragraph.sa_tabs.sa_header
-    - field.field.paragraph.sa_tabs.sa_label
     - field.field.paragraph.sa_tabs.sa_margin
     - field.field.paragraph.sa_tabs.sa_padding
     - field.field.paragraph.sa_tabs.sa_tab_item
@@ -37,16 +36,32 @@ third_party_settings:
         description: ''
         required_fields: false
   sdc_display:
-    enabled: false
+    enabled: true
     component:
-      machine_name: ''
+      machine_name: 'ui_suite_bootstrap:accordion'
+      show_deprecated: null
     mappings:
       static:
-        props: {  }
-        slots: {  }
+        props:
+          accordion_id: arbor
+          keep_open: null
+          variant: null
+        slots:
+          content:
+            value: ''
+            format: full_html
       dynamic:
-        props: {  }
-        slots: {  }
+        props:
+          accordion_id: field_tab_item
+          attributes: null
+          keep_open: null
+          variant: null
+        slots:
+          content:
+            sa_tab_item: sa_tab_item
+            field_tab_item: null
+_core:
+  default_config_hash: UQ1LRiaR9uQwxCsf--eg3pCG8luo-OpM--Wrvc3zPzc
 id: paragraph.sa_tabs.accordion
 targetEntityType: paragraph
 bundle: sa_tabs
@@ -100,7 +115,6 @@ hidden:
   sa_description: true
   sa_display_as_vertical_tabs: true
   sa_header: true
-  sa_label: true
   sa_margin: true
   sa_padding: true
   sa_width: true

@@ -5,7 +5,6 @@ dependencies:
     - core.entity_view_mode.paragraph.accordion
     - field.field.paragraph.sa_tab.sa_description
     - field.field.paragraph.sa_tab.sa_header
-    - field.field.paragraph.sa_tab.sa_label
     - paragraphs.paragraphs_type.sa_tab
   module:
     - nomarkup
@@ -33,10 +32,10 @@ third_party_settings:
       dynamic:
         props:
           item_id: sa_header
-          button_attributes: sa_header
           attributes: null
           opened: null
           heading_level: null
+          button_attributes: null
         slots:
           title:
             sa_header: sa_header
@@ -44,6 +43,8 @@ third_party_settings:
           content:
             sa_description: sa_description
             sa_header: null
+_core:
+  default_config_hash: Gdl29DSGn08sTM1w1eCccgl0l0eLdgb0ZSFtvkPsr1M
 id: paragraph.sa_tab.accordion
 targetEntityType: paragraph
 bundle: sa_tab
@@ -65,8 +66,16 @@ content:
     label: hidden
     settings:
       link_to_entity: false
-    third_party_settings: {  }
+    third_party_settings:
+      nomarkup:
+        enabled: true
+        separator: '|'
+        referenced_entity: ''
+      sdc_display:
+        enabled: 0
+        component:
+          machine_name: null
+          show_deprecated: 0
     weight: 0
     region: content
-hidden:
-  sa_label: true
+hidden: {  }
