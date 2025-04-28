@@ -2,7 +2,8 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.field.paragraph.sa_stat.sa_stat_count_down
+    - field.field.paragraph.sa_stat.field_count_down
+    - field.field.paragraph.sa_stat.sa_label
     - field.field.paragraph.sa_stat.sa_stat_description
     - field.field.paragraph.sa_stat.sa_stat_number
     - field.field.paragraph.sa_stat.sa_stat_prefix
@@ -15,19 +16,19 @@ targetEntityType: paragraph
 bundle: sa_stat
 mode: default
 content:
-  sa_count_down:
+  field_count_down:
     type: boolean_checkbox
     weight: 4
     region: content
     settings:
       display_label: true
     third_party_settings: {  }
-  sa_stat_count_down:
-    type: boolean_checkbox
-    weight: 4
+  sa_stat_number:
+    type: number
+    weight: 1
     region: content
     settings:
-      display_label: true
+      placeholder: ''
     third_party_settings: {  }
   sa_stat_description:
     type: text_textarea
@@ -35,13 +36,6 @@ content:
     region: content
     settings:
       rows: 5
-      placeholder: ''
-    third_party_settings: {  }
-  sa_stat_number:
-    type: number
-    weight: 1
-    region: content
-    settings:
       placeholder: ''
     third_party_settings: {  }
   sa_stat_prefix:
@@ -62,4 +56,5 @@ content:
     third_party_settings: {  }
 hidden:
   created: true
+  sa_label: true
   status: true
