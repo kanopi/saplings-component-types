@@ -3,9 +3,8 @@ status: true
 dependencies:
   config:
     - core.entity_form_mode.paragraph.preview
-    - field.field.paragraph.sa_stat.field_count_down
+    - field.field.paragraph.sa_stat.sa_stat_count_down
     - field.field.paragraph.sa_stat.sa_stat_number
-    - field.field.paragraph.sa_stat.sa_label
     - field.field.paragraph.sa_stat.sa_stat_description
     - field.field.paragraph.sa_stat.sa_stat_prefix
     - field.field.paragraph.sa_stat.sa_stat_suffix
@@ -17,7 +16,7 @@ targetEntityType: paragraph
 bundle: sa_stat
 mode: preview
 content:
-  field_count_down:
+  sa_stat_count_down:
     type: boolean_checkbox
     weight: 5
     region: content
@@ -29,14 +28,6 @@ content:
     weight: 2
     region: content
     settings:
-      placeholder: ''
-    third_party_settings: {  }
-  sa_label:
-    type: string_textfield
-    weight: 0
-    region: content
-    settings:
-      size: 60
       placeholder: ''
     third_party_settings: {  }
   sa_stat_description:

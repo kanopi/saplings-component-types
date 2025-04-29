@@ -2,8 +2,7 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.field.paragraph.sa_stat.field_count_down
-    - field.field.paragraph.sa_stat.sa_label
+    - field.field.paragraph.sa_stat.sa_stat_count_down
     - field.field.paragraph.sa_stat.sa_stat_description
     - field.field.paragraph.sa_stat.sa_stat_number
     - field.field.paragraph.sa_stat.sa_stat_prefix
@@ -39,32 +38,32 @@ third_party_settings:
             format: full_html
       dynamic:
         props:
-          count_down: field_count_down
+          count_down: sa_stat_count_down
           attributes: null
           variant: null
         slots:
           number:
             sa_stat_number: sa_stat_number
-            field_count_down: null
+            sa_stat_count_down: null
             sa_stat_description: null
             sa_stat_prefix: null
             sa_stat_suffix: null
           description:
             sa_stat_description: sa_stat_description
-            field_count_down: null
-            field_stat_number: null
+            sa_stat_count_down: null
+            sa_stat_number: null
             sa_stat_prefix: null
             sa_stat_suffix: null
           prefix:
             sa_stat_prefix: sa_stat_prefix
-            field_count_down: null
-            field_stat_number: null
+            sa_stat_count_down: null
+            sa_stat_number: null
             sa_stat_description: null
             sa_stat_suffix: null
           suffix:
             sa_stat_suffix: sa_stat_suffix
-            field_count_down: null
-            field_stat_number: null
+            sa_stat_count_down: null
+            sa_stat_number: null
             sa_stat_description: null
             sa_stat_prefix: null
 id: paragraph.sa_stat.default
@@ -72,7 +71,7 @@ targetEntityType: paragraph
 bundle: sa_stat
 mode: default
 content:
-  field_count_down:
+  sa_stat_count_down:
     type: boolean
     label: hidden
     settings:
@@ -134,5 +133,4 @@ content:
     third_party_settings: {  }
     weight: 3
     region: content
-hidden:
-  sa_label: true
+hidden: { }
