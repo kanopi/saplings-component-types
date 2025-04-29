@@ -57,17 +57,15 @@ third_party_settings:
           prefix:
             sa_stat_prefix: sa_stat_prefix
             sa_stat_count_down: null
-            sa_stat_description: null
             sa_stat_number: null
+            sa_stat_description: null
             sa_stat_suffix: null
           suffix:
             sa_stat_suffix: sa_stat_suffix
             sa_stat_count_down: null
-            sa_stat_description: null
             sa_stat_number: null
+            sa_stat_description: null
             sa_stat_prefix: null
-_core:
-  default_config_hash: magq_4A4LcgrHnjkNwJsULmywK8ZwtUHJXSWJiSCvJM
 id: paragraph.sa_stat.default
 targetEntityType: paragraph
 bundle: sa_stat
@@ -92,22 +90,17 @@ content:
           show_deprecated: 0
     weight: 4
     region: content
-  sa_stat_description:
-    type: text_default
-    label: hidden
-    settings: {  }
-    third_party_settings: {  }
-    weight: 0
-    region: content
   sa_stat_number:
-    type: number_integer
+    type: number_decimal
     label: hidden
     settings:
       thousand_separator: ''
+      decimal_separator: .
+      scale: 2
       prefix_suffix: false
     third_party_settings:
       nomarkup:
-        enabled: true
+        enabled: false
         separator: '|'
         referenced_entity: ''
       sdc_display:
@@ -116,6 +109,13 @@ content:
           machine_name: null
           show_deprecated: 0
     weight: 1
+    region: content
+  sa_stat_description:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
     region: content
   sa_stat_prefix:
     type: string
@@ -133,4 +133,4 @@ content:
     third_party_settings: {  }
     weight: 3
     region: content
-hidden: {  }
+hidden: { }

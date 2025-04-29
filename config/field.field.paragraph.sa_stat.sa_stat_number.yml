@@ -10,7 +10,7 @@ entity_type: paragraph
 bundle: sa_stat
 label: 'Stat Number'
 description: ''
-required: true
+required: false
 translatable: false
 default_value: {  }
 default_value_callback: ''
@@ -19,4 +19,4 @@ settings:
   max: null
   prefix: ''
   suffix: ''
-field_type: integer
+field_type: float
