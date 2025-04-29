@@ -1,0 +1,22 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.sa_icon
+    - paragraphs.paragraphs_type.sa_feature
+  module:
+    - ui_icons_field
+id: paragraph.sa_feature.sa_icon
+field_name: sa_icon
+entity_type: paragraph
+bundle: sa_feature
+label: Icon
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_icon_pack:
+    bootstrap: bootstrap
+field_type: ui_icon
