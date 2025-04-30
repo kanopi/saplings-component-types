@@ -4,13 +4,13 @@ status: true
 dependencies:
   config:
     - field.storage.paragraph.sa_link
-    - paragraphs.paragraphs_type.feature
+    - paragraphs.paragraphs_type.sa_feature
   module:
     - link
-id: paragraph.feature.sa_link
+id: paragraph.sa_feature.sa_link
 field_name: sa_link
 entity_type: paragraph
-bundle: feature
+bundle: sa_feature
 label: Link
 description: ''
 required: false
