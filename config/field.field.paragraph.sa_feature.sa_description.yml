@@ -11,7 +11,7 @@ dependencies:
 id: paragraph.sa_feature.sa_description
 field_name: sa_description
 entity_type: paragraph
-bundle: feature
+bundle: sa_feature
 label: Description
 description: ''
 required: false
