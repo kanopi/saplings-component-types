@@ -6,7 +6,6 @@ dependencies:
     - field.field.paragraph.sa_card.sa_card_image
     - field.field.paragraph.sa_card.sa_description
     - field.field.paragraph.sa_card.sa_header
-    - field.field.paragraph.sa_card.sa_label
     - field.field.paragraph.sa_card.sa_link
     - paragraphs.paragraphs_type.sa_card
   module:
@@ -57,5 +56,4 @@ content:
     third_party_settings: {  }
 hidden:
   created: true
-  sa_label: true
   status: true

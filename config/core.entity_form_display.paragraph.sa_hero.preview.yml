@@ -43,10 +43,10 @@ third_party_settings:
         open: false
         description: ''
         required_fields: true
-id: paragraph.sa_hero.default
+id: paragraph.sa_hero.preview
 targetEntityType: paragraph
 bundle: sa_hero
-mode: default
+mode: preview
 content:
   sa_container:
     type: options_select
