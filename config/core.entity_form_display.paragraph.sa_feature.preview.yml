@@ -3,13 +3,12 @@ status: true
 dependencies:
   config:
     - core.entity_form_mode.paragraph.preview
-    - field.field.paragraph.sa_feature.sa_icon
     - field.field.paragraph.sa_feature.sa_description
     - field.field.paragraph.sa_feature.sa_header
+    - field.field.paragraph.sa_feature.sa_icon
     - field.field.paragraph.sa_feature.sa_link
     - paragraphs.paragraphs_type.sa_feature
   module:
-    - link
     - text
     - ui_icons_field
 id: paragraph.sa_feature.preview
@@ -17,13 +16,6 @@ targetEntityType: paragraph
 bundle: sa_feature
 mode: preview
 content:
-  sa_icon:
-    type: icon_widget
-    weight: 0
-    region: content
-    settings:
-      icon_selector: icon_picker
-    third_party_settings: {  }
   sa_description:
     type: text_textarea
     weight: 2
@@ -40,13 +32,26 @@ content:
       size: 60
       placeholder: ''
     third_party_settings: {  }
+  sa_icon:
+    type: icon_widget
+    weight: 0
+    region: content
+    settings:
+      icon_selector: icon_picker
+    third_party_settings: {  }
   sa_link:
-    type: link_default
+    type: icon_link_widget
     weight: 3
     region: content
     settings:
       placeholder_url: ''
       placeholder_title: ''
+      allowed_icon_pack:
+        bootstrap: bootstrap
+      show_settings: false
+      icon_required: false
+      icon_position: true
+      icon_selector: icon_autocomplete
     third_party_settings: {  }
 hidden:
   created: true

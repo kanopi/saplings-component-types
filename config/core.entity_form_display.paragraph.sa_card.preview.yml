@@ -6,12 +6,13 @@ dependencies:
     - field.field.paragraph.sa_card.sa_card_image
     - field.field.paragraph.sa_card.sa_description
     - field.field.paragraph.sa_card.sa_header
+    - field.field.paragraph.sa_card.sa_label
     - field.field.paragraph.sa_card.sa_link
     - paragraphs.paragraphs_type.sa_card
   module:
-    - link
     - media_library
     - text
+    - ui_icons_field
 id: paragraph.sa_card.preview
 targetEntityType: paragraph
 bundle: sa_card
@@ -41,13 +42,20 @@ content:
       placeholder: ''
     third_party_settings: {  }
   sa_link:
-    type: link_default
+    type: icon_link_widget
     weight: 4
     region: content
     settings:
       placeholder_url: ''
       placeholder_title: ''
+      allowed_icon_pack:
+        bootstrap: bootstrap
+      show_settings: false
+      icon_required: false
+      icon_position: true
+      icon_selector: icon_autocomplete
     third_party_settings: {  }
 hidden:
   created: true
+  sa_label: true
   status: true
