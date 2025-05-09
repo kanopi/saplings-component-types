@@ -5,55 +5,97 @@ dependencies:
     - field.field.paragraph.sa_card.sa_card_image
     - field.field.paragraph.sa_card.sa_description
     - field.field.paragraph.sa_card.sa_header
+    - field.field.paragraph.sa_card.sa_label
     - field.field.paragraph.sa_card.sa_link
     - paragraphs.paragraphs_type.sa_card
   module:
+    - ds
     - element_class_formatter
     - nomarkup
     - sdc_display
     - text
+    - ui_icons_field
 third_party_settings:
   sdc_display:
-    enabled: true
+    enabled: false
     component:
-      machine_name: 'arbor:card'
-      show_deprecated: null
+      machine_name: ''
     mappings:
       static:
-        props:
-          h_100: '1'
-          image_col_classes: ''
-          content_col_classes: ''
-        slots:
-          image:
-            value: ''
-            format: full_html
-          header:
-            value: ''
-            format: full_html
-          content:
-            value: ''
-            format: full_html
-          footer:
-            value: ''
-            format: full_html
+        props: {  }
+        slots: {  }
       dynamic:
-        props:
-          attributes: ''
-          h_100: ''
-          header_attributes: ''
-          footer_attributes: ''
-        slots:
-          image:
-            sa_card_image: sa_card_image
-          header:
-            sa_header: sa_header
-          content:
-            sa_description: sa_description
-          footer:
-            sa_link: sa_link
-_core:
-  default_config_hash: xCCymuv9DaGtyC70gqwm_XPiD6RhA8LZdwbf6iyGCTM
+        props: {  }
+        slots: {  }
+  ds:
+    layout:
+      id: 'ui_patterns:arbor:card'
+      library: null
+      disable_css: false
+      entity_classes: all_classes
+      settings:
+        label: ''
+        ui_patterns:
+          component_id: 'arbor:card'
+          variant_id:
+            source_id: select
+            source:
+              value: ''
+          props:
+            attributes:
+              source_id: attributes
+              source:
+                value: ''
+            margin:
+              source_id: select
+              source:
+                value: ''
+            image_position:
+              source_id: select
+              source:
+                value: ''
+            h_100:
+              source_id: checkbox
+              source:
+                value: '1'
+            header_attributes:
+              source_id: attributes
+              source:
+                value: ''
+            footer_attributes:
+              source_id: attributes
+              source:
+                value: ''
+            row_attributes:
+              source_id: attributes
+              source:
+                value: 'class="g-0"'
+            image_col_attributes:
+              source_id: attributes
+              source:
+                value: 'class="col-md-4"'
+            content_col_attributes:
+              source_id: attributes
+              source:
+                value: 'class="col-md-8"'
+            image_col_classes:
+              source_id: textfield
+              source:
+                value: ''
+            content_col_classes:
+              source_id: textfield
+              source:
+                value: ''
+          slots: {  }
+    regions:
+      image:
+        - sa_card_image
+      header:
+        - sa_header
+      content:
+        - sa_description
+      footer:
+        - sa_link
 id: paragraph.sa_card.default
 targetEntityType: paragraph
 bundle: sa_card
@@ -76,13 +118,13 @@ content:
           machine_name: null
           show_deprecated: 0
     weight: 0
-    region: content
+    region: image
   sa_description:
     type: text_default
     label: hidden
     settings: {  }
     third_party_settings: {  }
-    weight: 1
+    weight: 2
     region: content
   sa_header:
     type: wrapper_class
@@ -104,24 +146,30 @@ content:
         component:
           machine_name: null
           show_deprecated: 0
-    weight: 2
-    region: content
+    weight: 1
+    region: header
   sa_link:
-    type: link_class
+    type: icon_link_formatter
     label: hidden
     settings:
-      class: 'btn btn-primary'
       trim_length: 80
       url_only: false
       url_plain: false
       rel: '0'
       target: '0'
+      icon_settings:
+        bootstrap:
+          size: 1rem
+          color: ''
+          alt: ''
+      icon_display: icon_only
     third_party_settings:
       nomarkup:
         enabled: true
         separator: '|'
         referenced_entity: ''
       sdc_display:
+        enabled: '1'
         component:
           machine_name: 'ui_suite_bootstrap:button'
           show_deprecated: 0
@@ -137,8 +185,8 @@ content:
                 value: ''
                 format: full_html
           dynamic:
-            mapped: url
-        enabled: 0
+            mapped: label
     weight: 3
-    region: content
-hidden: {  }
+    region: footer
+hidden:
+  sa_label: true

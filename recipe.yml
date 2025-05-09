@@ -22,6 +22,7 @@ install:
   - paragraphs
   - paragraphs_edit
   - swiper_formatter
+  - ui_icons_menu
   - ui_patterns_field_formatters
   - viewsreference
 config:

@@ -139,8 +139,6 @@ third_party_settings:
             sa_margin: null
             sa_padding: null
             sa_width: null
-_core:
-  default_config_hash: VceDe0h4-croJH4gWChxdzK_v3lNDrW6lOIvQSD3MZM
 id: paragraph.sa_columns.default
 targetEntityType: paragraph
 bundle: sa_columns
