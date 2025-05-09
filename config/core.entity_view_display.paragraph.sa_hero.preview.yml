@@ -100,10 +100,10 @@ third_party_settings:
             sa_overlay_opacity: null
             sa_padding: null
             sa_width: null
-id: paragraph.sa_hero.default
+id: paragraph.sa_hero.preview
 targetEntityType: paragraph
 bundle: sa_hero
-mode: default
+mode: preview
 content:
   sa_container:
     type: list_key
