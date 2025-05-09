@@ -3,18 +3,17 @@ status: true
 dependencies:
   config:
     - field.storage.paragraph.sa_column_items
-    - paragraphs.paragraphs_type.sa_existing_content_card
     - paragraphs.paragraphs_type.sa_block
     - paragraphs.paragraphs_type.sa_card
     - paragraphs.paragraphs_type.sa_carousel
     - paragraphs.paragraphs_type.sa_columns
+    - paragraphs.paragraphs_type.sa_existing_content_card
+    - paragraphs.paragraphs_type.sa_feature
     - paragraphs.paragraphs_type.sa_media
-    - paragraphs.paragraphs_type.sa_text
     - paragraphs.paragraphs_type.sa_stat
+    - paragraphs.paragraphs_type.sa_text
   module:
     - entity_reference_revisions
-_core:
-  default_config_hash: v_eNqoj_Znc23Wo1ZyNzUgzYPwWCflDOCfq7hZY1Skw
 id: paragraph.sa_columns.sa_column_items
 field_name: sa_column_items
 entity_type: paragraph
@@ -31,16 +30,14 @@ settings:
     target_bundles:
       sa_block: sa_block
       sa_card: sa_card
-      sa_existing_content_card: sa_existing_content_card
       sa_carousel: sa_carousel
+      sa_existing_content_card: sa_existing_content_card
       sa_media: sa_media
       sa_text: sa_text
+      sa_feature: sa_feature
       sa_stat: sa_stat
     negate: 0
     target_bundles_drag_drop:
-      sa_existing_content_card:
-        weight: 18
-        enabled: true
       sa_accordion:
         weight: 14
         enabled: false
@@ -62,12 +59,33 @@ settings:
       sa_columns:
         weight: 20
         enabled: false
+      sa_existing_content_card:
+        weight: 18
+        enabled: true
+      sa_faq:
+        weight: 30
+        enabled: false
+      sa_faq_item:
+        weight: 31
+        enabled: false
+      sa_feature:
+        weight: 32
+        enabled: true
       sa_filtered_list:
         weight: 21
+        enabled: false
+      sa_hero:
+        weight: 34
         enabled: false
       sa_media:
         weight: 22
         enabled: true
+      sa_media_collection:
+        weight: 36
+        enabled: false
+      sa_multi_item_carousel:
+        weight: 37
+        enabled: false
       sa_side_by_side:
         weight: 23
         enabled: false
