@@ -13,7 +13,7 @@
     "require": {
         "npm-asset/swiper": "^11.2.4",
         "drupal/block_field": "^1.0@RC",
-        "drupal/core": ">=10.4",
+        "drupal/core": "^10.4 || ^11",
         "drupal/ds": "^3.24",
         "drupal/element_class_formatter": "^2.0@beta",
         "drupal/entity_reference_revisions": "^1.12",
